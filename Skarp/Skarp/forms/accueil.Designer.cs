@@ -36,6 +36,7 @@
             this.ajouterUnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desJoueursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,8 @@
             this.menu_general.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.testToolStripMenuItem,
             this.test2ToolStripMenuItem,
-            this.fesdfsfsToolStripMenuItem});
+            this.fesdfsfsToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menu_general.Location = new System.Drawing.Point(0, 0);
             this.menu_general.Name = "menu_general";
             this.menu_general.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -103,12 +105,10 @@
             // 
             // ajouterUnUtilisateurToolStripMenuItem
             // 
-            this.ajouterUnUtilisateurToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ajouterUnUtilisateurToolStripMenuItem.Image = global::Skarp.Properties.Resources.news_red_button_300x300;
             this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
             this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
-            this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter un utilisateur";
-            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click);
+            this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter des utilisateurs";
+            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click_1);
             // 
             // gestionBDDToolStripMenuItem
             // 
@@ -123,6 +123,7 @@
             this.promouvoirUnUtilisateurToolStripMenuItem.Name = "promouvoirUnUtilisateurToolStripMenuItem";
             this.promouvoirUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.promouvoirUnUtilisateurToolStripMenuItem.Text = "Promouvoir un utilisateur";
+            this.promouvoirUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.promouvoirUnUtilisateurToolStripMenuItem_Click);
             // 
             // ajouterUnToolStripMenuItem
             // 
@@ -141,7 +142,14 @@
             this.desJoueursToolStripMenuItem.Name = "desJoueursToolStripMenuItem";
             this.desJoueursToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
             this.desJoueursToolStripMenuItem.Text = "Des joueurs";
-            this.desJoueursToolStripMenuItem.Click += new System.EventHandler(this.desJoueursToolStripMenuItem_Click);
+            this.desJoueursToolStripMenuItem.Click += new System.EventHandler(this.desJoueursToolStripMenuItem_Click_1);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(71, 24);
+            this.toolStripMenuItem1.Text = "Top 10";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // accueil
             // 
@@ -179,7 +187,9 @@
         private System.Windows.Forms.ToolStripMenuItem promouvoirUnUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jajouteunmenutropfacilementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem top10ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desJoueursToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

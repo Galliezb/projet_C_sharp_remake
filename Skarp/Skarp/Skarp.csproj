@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>Ressources\DLL\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -139,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Add_User.resx">
       <DependentUpon>Form_Administration_Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Administration_Promote_User.resx">
+      <DependentUpon>Form_Administration_Promote_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Update_Info.resx">
       <DependentUpon>Form_Administration_Update_Info.cs</DependentUpon>

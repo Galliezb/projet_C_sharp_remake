@@ -16,5 +16,34 @@ namespace Skarp.forms
         {
             InitializeComponent();
         }
+
+        private void btPromote1_Click(object sender, EventArgs e)
+        {
+            btPromote1.Visible = false;
+            btPromote2.Visible = true;
+        }
+
+        private void btPromote2_Click(object sender, EventArgs e)
+        {
+            btPromote2.Visible = false;
+            btPromote3.Visible = true;
+        }
+
+        private void btPromote3_Click(object sender, EventArgs e)
+        {
+            btPromote3.Visible = false;
+            btPromote4.Visible = true;
+        }
+
+        private void btPromote4_Click(object sender, EventArgs e)
+        {
+            btPromote4.Visible = false;
+            btPromote5.Visible = true;
+        }
+
+        private void btPromote5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
