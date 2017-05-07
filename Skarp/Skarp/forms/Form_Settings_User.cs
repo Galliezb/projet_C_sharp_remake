@@ -29,13 +29,18 @@ namespace Skarp.forms {
         private void btSave_Click ( object sender , EventArgs e ) {
 
             if ( tb_password.Text.ToString() == tb_password2.Text.ToString() ) {
+
                 Player.ID = Session.ID;
                 Player.email = tb_mail.Text.ToString();
                 Player.firstName = tb_prenom.Text.ToString();
                 Player.name = tb_nom.Text.ToString();
                 Player.password = tb_password.Text.ToString();
                 Player.pseudo = tb_pseudo.Text.ToString();
-                Player.language = Session.language;
+                if ( cb_language.SelectedItem.ToString() == Traducteur.traduction_[55] ) {
+                    Player.language = "fr";
+                } else if ( cb_language.SelectedItem.ToString() == Traducteur.traduction_[56] ) {
+                    Player.language = "en";
+                }
                 Player.isAdmin = Session.isAdmin;
                 Player.isOrganizer = Session.isOrganizer;
 

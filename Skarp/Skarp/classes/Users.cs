@@ -205,7 +205,7 @@ namespace Skarp {
             get { return isAdmin_; }
             set {
                 if ( value == true || value == false ) {
-                    isAdmin = value;
+                    isAdmin_ = value;
                 } else {
                     MessageBox.Show( Traducteur.traduction_[10] );
                 }
