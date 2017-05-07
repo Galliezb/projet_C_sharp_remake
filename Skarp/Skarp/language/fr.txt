@@ -1,0 +1,60 @@
+﻿Créer un compte
+Login et / ou mot de passe incorrect
+L'ID est incorrect
+Le nom ne peut dépasser 50 caractères
+Le prenom ne peut dépasser 50 caractères
+L'email ne peut dépasser 255 caractères
+Le mot de passe ne peut dépasser 255 caractères
+Le pseudo ne peut dépasser 50 caractères
+La langue ne peut être que 'fr' ou 'en'
+isOrganizer nécessite un booléen
+isAdmin nécessite un booléen
+Impossible d'update depuis une liste vide
+Impossible de supprimer un utilisateur sans IDuser défini ( nom : 
+Impossible de supprimer depuis une liste vide
+Le nom ne peut dépasser 50 caractères
+Le nom du responsable ne peut dépasser 50 caractères
+Le mail ne peut dépasser 255 caractères
+La date ne peut être passée
+La description ne peut dépasser 255 caractères
+Id de l'organisation incorrect pour une mise à jour en BDD
+Erreur de retour d'ID après insertion en BDD
+Id de l'organisation incorrect pour suppression en BDD
+Organisation surpprimée
+Le nom ne peut dépasser 50 caractères
+L'id du capitaine ne peut-être négatif
+L'id de la team ne peut-être négatif
+La description ne peut dépasser 255 caractères
+La date ne peut être passée
+ID incorrect pour update de la BDD
+Retour d'id incorrect après insertion
+Id Team incorrect pour une suppression en BDD
+Equipe surpprimée
+Le nom est trop long ( 50 charactères maximum )
+La description doit faire plus de 10 caractères
+La date ne peut être passée
+Il faut d'abord enregistré la startDate de start avant la endDate
+Les tournois doivent avoir minimum 3 jours d'écart entre le début et la fin
+Championnat toute ronde
+Elimination directe
+Phase de groupe
+Le type de tournoi est incorrect
+Minimum 12 joueurs nécessaire pour un tournoi
+L'id du tournoi n'est pas défini
+La BDD n'as pas retourné l'idTournament créée et l'idTournament n'as donc pas pu être mis à jour.
+Impossible de supprimer le tournoi. L'ID n'est pas défini.
+Tournoi surpprimé
+Pseudonyme
+Mot de passe
+Bienvenue
+Créer un compte
+Prénom
+Nom
+Email
+Mot de passe
+Pseuodnyme
+Français
+Anglais
+Les mots de passe ne correspondent pas
+La langue ne peut être que
+ou

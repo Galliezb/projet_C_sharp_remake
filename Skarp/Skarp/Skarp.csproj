@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{539182E2-3A08-4B4F-8B68-368D003A89CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skarp</RootNamespace>
+    <AssemblyName>Skarp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>Ressources\DLL\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ressources\DLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\DatabaseConnection.cs" />
+    <Compile Include="classes\Fonction.cs" />
+    <Compile Include="classes\Organization.cs" />
+    <Compile Include="classes\Session.cs" />
+    <Compile Include="classes\sql_non_identifie.cs" />
+    <Compile Include="classes\SQL_Request_Form_Login.cs" />
+    <Compile Include="classes\Team.cs" />
+    <Compile Include="classes\Tournament.cs" />
+    <Compile Include="classes\Traducteur.cs" />
+    <Compile Include="classes\Users.cs" />
+    <Compile Include="forms\accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\accueil.Designer.cs">
+      <DependentUpon>accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_accueil.Designer.cs">
+      <DependentUpon>Form_accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Administration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Administration.Designer.cs">
+      <DependentUpon>Form_Administration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_CreateOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_CreateOrg.Designer.cs">
+      <DependentUpon>Form_CreateOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_ManageTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_ManageTeam.Designer.cs">
+      <DependentUpon>Form_ManageTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Search_Tournament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Search_Tournament.Designer.cs">
+      <DependentUpon>Form_Search_Tournament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Settings_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Settings_User.Designer.cs">
+      <DependentUpon>Form_Settings_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Top10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Top10.Designer.cs">
+      <DependentUpon>Form_Top10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\accueil.resx">
+      <DependentUpon>accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_accueil.resx">
+      <DependentUpon>Form_accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Administration.resx">
+      <DependentUpon>Form_Administration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_CreateOrg.resx">
+      <DependentUpon>Form_CreateOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_ManageTeam.resx">
+      <DependentUpon>Form_ManageTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Search_Tournament.resx">
+      <DependentUpon>Form_Search_Tournament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Settings_User.resx">
+      <DependentUpon>Form_Settings_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Top10.resx">
+      <DependentUpon>Form_Top10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="language\fr.txt" />
+    <None Include="Ressources\fond_login.png" />
+    <None Include="Ressources\fond_news.png" />
+    <None Include="Ressources\Norbert\Team.png" />
+    <None Include="Ressources\Norbert\Settings.png" />
+    <None Include="Ressources\Norbert\Records.png" />
+    <None Include="Ressources\Norbert\FriendsList.png" />
+    <None Include="Ressources\news-red-button-300x300.jpg" />
+    <None Include="Ressources\Kwouin.wav" />
+    <None Include="Ressources\kwouin.bmp" />
+    <None Include="Ressources\304cae8c141683515667132206_700w_0.jpg" />
+    <None Include="Ressources\Admin.png" />
+    <Content Include="Ressources\bruno\airplane.png" />
+    <Content Include="Ressources\bruno\attachment.png" />
+    <Content Include="Ressources\bruno\bouton01.jpg" />
+    <Content Include="Ressources\bruno\bouton_config.jpg" />
+    <Content Include="Ressources\bruno\broken-heart.png" />
+    <Content Include="Ressources\bruno\browser.png" />
+    <Content Include="Ressources\bruno\cancel.png" />
+    <Content Include="Ressources\bruno\center-alignment.png" />
+    <Content Include="Ressources\bruno\clock-1.png" />
+    <Content Include="Ressources\bruno\clock.png" />
+    <Content Include="Ressources\bruno\cloud-computing.png" />
+    <Content Include="Ressources\bruno\compass.png" />
+    <Content Include="Ressources\bruno\computer.png" />
+    <Content Include="Ressources\bruno\creation_tournoi.jpg" />
+    <Content Include="Ressources\bruno\cursor.png" />
+    <Content Include="Ressources\bruno\document-1.png" />
+    <Content Include="Ressources\bruno\document-2.png" />
+    <Content Include="Ressources\bruno\document-3.png" />
+    <Content Include="Ressources\bruno\document.png" />
+    <Content Include="Ressources\bruno\download.png" />
+    <Content Include="Ressources\bruno\earth-globe.png" />
+    <Content Include="Ressources\bruno\email.png" />
+    <Content Include="Ressources\bruno\film.png" />
+    <Content Include="Ressources\bruno\folder.png" />
+    <Content Include="Ressources\bruno\gamepad.png" />
+    <Content Include="Ressources\bruno\group.png" />
+    <Content Include="Ressources\bruno\heart.png" />
+    <Content Include="Ressources\bruno\internet.png" />
+    <Content Include="Ressources\bruno\layers.png" />
+    <Content Include="Ressources\bruno\left-alignment.png" />
+    <Content Include="Ressources\bruno\light-bulb-1.png" />
+    <Content Include="Ressources\bruno\light-bulb.png" />
+    <Content Include="Ressources\bruno\link.png" />
+    <Content Include="Ressources\bruno\list.png" />
+    <Content Include="Ressources\bruno\mail.png" />
+    <Content Include="Ressources\bruno\microphone.png" />
+    <Content Include="Ressources\bruno\notification.png" />
+    <Content Include="Ressources\bruno\padlock.png" />
+    <Content Include="Ressources\bruno\pencil.png" />
+    <Content Include="Ressources\bruno\phone-book-1.png" />
+    <Content Include="Ressources\bruno\phone-book.png" />
+    <Content Include="Ressources\bruno\picture-1.png" />
+    <Content Include="Ressources\bruno\picture.png" />
+    <Content Include="Ressources\bruno\placeholder.png" />
+    <Content Include="Ressources\bruno\push-pin.png" />
+    <Content Include="Ressources\bruno\right-alignment.png" />
+    <Content Include="Ressources\bruno\settings.png" />
+    <Content Include="Ressources\bruno\share.png" />
+    <Content Include="Ressources\bruno\shield-1.png" />
+    <Content Include="Ressources\bruno\shield-2.png" />
+    <Content Include="Ressources\bruno\shield.png" />
+    <Content Include="Ressources\bruno\smartphone.png" />
+    <Content Include="Ressources\bruno\speech-bubble-1.png" />
+    <Content Include="Ressources\bruno\speech-bubble.png" />
+    <Content Include="Ressources\bruno\tablet.png" />
+    <Content Include="Ressources\bruno\unlock.png" />
+    <Content Include="Ressources\bruno\upload.png" />
+    <Content Include="Ressources\bruno\user-1.png" />
+    <Content Include="Ressources\bruno\user-2.png" />
+    <Content Include="Ressources\bruno\user-3.png" />
+    <Content Include="Ressources\bruno\user.png" />
+    <Content Include="Ressources\bruno\volume.png" />
+    <Content Include="Ressources\bruno\zoom-in.png" />
+    <Content Include="Ressources\bruno\zoom-out.png" />
+    <None Include="Ressources\button_news %281%29.png" />
+    <None Include="Ressources\calendar.png" />
+    <None Include="Ressources\dark-souls.jpg" />
+    <Content Include="Ressources\DLL\MySql.Data.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
