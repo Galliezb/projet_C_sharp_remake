@@ -205,7 +205,7 @@ namespace Skarp {
             get { return isAdmin_; }
             set {
                 if ( value == true || value == false ) {
-                    isAdmin = value;
+                    isAdmin_ = value;
                 } else {
                     MessageBox.Show( Traducteur.traduction_[10] );
                 }
@@ -218,7 +218,7 @@ namespace Skarp {
         /// Mets à jours les informations de l'instance dans la BDD ou insert si nécessaire
         /// </summary>
         public void update () {
-
+            
             // si l'idUser est défini alors on update et toutes les données sont correctes
             if ( IDUser_ != -1 ) {
 
@@ -239,6 +239,7 @@ namespace Skarp {
 
                 // mets à jour la session du connecté si c'est lui
                 if ( IDUser_ == Session.ID ) {
+                    
                     Session.ID = IDUser_;
                     Session.name = name_;
                     Session.firstname = firstName_;
