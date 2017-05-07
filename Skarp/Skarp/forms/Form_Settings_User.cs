@@ -26,22 +26,21 @@ namespace Skarp.forms {
 
         }
 
-        private void btSave_Click ( object sender , EventArgs e )     // lorsqu'on appuie sur le bouton SAVE on met a jour les données de l utilisateur dans la base de données.
-        {
+        private void btSave_Click ( object sender , EventArgs e ) {
+
             if ( tb_password.Text.ToString() == tb_password2.Text.ToString() ) {
+                Player.ID = Session.ID;
                 Player.email = tb_mail.Text.ToString();
                 Player.firstName = tb_prenom.Text.ToString();
                 Player.name = tb_nom.Text.ToString();
                 Player.password = tb_password.Text.ToString();
                 Player.pseudo = tb_pseudo.Text.ToString();
+                Player.language = Session.language;
+                Player.isAdmin = Session.isAdmin;
+                Player.isOrganizer = Session.isOrganizer;
 
-                // databaseRequest.updateInfo(Player);
                 Player.update();
-
-                //lbNom
-                this.ParentForm.Controls["PanelTop"].Controls["lbNom"].Text = Player.name;
-
-                //MessageBox.Show( traduction.display( 2002 ) );
+                MessageBox.Show( "Informations mises à jours" );
 
             } else {
 

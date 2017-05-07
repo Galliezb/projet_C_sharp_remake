@@ -27,47 +27,6 @@ namespace Skarp.forms {
 
         }
 
-        private void treeView1_AfterSelect ( object sender , TreeViewEventArgs e ) {
-            if ( treeView1.SelectedNode.Text == "Add User to DB" ) {
-                foreach ( Control c in panelAddUser.Controls ) {
-                    if ( c is TextBox )
-                        c.Text = String.Empty;
-                    if ( c is ComboBox )
-                        c.Text = String.Empty;
-                }
-                panelAddUser.Controls["cbbSelectType"].Text = String.Empty;
-
-
-                panelChangeInfo.Visible = false;
-                panelUpdateInfo.Visible = false;
-                panelAddUser.Visible = true;
-                //panelAddUser.
-            }
-            if ( treeView1.SelectedNode.Text == "Update Informations" ) {
-                foreach ( Control c in panelAddUser.Controls ) {
-                    if ( c is TextBox )
-                        c.Text = String.Empty;
-                    if ( c is ComboBox )
-                        c.Text = String.Empty;
-                }
-                panelChangeInfo.Visible = false;
-                panelUpdateInfo.Visible = true;
-                panelAddUser.Visible = false;
-
-            }
-            if ( treeView1.SelectedNode.Text == "Change Your Informations" ) {
-                foreach ( Control c in panelAddUser.Controls ) {
-                    if ( c is TextBox )
-                        c.Text = String.Empty;
-                    if ( c is ComboBox )
-                        c.Text = String.Empty;
-                }
-                panelAddUser.Visible = false;
-                panelUpdateInfo.Visible = false;
-                panelChangeInfo.Visible = true;
-            }
-        }
-
         private void Form_Administration_Load ( object sender , EventArgs e ) {
             panelAddUser.Parent = this;
             panelUpdateInfo.Parent = this;

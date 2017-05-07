@@ -38,13 +38,13 @@ namespace Skarp.forms {
         }
 
         private void testToolStripMenuItem_Click ( object sender , EventArgs e ) {
-            /*
+            
             closeAll();
             affichage = new forms.Form_Administration();
             affichage.MdiParent = this;
             affichage.Location = new Point( 0 , 0 );
             affichage.Show();
-            */
+            
         }
 
         private void test2ToolStripMenuItem_Click ( object sender , EventArgs e ) {
@@ -58,6 +58,15 @@ namespace Skarp.forms {
         private void closeAll() {
 
             foreach(Form f in this.MdiChildren ) {
+                int x = 0;
+                while ( true ) {
+                    f.Location = new Point( x , 0 );
+                    x++;
+                    if ( x > 800 ) {
+                        break;
+                    }
+                }
+
                 f.Close();
             }
 
