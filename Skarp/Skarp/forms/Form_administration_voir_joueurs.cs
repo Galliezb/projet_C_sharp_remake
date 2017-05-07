@@ -24,7 +24,17 @@ namespace Skarp.forms {
             dg_joueur.DataSource = dataForGrid;
             dg_joueur.DataMember = "user";
 
-            dg_joueur.Columns[0].Visible = false;
+            dg_joueur.Columns["idUser"].Visible = false;
+            dg_joueur.Columns["isAdmin"].Visible = false;
+            dg_joueur.Columns["isorganizer"].Visible = false;
+
+            int taille = 135;
+            dg_joueur.Columns["name"].Width = taille;
+            dg_joueur.Columns["firstName"].Width = taille;
+            dg_joueur.Columns["email"].Width = taille;
+            dg_joueur.Columns["password"].Width = taille;
+            dg_joueur.Columns["pseudo"].Width = taille;
+            dg_joueur.Columns["language"].Width = taille;
 
         }
 
