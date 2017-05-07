@@ -391,7 +391,7 @@ namespace Skarp {
         public DataSet getAllUsers () {
 
             
-            string request = "SELECT `name`, `firstName`, `email`, `password`, `pseudo`, `language`, `isOrganizer`, `isAdmin` FROM `user`";
+            string request = "SELECT * FROM user";
             MySqlDataAdapter monDataAdapter = new MySqlDataAdapter(request,maConnexionMysql.Laconnexion);
 
             MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder( monDataAdapter );
@@ -409,11 +409,11 @@ namespace Skarp {
         /// <param name="dataSetForUpdate"></param>
         public void update ( DataSet dataSetForUpdate ) {
 
-            string request = "SELECT `name`, `firstName`, `email`, `password`, `pseudo`, `language`, `isOrganizer`, `isAdmin` FROM `user`";
+            string request = "SELECT * FROM user";
             MySqlDataAdapter monDataAdapter = new MySqlDataAdapter( request, maConnexionMysql.Laconnexion );
             MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder( monDataAdapter );
 
-            monDataAdapter.Update(dataSetForUpdate);
+            monDataAdapter.Update(dataSetForUpdate,"user");
 
         }
 
