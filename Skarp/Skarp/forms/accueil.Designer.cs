@@ -30,12 +30,13 @@
             this.testToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.test2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fesdfsfsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionBDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promouvoirUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.top10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desJoueursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.testToolStripMenuItem,
             this.test2ToolStripMenuItem,
             this.fesdfsfsToolStripMenuItem,
-            this.top10ToolStripMenuItem});
+            this.toolStripMenuItem1});
             this.menu_general.Location = new System.Drawing.Point(0, 0);
             this.menu_general.Name = "menu_general";
             this.menu_general.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -102,6 +103,13 @@
             this.fesdfsfsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.fesdfsfsToolStripMenuItem.Text = "Administration";
             // 
+            // ajouterUnUtilisateurToolStripMenuItem
+            // 
+            this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
+            this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
+            this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter des utilisateurs";
+            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click_1);
+            // 
             // gestionBDDToolStripMenuItem
             // 
             this.gestionBDDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -128,6 +136,20 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Name = "jajouteunmenutropfacilementToolStripMenuItem";
             this.jajouteunmenutropfacilementToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "j\'ajouteunmenutropfacilement";
+            // 
+            // desJoueursToolStripMenuItem
+            // 
+            this.desJoueursToolStripMenuItem.Name = "desJoueursToolStripMenuItem";
+            this.desJoueursToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.desJoueursToolStripMenuItem.Text = "Des joueurs";
+            this.desJoueursToolStripMenuItem.Click += new System.EventHandler(this.desJoueursToolStripMenuItem_Click_1);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(71, 24);
+            this.toolStripMenuItem1.Text = "Top 10";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // accueil
             // 
@@ -165,6 +187,9 @@
         private System.Windows.Forms.ToolStripMenuItem promouvoirUnUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jajouteunmenutropfacilementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem top10ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desJoueursToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

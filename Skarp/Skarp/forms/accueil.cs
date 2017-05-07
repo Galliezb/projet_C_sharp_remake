@@ -96,14 +96,36 @@ namespace Skarp.forms {
         {
             closeAll();
             affichage = new forms.Form_Top10();
-            displayForm(affichage);
+            displayForm();
         }
 
         private void promouvoirUnUtilisateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             closeAll();
             affichage = new forms.Form_Administration_Promote_User();
-            displayForm(affichage);
+            displayForm();
+        }
+       
+
+        private void ajouterUnUtilisateurToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Administration_Add_User();
+            displayForm();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Top10();
+            displayForm();
+        }
+
+        private void desJoueursToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_administration_voir_joueurs();
+            displayForm();
         }
     }
 }
