@@ -30,11 +30,12 @@
             this.testToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.test2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fesdfsfsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionBDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promouvoirUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.top10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +46,8 @@
             this.menu_general.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.testToolStripMenuItem,
             this.test2ToolStripMenuItem,
-            this.fesdfsfsToolStripMenuItem});
+            this.fesdfsfsToolStripMenuItem,
+            this.top10ToolStripMenuItem});
             this.menu_general.Location = new System.Drawing.Point(0, 0);
             this.menu_general.Name = "menu_general";
             this.menu_general.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -102,15 +104,6 @@
             this.fesdfsfsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.fesdfsfsToolStripMenuItem.Text = "Administration";
             // 
-            // ajouterUnUtilisateurToolStripMenuItem
-            // 
-            this.ajouterUnUtilisateurToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ajouterUnUtilisateurToolStripMenuItem.Image = global::Skarp.Properties.Resources.news_red_button_300x300;
-            this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
-            this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
-            this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter un utilisateur";
-            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click);
-            // 
             // gestionBDDToolStripMenuItem
             // 
             this.gestionBDDToolStripMenuItem.Name = "gestionBDDToolStripMenuItem";
@@ -122,6 +115,7 @@
             this.promouvoirUnUtilisateurToolStripMenuItem.Name = "promouvoirUnUtilisateurToolStripMenuItem";
             this.promouvoirUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.promouvoirUnUtilisateurToolStripMenuItem.Text = "Promouvoir un utilisateur";
+            this.promouvoirUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.promouvoirUnUtilisateurToolStripMenuItem_Click);
             // 
             // ajouterUnToolStripMenuItem
             // 
@@ -134,6 +128,22 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Name = "jajouteunmenutropfacilementToolStripMenuItem";
             this.jajouteunmenutropfacilementToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "j\'ajouteunmenutropfacilement";
+            // 
+            // ajouterUnUtilisateurToolStripMenuItem
+            // 
+            this.ajouterUnUtilisateurToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ajouterUnUtilisateurToolStripMenuItem.Image = global::Skarp.Properties.Resources.news_red_button_300x300;
+            this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
+            this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
+            this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter un utilisateur";
+            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click);
+            // 
+            // top10ToolStripMenuItem
+            // 
+            this.top10ToolStripMenuItem.Name = "top10ToolStripMenuItem";
+            this.top10ToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.top10ToolStripMenuItem.Text = "Top 10";
+            this.top10ToolStripMenuItem.Click += new System.EventHandler(this.top10ToolStripMenuItem_Click);
             // 
             // accueil
             // 
@@ -171,6 +181,7 @@
         private System.Windows.Forms.ToolStripMenuItem promouvoirUnUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jajouteunmenutropfacilementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem top10ToolStripMenuItem;
     }
 }
 

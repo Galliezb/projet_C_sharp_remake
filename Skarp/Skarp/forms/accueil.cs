@@ -99,5 +99,19 @@ namespace Skarp.forms {
             affichage = new forms.Form_Administration_Add_User();
             displayForm(affichage);
         }
+
+        private void top10ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Top10();
+            displayForm(affichage);
+        }
+
+        private void promouvoirUnUtilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Administration_Promote_User();
+            displayForm(affichage);
+        }
     }
 }
