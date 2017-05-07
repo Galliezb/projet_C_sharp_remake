@@ -67,19 +67,20 @@
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.userToolStripMenuItem.Text = "User";
+            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // jesaispasToolStripMenuItem
             // 
             this.jesaispasToolStripMenuItem.Name = "jesaispasToolStripMenuItem";
-            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.jesaispasToolStripMenuItem.Text = "jesaispas";
             // 
             // testToolStripMenuItem1
             // 
             this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
-            this.testToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
             this.testToolStripMenuItem1.Text = "test";
             // 
             // test2ToolStripMenuItem
@@ -108,6 +109,7 @@
             this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
             this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter un utilisateur";
+            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click);
             // 
             // gestionBDDToolStripMenuItem
             // 

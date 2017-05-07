@@ -71,12 +71,24 @@ namespace Skarp.forms {
             fefe.Location = new Point( 0 , 0 );
             fefe.Size = new Size( 800 , 628 );
             fefe.FormBorderStyle = FormBorderStyle.None;
-            fefe.BackColor = Color.Black;
+            fefe.BackColor = Color.FromArgb(66, 96, 154);
             fefe.ForeColor = Color.White;
             fefe.Font = new Font( "Century Schoolbook" , 12 );
             fefe.ShowIcon = false;
             fefe.Show();
 
+        }
+
+        private void userToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ajouterUnUtilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Administration_Add_User();
+            displayForm(affichage);
         }
     }
 }
