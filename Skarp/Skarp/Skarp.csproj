@@ -76,12 +76,6 @@
     <Compile Include="forms\Form_accueil.Designer.cs">
       <DependentUpon>Form_accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Form_Administration.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\Form_Administration.Designer.cs">
-      <DependentUpon>Form_Administration.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\Form_Administration_Add_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +93,12 @@
     </Compile>
     <Compile Include="forms\Form_Administration_Update_Info.Designer.cs">
       <DependentUpon>Form_Administration_Update_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_administration_voir_joueurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_administration_voir_joueurs.Designer.cs">
+      <DependentUpon>Form_administration_voir_joueurs.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Form_CreateOrg.cs">
       <SubType>Form</SubType>
@@ -138,9 +138,6 @@
     <EmbeddedResource Include="forms\Form_accueil.resx">
       <DependentUpon>Form_accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\Form_Administration.resx">
-      <DependentUpon>Form_Administration.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Add_User.resx">
       <DependentUpon>Form_Administration_Add_User.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Update_Info.resx">
       <DependentUpon>Form_Administration_Update_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_administration_voir_joueurs.resx">
+      <DependentUpon>Form_administration_voir_joueurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_CreateOrg.resx">
       <DependentUpon>Form_CreateOrg.cs</DependentUpon>

@@ -37,21 +37,11 @@ namespace Skarp.forms {
             */
         }
 
-        private void testToolStripMenuItem_Click ( object sender , EventArgs e ) {
-            
-            closeAll();
-            affichage = new forms.Form_Administration();
-            affichage.MdiParent = this;
-            affichage.Location = new Point( 0 , 0 );
-            affichage.Show();
-            
-        }
-
         private void test2ToolStripMenuItem_Click ( object sender , EventArgs e ) {
             
             closeAll();
             affichage = new forms.Form_Settings_User();
-            displayForm( affichage );
+            displayForm();
             
         }
 
@@ -72,24 +62,19 @@ namespace Skarp.forms {
 
         }
 
-        private void displayForm ( Form fefe ) {
+        private void displayForm () {
 
-            fefe.MdiParent = this;
-            fefe.StartPosition = FormStartPosition.Manual;
-            fefe.WindowState = FormWindowState.Maximized;
-            fefe.Location = new Point( 0 , 0 );
-            fefe.Size = new Size( 800 , 628 );
-            fefe.FormBorderStyle = FormBorderStyle.None;
-            fefe.BackColor = Color.FromArgb(66, 96, 154);
-            fefe.ForeColor = Color.White;
-            fefe.Font = new Font( "Century Schoolbook" , 12 );
-            fefe.ShowIcon = false;
-            fefe.Show();
-
-        }
-
-        private void userToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+            affichage.MdiParent = this;
+            affichage.FormBorderStyle = FormBorderStyle.None;
+            affichage.StartPosition = FormStartPosition.Manual;
+            affichage.WindowState = FormWindowState.Maximized;
+            affichage.Font = new Font( "Century Schoolbook" , 12 );
+            affichage.Location = new Point( 0 , 0 );
+            affichage.Size = new Size( 800 , 628 );
+            affichage.BackColor = Color.FromArgb(66, 96, 154);
+            affichage.ForeColor = Color.White;
+            affichage.ShowIcon = false;
+            affichage.Show();
 
         }
 
@@ -97,7 +82,14 @@ namespace Skarp.forms {
         {
             closeAll();
             affichage = new forms.Form_Administration_Add_User();
-            displayForm(affichage);
+            displayForm();
+        }
+
+        private void desJoueursToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_administration_voir_joueurs();
+            affichage.MdiParent = this;
+            displayForm();
         }
 
         private void top10ToolStripMenuItem_Click(object sender, EventArgs e)

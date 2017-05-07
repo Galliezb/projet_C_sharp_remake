@@ -64,25 +64,23 @@
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
             this.testToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.testToolStripMenuItem.Text = "test";
-            this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.userToolStripMenuItem.Text = "User";
-            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // jesaispasToolStripMenuItem
             // 
             this.jesaispasToolStripMenuItem.Name = "jesaispasToolStripMenuItem";
-            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.jesaispasToolStripMenuItem.Text = "jesaispas";
             // 
             // testToolStripMenuItem1
             // 
             this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
-            this.testToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
             this.testToolStripMenuItem1.Text = "test";
             // 
             // test2ToolStripMenuItem
@@ -106,9 +104,11 @@
             // 
             // gestionBDDToolStripMenuItem
             // 
+            this.gestionBDDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desJoueursToolStripMenuItem});
             this.gestionBDDToolStripMenuItem.Name = "gestionBDDToolStripMenuItem";
             this.gestionBDDToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
-            this.gestionBDDToolStripMenuItem.Text = "Gestion BDD";
+            this.gestionBDDToolStripMenuItem.Text = "Afficher la liste";
             // 
             // promouvoirUnUtilisateurToolStripMenuItem
             // 
@@ -128,22 +128,6 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Name = "jajouteunmenutropfacilementToolStripMenuItem";
             this.jajouteunmenutropfacilementToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "j\'ajouteunmenutropfacilement";
-            // 
-            // ajouterUnUtilisateurToolStripMenuItem
-            // 
-            this.ajouterUnUtilisateurToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ajouterUnUtilisateurToolStripMenuItem.Image = global::Skarp.Properties.Resources.news_red_button_300x300;
-            this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
-            this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
-            this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter un utilisateur";
-            this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click);
-            // 
-            // top10ToolStripMenuItem
-            // 
-            this.top10ToolStripMenuItem.Name = "top10ToolStripMenuItem";
-            this.top10ToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-            this.top10ToolStripMenuItem.Text = "Top 10";
-            this.top10ToolStripMenuItem.Click += new System.EventHandler(this.top10ToolStripMenuItem_Click);
             // 
             // accueil
             // 
@@ -181,7 +165,6 @@
         private System.Windows.Forms.ToolStripMenuItem promouvoirUnUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jajouteunmenutropfacilementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem top10ToolStripMenuItem;
     }
 }
 

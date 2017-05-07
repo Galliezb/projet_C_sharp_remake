@@ -58,3 +58,5 @@ Anglais
 Les mots de passe ne correspondent pas
 La langue ne peut être que
 ou
+Langue
+Organisateur
