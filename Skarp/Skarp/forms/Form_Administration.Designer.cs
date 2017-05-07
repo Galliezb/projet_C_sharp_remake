@@ -28,12 +28,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Add User to DB");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Update Informations");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Change Your Informations");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Show Informations");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Promote an User");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Add an Administrator");
             this.tps = new System.Windows.Forms.Timer(this.components);
             this.panelChangeInfo = new System.Windows.Forms.Panel();
             this.btSubmit = new System.Windows.Forms.Button();
@@ -62,7 +56,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.updateDataGridView = new System.Windows.Forms.Button();
             this.panelUpdateInfo = new System.Windows.Forms.Panel();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.panelAddUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelUpdateInfo.SuspendLayout();
@@ -396,43 +389,12 @@
             this.panelUpdateInfo.TabIndex = 44;
             this.panelUpdateInfo.Visible = false;
             // 
-            // treeView1
-            // 
-            this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
-            this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.treeView1.ForeColor = System.Drawing.Color.White;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Name = "AddUser";
-            treeNode1.Text = "Add User to DB";
-            treeNode2.Name = "UpdateInfo";
-            treeNode2.Text = "Update Informations";
-            treeNode3.Name = "ChangeSelfInfo";
-            treeNode3.Text = "Change Your Informations";
-            treeNode4.Name = "ShowInfo";
-            treeNode4.Text = "Show Informations";
-            treeNode5.Name = "PromUser";
-            treeNode5.Text = "Promote an User";
-            treeNode6.Name = "AddAdmin";
-            treeNode6.Text = "Add an Administrator";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6});
-            this.treeView1.Size = new System.Drawing.Size(235, 768);
-            this.treeView1.TabIndex = 3;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            // 
             // Form_Administration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(1005, 768);
-            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.panelUpdateInfo);
             this.Controls.Add(this.panelAddUser);
             this.Controls.Add(this.panelChangeInfo);
@@ -482,6 +444,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button updateDataGridView;
         private System.Windows.Forms.Panel panelUpdateInfo;
-        private System.Windows.Forms.TreeView treeView1;
     }
 }
