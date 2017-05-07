@@ -52,7 +52,6 @@
             this.dg_joueur.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dg_joueur.Size = new System.Drawing.Size(800, 544);
             this.dg_joueur.TabIndex = 1;
-            this.dg_joueur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);
             // 
             // Form_administration_voir_joueurs
             // 
