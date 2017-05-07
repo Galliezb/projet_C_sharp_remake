@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btPromote1 = new System.Windows.Forms.Button();
             this.btPromote2 = new System.Windows.Forms.Button();
             this.btPromote3 = new System.Windows.Forms.Button();
             this.btPromote4 = new System.Windows.Forms.Button();
             this.btPromote5 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.dg_joueur = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).BeginInit();
             this.SuspendLayout();
             // 
             // btPromote1
@@ -50,7 +52,7 @@
             // btPromote2
             // 
             this.btPromote2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPromote2.Location = new System.Drawing.Point(380, 466);
+            this.btPromote2.Location = new System.Drawing.Point(629, 158);
             this.btPromote2.Name = "btPromote2";
             this.btPromote2.Size = new System.Drawing.Size(143, 83);
             this.btPromote2.TabIndex = 46;
@@ -62,7 +64,7 @@
             // btPromote3
             // 
             this.btPromote3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPromote3.Location = new System.Drawing.Point(510, 364);
+            this.btPromote3.Location = new System.Drawing.Point(308, 12);
             this.btPromote3.Name = "btPromote3";
             this.btPromote3.Size = new System.Drawing.Size(143, 83);
             this.btPromote3.TabIndex = 46;
@@ -74,7 +76,7 @@
             // btPromote4
             // 
             this.btPromote4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPromote4.Location = new System.Drawing.Point(117, 422);
+            this.btPromote4.Location = new System.Drawing.Point(83, 414);
             this.btPromote4.Name = "btPromote4";
             this.btPromote4.Size = new System.Drawing.Size(143, 83);
             this.btPromote4.TabIndex = 46;
@@ -86,7 +88,7 @@
             // btPromote5
             // 
             this.btPromote5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPromote5.Location = new System.Drawing.Point(316, 364);
+            this.btPromote5.Location = new System.Drawing.Point(46, 195);
             this.btPromote5.Name = "btPromote5";
             this.btPromote5.Size = new System.Drawing.Size(143, 83);
             this.btPromote5.TabIndex = 46;
@@ -95,15 +97,19 @@
             this.btPromote5.Visible = false;
             this.btPromote5.Click += new System.EventHandler(this.btPromote5_Click);
             // 
-            // checkBox1
+            // dg_joueur
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(591, 90);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(133, 24);
-            this.checkBox1.TabIndex = 47;
-            this.checkBox1.Text = "Administrator";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.dg_joueur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_joueur.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dg_joueur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_joueur.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_joueur.Location = new System.Drawing.Point(263, 124);
+            this.dg_joueur.Name = "dg_joueur";
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dg_joueur.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dg_joueur.Size = new System.Drawing.Size(250, 300);
+            this.dg_joueur.TabIndex = 48;
+            this.dg_joueur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);
             // 
             // Form_Administration_Promote_User
             // 
@@ -111,7 +117,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.dg_joueur);
             this.Controls.Add(this.btPromote5);
             this.Controls.Add(this.btPromote4);
             this.Controls.Add(this.btPromote3);
@@ -120,12 +126,13 @@
             this.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Administration_Promote_User";
             this.Text = "Form_Administration_Promote_User";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_Administration_Promote_User_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -136,6 +143,6 @@
         private System.Windows.Forms.Button btPromote3;
         private System.Windows.Forms.Button btPromote4;
         private System.Windows.Forms.Button btPromote5;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridView dg_joueur;
     }
 }
