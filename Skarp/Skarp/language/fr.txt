@@ -60,3 +60,9 @@ La langue ne peut être que
 ou
 Langue
 Organisateur
+News insérée
+Erreur : La news n'as pas été insérée
+News modifié
+Erreur : La news n'as pas pu être modifié
+News supprimé
+Erreur : Impossible de supprimer la news

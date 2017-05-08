@@ -127,5 +127,23 @@ namespace Skarp.forms {
             affichage = new forms.Form_administration_voir_joueurs();
             displayForm();
         }
+
+        private void ajouterToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_administration_news_ajouter();
+            displayForm();
+        }
+
+        private void modifierToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_administration_news_modifier();
+            displayForm();
+        }
+
+        private void supprimerToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_administration_news_delete();
+            displayForm();
+        }
     }
 }

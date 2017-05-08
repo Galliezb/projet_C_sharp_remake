@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="classes\DatabaseConnection.cs" />
     <Compile Include="classes\Fonction.cs" />
+    <Compile Include="classes\News.cs" />
     <Compile Include="classes\Organization.cs" />
     <Compile Include="classes\Session.cs" />
     <Compile Include="classes\sql_non_identifie.cs" />
@@ -81,6 +82,24 @@
     </Compile>
     <Compile Include="forms\Form_Administration_Add_User.Designer.cs">
       <DependentUpon>Form_Administration_Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_administration_news_ajouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_administration_news_ajouter.Designer.cs">
+      <DependentUpon>Form_administration_news_ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_administration_news_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_administration_news_delete.Designer.cs">
+      <DependentUpon>Form_administration_news_delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_administration_news_modifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_administration_news_modifier.Designer.cs">
+      <DependentUpon>Form_administration_news_modifier.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Form_Administration_Promote_User.cs">
       <SubType>Form</SubType>
@@ -141,6 +160,15 @@
     <EmbeddedResource Include="forms\Form_Administration_Add_User.resx">
       <DependentUpon>Form_Administration_Add_User.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\form_administration_news_ajouter.resx">
+      <DependentUpon>Form_administration_news_ajouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_administration_news_delete.resx">
+      <DependentUpon>Form_administration_news_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_administration_news_modifier.resx">
+      <DependentUpon>Form_administration_news_modifier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Promote_User.resx">
       <DependentUpon>Form_Administration_Promote_User.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +218,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="language\fr.txt" />
+    <None Include="Ressources\pixel_transparent.png" />
+    <None Include="Ressources\fr.jpg" />
+    <None Include="Ressources\en.jpg" />
     <None Include="Ressources\fond_login.png" />
     <None Include="Ressources\fond_news.png" />
     <None Include="Ressources\Norbert\Team.png" />
