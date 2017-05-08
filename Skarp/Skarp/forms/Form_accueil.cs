@@ -145,7 +145,7 @@ namespace Skarp.forms {
         }
 
         public void loadData () {
-            MessageBox.Show( Session.language );
+            
 
             Traducteur.loadText( "fr" );
             

@@ -59,11 +59,11 @@ namespace Skarp.forms
             dg_joueur.DataMember = "user";
             foreach(DataGridViewColumn column in dg_joueur.Columns)
             {
-                column.Width = 96;
+                column.Width = 64;
             }
             for (int i =0; i < 9; i++)
             {
-                if (i==1 || i== 8)
+                if (i==1 || i== 8 || i==7)
                 {
                    
                 } 
