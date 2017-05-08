@@ -13,7 +13,7 @@ namespace Skarp.forms {
 
         News allNews;
         DataSet dataSetAllNews;
-
+        int ligneDelete=0;
 
         public Form_administration_news_delete () {
             InitializeComponent();
@@ -42,6 +42,7 @@ namespace Skarp.forms {
                     break;
 
                 }
+                ligneDelete++;
 
             }
 
@@ -57,6 +58,8 @@ namespace Skarp.forms {
                 MessageBox.Show( Traducteur.traduction_[67] );
             }
 
+            dataSetAllNews.Tables["News"].Rows[ligneDelete].Delete();
+            ligneDelete = 0;
             cb_titre_news.Items.Remove(cb_titre_news.Text);
             cb_titre_news.Text = "";
             tb_auteur.Clear();

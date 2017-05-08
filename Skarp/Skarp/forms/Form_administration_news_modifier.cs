@@ -15,6 +15,7 @@ namespace Skarp.forms {
 
         News allNews;
         DataSet dataSetAllNews;
+        int ligneLu = 0;
 
         public Form_administration_news_modifier () {
             InitializeComponent();
@@ -23,12 +24,7 @@ namespace Skarp.forms {
             allNews = new News();
             dataSetAllNews = allNews.getAllNews();
 
-            foreach(DataRow rw in dataSetAllNews.Tables["News"].Rows ) {
-
-                cb_titre_news.Items.Add( rw["titre"].ToString() );
-
-            }
-
+            reloadDataComboTitre();
 
         }
 
@@ -49,21 +45,47 @@ namespace Skarp.forms {
 
                 }
 
+                ligneLu++;
+
             }
 
         }
 
         private void button_sauvegarder_Click ( object sender , EventArgs e ) {
 
+            allNews.titre = cb_titre_news.Text;
             allNews.message = tb_message.Text;
             allNews.language = cb_language.Text;
+            
 
             if ( allNews.update() ) {
+
                 MessageBox.Show( Traducteur.traduction_[64] );
+                dataSetAllNews.Tables["News"].Rows[ligneLu]["titre"] = cb_titre_news.Text;
+                dataSetAllNews.Tables["News"].Rows[ligneLu]["message"] = tb_message;
+                dataSetAllNews.Tables["News"].Rows[ligneLu]["language"] = cb_language;
+                ligneLu = 0;
+                reloadDataComboTitre();
+                cb_titre_news.Text = "";
+                tb_message.Clear();
+
             } else {
                 MessageBox.Show( Traducteur.traduction_[65] );
             }
 
         }
+
+        public void reloadDataComboTitre () {
+
+            cb_titre_news.Items.Clear();
+            foreach ( DataRow rw in dataSetAllNews.Tables["News"].Rows ) {
+
+                cb_titre_news.Items.Add( rw["titre"].ToString() );
+
+            }
+
+
+        }
+
     }
 }
