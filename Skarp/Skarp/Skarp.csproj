@@ -77,6 +77,12 @@
     <Compile Include="forms\Form_accueil.Designer.cs">
       <DependentUpon>Form_accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_AddTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_AddTeam.Designer.cs">
+      <DependentUpon>Form_AddTeam.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form_Administration_Add_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,18 @@
     <Compile Include="forms\Form_Settings_User.Designer.cs">
       <DependentUpon>Form_Settings_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_Team_Add_Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Team_Add_Player.Designer.cs">
+      <DependentUpon>Form_Team_Add_Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Team_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Team_Manage.Designer.cs">
+      <DependentUpon>Form_Team_Manage.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form_Top10.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_accueil.resx">
       <DependentUpon>Form_accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_AddTeam.resx">
+      <DependentUpon>Form_AddTeam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Add_User.resx">
       <DependentUpon>Form_Administration_Add_User.cs</DependentUpon>
@@ -189,6 +210,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Settings_User.resx">
       <DependentUpon>Form_Settings_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Team_Add_Player.resx">
+      <DependentUpon>Form_Team_Add_Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Team_Manage.resx">
+      <DependentUpon>Form_Team_Manage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Top10.resx">
       <DependentUpon>Form_Top10.cs</DependentUpon>

@@ -63,13 +63,13 @@ namespace Skarp.forms
             }
             for (int i =0; i < 9; i++)
             {
-                if (i==1 || i== 8 || i==7)
+                if (i!=1 && i!= 8 && i!=7)
                 {
-                   
+                    dg_joueur.Columns[i].Visible = false;
                 } 
                 else
                 {
-                    dg_joueur.Columns[i].Visible = false;
+                    dg_joueur.Columns[i].Visible = true;
                 }
             }
             

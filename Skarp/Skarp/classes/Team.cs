@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using MySql.Data.MySqlClient;
+using MySql.Data;
 
 namespace Skarp {
     public class Team {
         int idTeam_;
         string name_;
         DateTime creationDate_;
+        
         int idCaptain_;
         DatabaseConnection dbConnect = new DatabaseConnection();
         string description_;
@@ -123,7 +127,6 @@ namespace Skarp {
 
             dbConnect.Laconnexion.Open();
             string sqlRequest = "INSERT INTO team SET name= @_name , description=@_description , captain =@_captain , dateCreation = @_dateCreation;";
-            dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_name" , name_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_captain" , idCaptain_ );
@@ -133,11 +136,14 @@ namespace Skarp {
 
             // exécute la requête
             dbConnect.Lacommande.ExecuteNonQuery();
+            
 
             long idReturn = dbConnect.Lacommande.LastInsertedId;
 
             if ( idReturn > 0 ) {
+
                 idTeam_ = Convert.ToInt32( idReturn );
+
             } else {
                 MessageBox.Show( Traducteur.traduction_[29] );
             }
@@ -171,6 +177,22 @@ namespace Skarp {
 
             }
 
+
+        }
+
+        public DataSet getTeamOfTheSession()
+        {
+
+
+            string request = "SELECT * FROM team WHERE idCaptain =  @_UserID";
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter(request, dbConnect.Laconnexion);
+            dbConnect.Lacommande.Parameters.AddWithValue("@_UserID", Session.ID);
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(monDataAdapter);
+            
+            DataSet monDataSet = new DataSet();
+            monDataAdapter.Fill(monDataSet, "team");
+            dbConnect.Lacommande.Parameters.Clear();
+            return monDataSet;
 
         }
 

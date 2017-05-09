@@ -145,5 +145,22 @@ namespace Skarp.forms {
             affichage = new forms.Form_administration_news_delete();
             displayForm();
         }
+
+        private void menu_general_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+           
+        }
+
+        private void ajouterUneÉquipeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_AddTeam();
+            displayForm();
+        }
+
+        private void gérerVosÉquipesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
