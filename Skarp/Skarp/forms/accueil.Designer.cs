@@ -158,6 +158,7 @@
             this.créerToolStripMenuItem.Name = "créerToolStripMenuItem";
             this.créerToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
             this.créerToolStripMenuItem.Text = "Créer";
+            this.créerToolStripMenuItem.Click += new System.EventHandler(this.créerToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem1
             // 

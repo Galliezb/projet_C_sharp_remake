@@ -160,7 +160,16 @@ namespace Skarp.forms {
 
         private void gérerVosÉquipesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            closeAll();
+            affichage = new forms.Form_Team_Manage();
+            displayForm();
+        }
 
+        private void créerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_Add();
+            displayForm();
         }
 
         private void organisationToolStripMenuItem_Click ( object sender , EventArgs e ) {
