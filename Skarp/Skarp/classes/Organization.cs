@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Skarp {
     public class Organisation {
 
         int idOrganization_;
         string nameOrganization_;
-        string nameResponsable_;
+        int idOrganizer_;
         string mailResponsable_;
         DateTime dateCreation_;
         string description_;
-        DatabaseConnection dbConnect = new DatabaseConnection();
+        DatabaseConnection maConnexionMysql = new DatabaseConnection();
 
         /// <summary>
         /// Constructeur Organisation, sans paramètre = non défini et -1 pour les ints
@@ -27,11 +28,11 @@ namespace Skarp {
         /// <param name="Mail">LKe mail du responsable</param>
         /// <param name="DateCreation">La date de création de l'organisation</param>
         /// <param name="Description">La description de l'organisation</param>
-        public Organisation ( int IdOrga = -1 , string Name = "non défini" , string NameResp = "non défini" , string Mail = "non défini" , DateTime DateCreation = new DateTime() , string Description = "non défini" ) {
+        public Organisation ( int IdOrga = -1 , string Name = "non défini" , int idOrganizer = -1 , string Mail = "non défini" , DateTime DateCreation = new DateTime() , string Description = "non défini" ) {
 
             idOrganization_ = IdOrga;
             nameOrganization_ = Name;
-            nameResponsable_ = NameResp;
+            idOrganizer_ = idOrganizer;
             mailResponsable_ = Mail;
             dateCreation_ = DateCreation;
             description_ = Description;
@@ -43,6 +44,7 @@ namespace Skarp {
         /// </summary>
         public int ID {
             get { return idOrganization_; }
+            set { idOrganization_ = value; }
         }
         /// <summary>
         /// Récupère ou modifie le nom de l'organisation
@@ -64,32 +66,16 @@ namespace Skarp {
         /// <summary>
         /// Récupère ou modifie le nom du responsable de l'organisation
         /// </summary>
-        public string Nameresp {
-            get { return nameResponsable_; }
-            set {
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[15] );
-                } else {
-
-                    nameResponsable_ = value;
-
-                }
-
-            }
+        public int idOrganizer {
+            get { return idOrganizer_; }
+            set { idOrganizer_ = value; }
         }
         /// <summary>
         /// récupère ou modifie le mail du responsable de l'organisation
         /// </summary>
         public string Mail {
             get { return mailResponsable_; }
-            set {
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[16] );
-                } else {
-
-                    mailResponsable_ = value;
-
-                }
+            set {mailResponsable_ = value;
             }
         }
         /// <summary>
@@ -97,14 +83,7 @@ namespace Skarp {
         /// </summary>
         public DateTime DateCreation {
             get { return dateCreation_; }
-            set {
-                if ( DateTime.Compare( value , DateTime.Now ) < 0 ) {
-                    MessageBox.Show( Traducteur.traduction_[17] );
-                } else {
-                    dateCreation_ = value;
-
-                }
-            }
+            set {dateCreation_ = value;}
         }
 
 
@@ -113,15 +92,7 @@ namespace Skarp {
         /// </summary>
         public string Description {
             get { return description_; }
-            set {
-                if ( value.Length > 255 ) {
-                    MessageBox.Show( Traducteur.traduction_[18] );
-                } else {
-
-                    mailResponsable_ = value;
-
-                }
-            }
+            set {mailResponsable_ = value;}
         }
 
 
@@ -132,24 +103,24 @@ namespace Skarp {
 
             if ( idOrganization_ != -1 ) {
 
-                    dbConnect.Laconnexion.Open();
-                    string sqlRequest = "UPDATE team SET name= @_idOrganization , 	nameOrganization=@_nameOrganization , description =@_description , NameResponsable = @_NameResponsable , mailResponsable = @_mailResponsable , creatingDate = @_creatingDate;";
-                    dbConnect.Lacommande.Parameters.AddWithValue( "@_idOrganization" , idOrganization_ );
-                    dbConnect.Lacommande.Parameters.AddWithValue( "@_nameOrganization" , nameOrganization_ );
-                    dbConnect.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
-                    dbConnect.Lacommande.Parameters.AddWithValue( "@_NameResponsable" , nameResponsable_ );
-                    dbConnect.Lacommande.Parameters.AddWithValue( "@_mailResponsable" , mailResponsable_ );
-                    dbConnect.Lacommande.Parameters.AddWithValue( "@_creatingDate" , dateCreation_.ToString( "yyyy-MM-dd" ) );
+                    maConnexionMysql.Laconnexion.Open();
+                    string sqlRequest = "UPDATE organization SET nameOrganization= @_nameOrganization , description =@_description, idOrganizer=@_idOrganizer , mailResponsable = @_mailResponsable , creatingDate = @_creatingDate WHERE idOrganization=@_idOrganization;";
+                    maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_idOrganization" , idOrganization_ );
+                    maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_nameOrganization" , nameOrganization_ );
+                    maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
+                    maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_idOrganizer" , idOrganizer_ );
+                    maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_mailResponsable" , mailResponsable_ );
+                    maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_creatingDate" , dateCreation_.ToString( "yyyy-MM-dd" ) );
 
 
 
-                    dbConnect.Lacommande.CommandText = sqlRequest;
+                    maConnexionMysql.Lacommande.CommandText = sqlRequest;
 
                     //éxécution de la requête
-                    dbConnect.Lacommande.ExecuteNonQuery();
+                    maConnexionMysql.Lacommande.ExecuteNonQuery();
 
-                    dbConnect.Lacommande.Parameters.Clear();
-                    dbConnect.Laconnexion.Close();
+                    maConnexionMysql.Lacommande.Parameters.Clear();
+                    maConnexionMysql.Laconnexion.Close();
 
                 
             } else {
@@ -162,21 +133,20 @@ namespace Skarp {
         /// </summary>
         public void insert () {
 
-                dbConnect.Laconnexion.Open();
-                string sqlRequest = "INSERT INTO team SET name= @_idOrganization , 	nameOrganization=@_nameOrganization , description =@_description , NameResponsable = @_NameResponsable , mailResponsable = @_mailResponsable , creatingDate=@_creatingDate;";
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_idOrganization" , idOrganization_ );
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_nameOrganization" , nameOrganization_ );
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_NameResponsable" , nameResponsable_ );
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_mailResponsable" , mailResponsable_ );
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_creatingDate" , dateCreation_.ToString( "yyyy-MM-dd" ) );
+                maConnexionMysql.Laconnexion.Open();
+                string sqlRequest = "INSERT INTO organization SET nameOrganization=@_nameOrganization , description =@_description , idOrganizer = @_idOrganizer , mailResponsable = @_mailResponsable , creatingDate=@_creatingDate;";
+                maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_nameOrganization" , nameOrganization_ );
+                maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
+                maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_idOrganizer" , idOrganizer_ );
+                maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_mailResponsable" , mailResponsable_ );
+                maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_creatingDate" , dateCreation_.ToString( "yyyy-MM-dd" ) );
 
-                dbConnect.Lacommande.CommandText = sqlRequest;
+                maConnexionMysql.Lacommande.CommandText = sqlRequest;
 
                 // exécute la requête
-                dbConnect.Lacommande.ExecuteNonQuery();
+                maConnexionMysql.Lacommande.ExecuteNonQuery();
 
-                long idReturn = dbConnect.Lacommande.LastInsertedId;
+                long idReturn = maConnexionMysql.Lacommande.LastInsertedId;
 
                 if ( idReturn > 0 ) {
                     idOrganization_ = Convert.ToInt32( idReturn );
@@ -185,8 +155,8 @@ namespace Skarp {
                 }
 
                 // clear commande et ferme la connection
-                dbConnect.Lacommande.Parameters.Clear();
-                dbConnect.Laconnexion.Close();
+                maConnexionMysql.Lacommande.Parameters.Clear();
+                maConnexionMysql.Laconnexion.Close();
 
         }
 
@@ -201,23 +171,48 @@ namespace Skarp {
                 MessageBox.Show( Traducteur.traduction_[21] );
 
             } else {
-                dbConnect.Laconnexion.Open();
+                maConnexionMysql.Laconnexion.Open();
                 // creation requête et ajout à la commande
-                string sqlRequest = "DELETE FROM team WHERE idOrganization=@_idOrganization";
+                string sqlRequest = "DELETE FROM organization WHERE idOrganization=@_idOrganization";
 
-                dbConnect.Lacommande.Parameters.AddWithValue( "@_idOrganization" , idOrganization_ );
-                dbConnect.Lacommande.CommandText = sqlRequest;
+                maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_idOrganization" , idOrganization_ );
+                maConnexionMysql.Lacommande.CommandText = sqlRequest;
 
                 // exécute la requête
-                dbConnect.Lacommande.ExecuteNonQuery();
+                maConnexionMysql.Lacommande.ExecuteNonQuery();
                 MessageBox.Show( Traducteur.traduction_[22] );
 
                 // clear commande et ferme la connection
-                dbConnect.Lacommande.Parameters.Clear();
-                dbConnect.Laconnexion.Close();
+                maConnexionMysql.Lacommande.Parameters.Clear();
+                maConnexionMysql.Laconnexion.Close();
 
             }
 
+
+        }
+
+        public DataSet getAllInfo() {
+
+
+            string request = "SELECT * FROM organization WHERE idOrganizer="+Session.ID;
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter( request , maConnexionMysql.Laconnexion );
+
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder( monDataAdapter );
+
+            DataSet monDataSet = new DataSet();
+            monDataAdapter.Fill( monDataSet , "organization" );
+
+            return monDataSet;
+
+        }
+
+        public void update ( DataSet dataSetForUpdate ) {
+
+            string request = "SELECT org.*,user.pseudo FROM organization as org LEFT JOIN user ON user.idUser=org.idOrganizer WHERE idOrganizer=" + Session.ID;
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter( request , maConnexionMysql.Laconnexion );
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder( monDataAdapter );
+
+            monDataAdapter.Update( dataSetForUpdate , "organization" );
 
         }
 

@@ -31,8 +31,18 @@
             this.vosÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerVosÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supprimerUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterUnJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tournoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.créerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.supprimerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.historiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enCoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historiqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.test2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.organisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fesdfsfsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionBDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,16 +53,6 @@
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tournoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.créerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.supprimerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.historiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enCoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historiqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.organisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.supprimerUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterUnJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,19 +90,19 @@
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.userToolStripMenuItem.Text = "test1";
             // 
             // jesaispasToolStripMenuItem
             // 
             this.jesaispasToolStripMenuItem.Name = "jesaispasToolStripMenuItem";
-            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.jesaispasToolStripMenuItem.Text = "test2";
             // 
             // testToolStripMenuItem1
             // 
             this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
-            this.testToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(114, 24);
             this.testToolStripMenuItem1.Text = "test3";
             // 
             // vosÉquipesToolStripMenuItem
@@ -130,6 +130,68 @@
             this.gérerVosÉquipesToolStripMenuItem.Text = "Gérer vos équipes";
             this.gérerVosÉquipesToolStripMenuItem.Click += new System.EventHandler(this.gérerVosÉquipesToolStripMenuItem_Click);
             // 
+            // supprimerUneÉquipeToolStripMenuItem
+            // 
+            this.supprimerUneÉquipeToolStripMenuItem.Name = "supprimerUneÉquipeToolStripMenuItem";
+            this.supprimerUneÉquipeToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
+            this.supprimerUneÉquipeToolStripMenuItem.Text = "Supprimer une équipe";
+            // 
+            // ajouterUnJoueurToolStripMenuItem
+            // 
+            this.ajouterUnJoueurToolStripMenuItem.Name = "ajouterUnJoueurToolStripMenuItem";
+            this.ajouterUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
+            this.ajouterUnJoueurToolStripMenuItem.Text = "Ajouter un joueur";
+            // 
+            // tournoiToolStripMenuItem
+            // 
+            this.tournoiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.créerToolStripMenuItem,
+            this.modifierToolStripMenuItem1,
+            this.supprimerToolStripMenuItem1,
+            this.historiqueToolStripMenuItem});
+            this.tournoiToolStripMenuItem.Name = "tournoiToolStripMenuItem";
+            this.tournoiToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.tournoiToolStripMenuItem.Text = "Tournoi";
+            // 
+            // créerToolStripMenuItem
+            // 
+            this.créerToolStripMenuItem.Name = "créerToolStripMenuItem";
+            this.créerToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
+            this.créerToolStripMenuItem.Text = "Créer";
+            // 
+            // modifierToolStripMenuItem1
+            // 
+            this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(157, 24);
+            this.modifierToolStripMenuItem1.Text = "Modifier";
+            // 
+            // supprimerToolStripMenuItem1
+            // 
+            this.supprimerToolStripMenuItem1.Name = "supprimerToolStripMenuItem1";
+            this.supprimerToolStripMenuItem1.Size = new System.Drawing.Size(157, 24);
+            this.supprimerToolStripMenuItem1.Text = "Supprimer";
+            // 
+            // historiqueToolStripMenuItem
+            // 
+            this.historiqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.enCoursToolStripMenuItem,
+            this.historiqueToolStripMenuItem1});
+            this.historiqueToolStripMenuItem.Name = "historiqueToolStripMenuItem";
+            this.historiqueToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
+            this.historiqueToolStripMenuItem.Text = "Lister";
+            // 
+            // enCoursToolStripMenuItem
+            // 
+            this.enCoursToolStripMenuItem.Name = "enCoursToolStripMenuItem";
+            this.enCoursToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.enCoursToolStripMenuItem.Text = "En cours";
+            // 
+            // historiqueToolStripMenuItem1
+            // 
+            this.historiqueToolStripMenuItem1.Name = "historiqueToolStripMenuItem1";
+            this.historiqueToolStripMenuItem1.Size = new System.Drawing.Size(143, 24);
+            this.historiqueToolStripMenuItem1.Text = "Fini";
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -143,6 +205,13 @@
             this.test2ToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.test2ToolStripMenuItem.Text = "Options";
             this.test2ToolStripMenuItem.Click += new System.EventHandler(this.test2ToolStripMenuItem_Click);
+            // 
+            // organisationToolStripMenuItem
+            // 
+            this.organisationToolStripMenuItem.Name = "organisationToolStripMenuItem";
+            this.organisationToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.organisationToolStripMenuItem.Text = "Organisation";
+            this.organisationToolStripMenuItem.Click += new System.EventHandler(this.organisationToolStripMenuItem_Click);
             // 
             // fesdfsfsToolStripMenuItem
             // 
@@ -221,74 +290,6 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Name = "jajouteunmenutropfacilementToolStripMenuItem";
             this.jajouteunmenutropfacilementToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "j\'ajouteunmenutropfacilement";
-            // 
-            // tournoiToolStripMenuItem
-            // 
-            this.tournoiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.créerToolStripMenuItem,
-            this.modifierToolStripMenuItem1,
-            this.supprimerToolStripMenuItem1,
-            this.historiqueToolStripMenuItem});
-            this.tournoiToolStripMenuItem.Name = "tournoiToolStripMenuItem";
-            this.tournoiToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
-            this.tournoiToolStripMenuItem.Text = "Tournoi";
-            // 
-            // créerToolStripMenuItem
-            // 
-            this.créerToolStripMenuItem.Name = "créerToolStripMenuItem";
-            this.créerToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
-            this.créerToolStripMenuItem.Text = "Créer";
-            // 
-            // modifierToolStripMenuItem1
-            // 
-            this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(157, 24);
-            this.modifierToolStripMenuItem1.Text = "Modifier";
-            // 
-            // supprimerToolStripMenuItem1
-            // 
-            this.supprimerToolStripMenuItem1.Name = "supprimerToolStripMenuItem1";
-            this.supprimerToolStripMenuItem1.Size = new System.Drawing.Size(157, 24);
-            this.supprimerToolStripMenuItem1.Text = "Supprimer";
-            // 
-            // historiqueToolStripMenuItem
-            // 
-            this.historiqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.enCoursToolStripMenuItem,
-            this.historiqueToolStripMenuItem1});
-            this.historiqueToolStripMenuItem.Name = "historiqueToolStripMenuItem";
-            this.historiqueToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
-            this.historiqueToolStripMenuItem.Text = "Lister";
-            // 
-            // enCoursToolStripMenuItem
-            // 
-            this.enCoursToolStripMenuItem.Name = "enCoursToolStripMenuItem";
-            this.enCoursToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.enCoursToolStripMenuItem.Text = "En cours";
-            // 
-            // historiqueToolStripMenuItem1
-            // 
-            this.historiqueToolStripMenuItem1.Name = "historiqueToolStripMenuItem1";
-            this.historiqueToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
-            this.historiqueToolStripMenuItem1.Text = "Fini";
-            // 
-            // organisationToolStripMenuItem
-            // 
-            this.organisationToolStripMenuItem.Name = "organisationToolStripMenuItem";
-            this.organisationToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
-            this.organisationToolStripMenuItem.Text = "Organisation";
-            // 
-            // supprimerUneÉquipeToolStripMenuItem
-            // 
-            this.supprimerUneÉquipeToolStripMenuItem.Name = "supprimerUneÉquipeToolStripMenuItem";
-            this.supprimerUneÉquipeToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
-            this.supprimerUneÉquipeToolStripMenuItem.Text = "Supprimer une équipe";
-            // 
-            // ajouterUnJoueurToolStripMenuItem
-            // 
-            this.ajouterUnJoueurToolStripMenuItem.Name = "ajouterUnJoueurToolStripMenuItem";
-            this.ajouterUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
-            this.ajouterUnJoueurToolStripMenuItem.Text = "Ajouter un joueur";
             // 
             // accueil
             // 

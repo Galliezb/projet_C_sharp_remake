@@ -137,6 +137,12 @@
     <Compile Include="forms\Form_ManageTeam.Designer.cs">
       <DependentUpon>Form_ManageTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_organisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_organisation.Designer.cs">
+      <DependentUpon>Form_organisation.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form_Search_Tournament.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_ManageTeam.resx">
       <DependentUpon>Form_ManageTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_organisation.resx">
+      <DependentUpon>Form_organisation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Search_Tournament.resx">
       <DependentUpon>Form_Search_Tournament.cs</DependentUpon>

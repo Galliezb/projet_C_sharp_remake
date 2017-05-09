@@ -162,5 +162,11 @@ namespace Skarp.forms {
         {
 
         }
+
+        private void organisationToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_organisation();
+            displayForm();
+        }
     }
 }
