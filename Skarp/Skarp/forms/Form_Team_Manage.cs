@@ -17,16 +17,24 @@ namespace Skarp.forms
         public Form_Team_Manage()
         {
             InitializeComponent();
+            
         }
 
         private void dg_joueur_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //team.get
+           
         }
 
         private void btSave_Click(object sender, EventArgs e)
         {
             team.update();
+        }
+
+        private void Form_Team_Manage_Load(object sender, EventArgs e)
+        {
+            dataForGrid = team.getTeamOfTheSession();
+            dg_team.DataSource = dataForGrid;
+            dg_team.DataMember = "team";
         }
     }
 }

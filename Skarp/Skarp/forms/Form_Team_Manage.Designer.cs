@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dg_joueur = new System.Windows.Forms.DataGridView();
+            this.dg_team = new System.Windows.Forms.DataGridView();
             this.lbTeam = new System.Windows.Forms.Label();
             this.btSave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_team)).BeginInit();
             this.SuspendLayout();
             // 
-            // dg_joueur
+            // dg_team
             // 
-            this.dg_joueur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.dg_joueur.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dg_joueur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_joueur.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.dg_joueur.Location = new System.Drawing.Point(156, 145);
-            this.dg_joueur.Name = "dg_joueur";
+            this.dg_team.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_team.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dg_team.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_team.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_team.Location = new System.Drawing.Point(156, 145);
+            this.dg_team.Name = "dg_team";
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dg_joueur.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dg_joueur.Size = new System.Drawing.Size(485, 300);
-            this.dg_joueur.TabIndex = 49;
-            this.dg_joueur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);
+            this.dg_team.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dg_team.Size = new System.Drawing.Size(485, 300);
+            this.dg_team.TabIndex = 49;
+            this.dg_team.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);
             // 
             // lbTeam
             // 
@@ -77,14 +77,15 @@
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.btSave);
             this.Controls.Add(this.lbTeam);
-            this.Controls.Add(this.dg_joueur);
+            this.Controls.Add(this.dg_team);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Team_Manage";
             this.Text = "Form_Team_Manage";
-            ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).EndInit();
+            this.Load += new System.EventHandler(this.Form_Team_Manage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dg_team)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,7 +93,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dg_joueur;
+        private System.Windows.Forms.DataGridView dg_team;
         private System.Windows.Forms.Label lbTeam;
         private System.Windows.Forms.Button btSave;
     }
