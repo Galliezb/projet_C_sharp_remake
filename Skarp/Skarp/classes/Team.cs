@@ -184,14 +184,15 @@ namespace Skarp {
         {
 
 
-            string request = "SELECT * FROM team WHERE captain = @_Useriden";
+            string request = "SELECT * FROM team WHERE captain =  " + Session.ID ;
+
             MySqlDataAdapter monDataAdapter = new MySqlDataAdapter(request, dbConnect.Laconnexion);
-            dbConnect.Lacommande.Parameters.AddWithValue("@_Useriden", Session.ID);
+  
             MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(monDataAdapter);
             
             DataSet monDataSet = new DataSet();
             monDataAdapter.Fill(monDataSet, "team");
-            dbConnect.Lacommande.Parameters.Clear();
+
             return monDataSet;
 
         }
