@@ -27,11 +27,12 @@ namespace Skarp.forms {
             newsToInsert.dateCreation = DateTime.Now;
             newsToInsert.language = cb_language.Text;
 
-            tb_titre.Clear();
-            tb_message.Clear();
-            cb_language.SelectedIndex = 0;
+
 
             if ( newsToInsert.insert() ) {
+                tb_titre.Clear();
+                tb_message.Clear();
+                cb_language.SelectedIndex = 0;
                 MessageBox.Show( Traducteur.traduction_[62] );
             } else {
                 MessageBox.Show( Traducteur.traduction_[63] );

@@ -84,7 +84,6 @@
             this.panelCreateTnm.Name = "panelCreateTnm";
             this.panelCreateTnm.Size = new System.Drawing.Size( 1003 , 570 );
             this.panelCreateTnm.TabIndex = 0;
-            this.panelCreateTnm.Paint += new System.Windows.Forms.PaintEventHandler( this.panelCreateTnm_Paint );
             // 
             // rtbDescTnm
             // 
@@ -247,7 +246,7 @@
             this.btSubmitOrga.TabIndex = 10;
             this.btSubmitOrga.Text = "SUBMIT";
             this.btSubmitOrga.UseVisualStyleBackColor = true;
-            this.btSubmitOrga.Click += new System.EventHandler( this.btSubmitOrga_Click );
+
             // 
             // richTextBox1
             // 

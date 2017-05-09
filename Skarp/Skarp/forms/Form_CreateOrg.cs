@@ -92,14 +92,5 @@ namespace Skarp.forms {
             panelCreateOrga.Visible = true;
         }
 
-        private void panelCreateTnm_Paint ( object sender , PaintEventArgs e ) {
-
-        }
-
-        private void btSubmitOrga_Click ( object sender , EventArgs e ) {
-
-            // create organization
-
-        }
     }
 }
