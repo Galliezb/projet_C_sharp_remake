@@ -162,5 +162,12 @@ namespace Skarp.forms {
         {
 
         }
+
+        private void créerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_Add();
+            displayForm();
+        }
     }
 }

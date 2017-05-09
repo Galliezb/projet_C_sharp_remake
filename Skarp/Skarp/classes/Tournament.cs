@@ -56,91 +56,39 @@ namespace Skarp {
         public int idOrganizer {
 
             get { return idOrganizer_; }
+            set { idOrganizer_ = value; }
 
         }
 
         public string name {
             get { return this.name_; }
-            set {
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[32] );
-                } else {
-                    name_ = value;
-                }
-
-            }
-        }
+            set {name_ = value;}
+         }
 
         public string Description {
             get { return this.description_; }
-            set {
-                if ( value.Length < 10 ) {
-                    MessageBox.Show( Traducteur.traduction_[33] );
-                } else {
-                    description_ = value;
-                }
-                
-            }
-        }
+            set {description_ = value;}
+         }
 
         public DateTime startDate {
             get { return startDate_; }
-            set {
-                if ( DateTime.Compare(value,DateTime.Now) < 0 ) {
-                    MessageBox.Show( Traducteur.traduction_[34] );
-                } else {
-                    startDate_ = value;
-                }
-                
-            }
+            set {startDate_ = value;}
         }
 
         public DateTime endDate {
             get { return endDate_; }
-            set {
-                if ( DateTime.Compare( startDate_ , DateTime.Now ) < 0 ) {
-                    MessageBox.Show( Traducteur.traduction_[35] );
-                } else if ( DateTime.Compare( value , startDate_.AddDays(3) ) < 0 ) {
-                    MessageBox.Show( Traducteur.traduction_[36] );
-                } else {
-                    endDate_ = value;
-                }
-            }
+            set { endDate_ = value;}
         }
 
         public string typeTournoi {
             get { return type_;  }
-            set {
-                // All - play - all
-                //Deathmatch
-                //Pool phase
-                //comboBoxType.Items.Add( "Championnat toute ronde" );
-                //comboBoxType.Items.Add( "Elimination directe" );
-                //comboBoxType.Items.Add( "Phase de groupe" );
-                
-
-                if ( value == Traducteur.traduction_[37] ||
-                     value == Traducteur.traduction_[38] ||
-                     value == Traducteur.traduction_[39]
-                    ) {
-
-                    type_ = value;
-
-                } else {
-                    MessageBox.Show( Traducteur.traduction_[40] );
-                }
-            }
+            set { type_ = value; }
         }
 
         public int maxPlayer {
             get { return maxPlayer_; }
-            set {
-                if ( value < 12 ) {
-                    MessageBox.Show( Traducteur.traduction_[41] );
-                } else {
-                    maxPlayer_ = value;
-                }
-            }
+            set { maxPlayer_ = value;}
+            
         }
 
         public void update () {
@@ -184,13 +132,13 @@ namespace Skarp {
             dbConnect.Lacommande.Parameters.AddWithValue( "@_idOrganizer" , idOrganizer_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_name" , name_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
-            dbConnect.Lacommande.Parameters.AddWithValue( "@startDate" , startDate_ );
-            dbConnect.Lacommande.Parameters.AddWithValue( "@_endDate" , endDate_ );
+            dbConnect.Lacommande.Parameters.AddWithValue( "@_startDate" , startDate_.ToString("yyyy-MM-dd"));
+            dbConnect.Lacommande.Parameters.AddWithValue( "@_endDate" , endDate_.ToString("yyyy-MM-dd"));
             dbConnect.Lacommande.Parameters.AddWithValue( "@_type" , type_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_maxPlayer" , maxPlayer_ );
 
             dbConnect.Lacommande.CommandText = sqlRequest;
-
+            MessageBox.Show(dbConnect.Lacommande.CommandText.ToString());
             // exécute la requête
             dbConnect.Lacommande.ExecuteNonQuery();
 
