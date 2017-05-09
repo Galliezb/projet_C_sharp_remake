@@ -113,6 +113,16 @@ namespace Skarp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap en {
+            get {
+                object obj = ResourceManager.GetObject("en", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fond_login {
             get {
                 object obj = ResourceManager.GetObject("fond_login", resourceCulture);
@@ -126,6 +136,16 @@ namespace Skarp.Properties {
         internal static System.Drawing.Bitmap fond_news {
             get {
                 object obj = ResourceManager.GetObject("fond_news", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fr {
+            get {
+                object obj = ResourceManager.GetObject("fr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,6 +175,16 @@ namespace Skarp.Properties {
         internal static System.Drawing.Bitmap news_red_button_300x300 {
             get {
                 object obj = ResourceManager.GetObject("news_red_button_300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixel_transparent {
+            get {
+                object obj = ResourceManager.GetObject("pixel_transparent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
