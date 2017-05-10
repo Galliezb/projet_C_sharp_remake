@@ -32,13 +32,14 @@
             this.tbDescription = new System.Windows.Forms.TextBox();
             this.lbNameTeam = new System.Windows.Forms.Label();
             this.lbDescription = new System.Windows.Forms.Label();
+            this.btAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbNameTeam
             // 
             this.tbNameTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.tbNameTeam.ForeColor = System.Drawing.Color.White;
-            this.tbNameTeam.Location = new System.Drawing.Point(444, 172);
+            this.tbNameTeam.Location = new System.Drawing.Point(377, 172);
             this.tbNameTeam.Name = "tbNameTeam";
             this.tbNameTeam.Size = new System.Drawing.Size(253, 27);
             this.tbNameTeam.TabIndex = 66;
@@ -47,7 +48,7 @@
             // 
             this.tbDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.tbDescription.ForeColor = System.Drawing.Color.White;
-            this.tbDescription.Location = new System.Drawing.Point(444, 242);
+            this.tbDescription.Location = new System.Drawing.Point(377, 242);
             this.tbDescription.Multiline = true;
             this.tbDescription.Name = "tbDescription";
             this.tbDescription.Size = new System.Drawing.Size(253, 120);
@@ -56,7 +57,7 @@
             // lbNameTeam
             // 
             this.lbNameTeam.AutoSize = true;
-            this.lbNameTeam.Location = new System.Drawing.Point(233, 175);
+            this.lbNameTeam.Location = new System.Drawing.Point(73, 175);
             this.lbNameTeam.Name = "lbNameTeam";
             this.lbNameTeam.Size = new System.Drawing.Size(57, 20);
             this.lbNameTeam.TabIndex = 67;
@@ -65,11 +66,22 @@
             // lbDescription
             // 
             this.lbDescription.AutoSize = true;
-            this.lbDescription.Location = new System.Drawing.Point(233, 245);
+            this.lbDescription.Location = new System.Drawing.Point(73, 245);
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(97, 20);
             this.lbDescription.TabIndex = 67;
             this.lbDescription.Text = "Description:";
+            // 
+            // btAdd
+            // 
+            this.btAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAdd.Location = new System.Drawing.Point(645, 505);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(143, 83);
+            this.btAdd.TabIndex = 68;
+            this.btAdd.Text = "Add";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // Form_AddTeam
             // 
@@ -77,6 +89,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.btAdd);
             this.Controls.Add(this.lbDescription);
             this.Controls.Add(this.lbNameTeam);
             this.Controls.Add(this.tbDescription);
@@ -97,5 +110,6 @@
         private System.Windows.Forms.TextBox tbDescription;
         private System.Windows.Forms.Label lbNameTeam;
         private System.Windows.Forms.Label lbDescription;
+        private System.Windows.Forms.Button btAdd;
     }
 }

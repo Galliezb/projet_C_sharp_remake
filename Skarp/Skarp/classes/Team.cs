@@ -197,6 +197,16 @@ namespace Skarp {
 
         }
 
+        public void update(DataSet dataSetForUpdate)
+        {
+
+            string request = "SELECT * FROM team";
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter(request, dbConnect.Laconnexion);
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(monDataAdapter);
+
+            monDataAdapter.Update(dataSetForUpdate, "team");
+
+        }
 
     }
 }

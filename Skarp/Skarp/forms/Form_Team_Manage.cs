@@ -27,7 +27,7 @@ namespace Skarp.forms
 
         private void btSave_Click(object sender, EventArgs e)
         {
-            team.update();
+            team.update(dataForGrid);
         }
 
         private void Form_Team_Manage_Load(object sender, EventArgs e)
@@ -35,6 +35,18 @@ namespace Skarp.forms
             dataForGrid = team.getTeamOfTheSession();
             dg_team.DataSource = dataForGrid;
             dg_team.DataMember = "team";
+            dg_team.Columns[4].Width = 240;
+            for (int i = 0; i < 4; i++)
+            {
+                if (i != 0 && i != 2 )
+                {
+                    dg_team.Columns[i].Visible = true;
+                }
+                else
+                {
+                    dg_team.Columns[i].Visible = false;
+                }
+            }
         }
     }
 }
