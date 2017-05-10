@@ -171,5 +171,11 @@ namespace Skarp.forms {
             affichage = new forms.Form_Tournament_Add();
             displayForm();
         }
+
+        private void organisationToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_organisation();
+            displayForm();
+        }
     }
 }

@@ -66,3 +66,4 @@ News modifié
 Erreur : La news n'as pas pu être modifié
 News supprimé
 Erreur : Impossible de supprimer la news
+Informations sauvegardées
