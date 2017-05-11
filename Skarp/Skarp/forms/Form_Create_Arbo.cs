@@ -17,7 +17,7 @@ namespace Skarp.forms
         public Form_Create_Arbo()
         {
             InitializeComponent();
-            //DataSet dataAllTeam = new DataSet();
+            
             forGettingAllTeams = new Team();
         }
 
@@ -26,7 +26,16 @@ namespace Skarp.forms
             dataAllTeam = forGettingAllTeams.getAllTeam();
             foreach ( DataRow r in dataAllTeam.Tables[0].Rows)
             {
-                cbb_Name_Tournament.Items.Add(r["name"].ToString());
+
+                cbR1T1.Items.Add(r["name"].ToString());
+                cbR1T2.Items.Add(r["name"].ToString());
+                cbR1T3.Items.Add(r["name"].ToString());
+                cbR1T4.Items.Add(r["name"].ToString());
+                cbR1T5.Items.Add(r["name"].ToString());
+                cbR1T6.Items.Add(r["name"].ToString());
+                cbR1T7.Items.Add(r["name"].ToString());
+                cbR1T8.Items.Add(r["name"].ToString());
+
             }
         }
     }
