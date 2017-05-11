@@ -18,7 +18,7 @@ namespace Skarp.classes
             {
                 
                 DirectoryEntry Ldap = new DirectoryEntry("LDAP://192.168.1.54", "Administrateur", "Password1");
-                DirectoryEntry userADCreated = Ldap.Children.Add("cn=" + fullname, "nosUsers");
+                DirectoryEntry userADCreated = Ldap.Children.Add("cn=" + fullname, "user");
 
                 userADCreated.Properties["SAMAccountName"].Add(fullname);
 
@@ -40,7 +40,7 @@ namespace Skarp.classes
                 // et sauvé avant de pouvoir faire cette étape
                 userADCreated.CommitChanges();
                 userADCreated.Invoke("SetPassword", new object[] { pass });
-
+                userADCreated.Properties["nosUsers"].Add(userADCreated);
                 // On va maintenant activer le compte : ADS_UF_NORMAL_ACCOUNT
 
                 userADCreated.Properties["userAccountControl"].Value = 0x0200;
