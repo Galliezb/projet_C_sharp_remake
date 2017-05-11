@@ -127,6 +127,12 @@
     <Compile Include="forms\Form_Administration_Update_Info.Designer.cs">
       <DependentUpon>Form_Administration_Update_Info.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_Administration_Voir_Equipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Administration_Voir_Equipes.Designer.cs">
+      <DependentUpon>Form_Administration_Voir_Equipes.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form_administration_voir_joueurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     </Compile>
     <Compile Include="forms\Form_CreateOrg.Designer.cs">
       <DependentUpon>Form_CreateOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Create_Arbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Create_Arbo.Designer.cs">
+      <DependentUpon>Form_Create_Arbo.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Form_ManageTeam.cs">
       <SubType>Form</SubType>
@@ -237,11 +249,17 @@
     <EmbeddedResource Include="forms\Form_Administration_Update_Info.resx">
       <DependentUpon>Form_Administration_Update_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Administration_Voir_Equipes.resx">
+      <DependentUpon>Form_Administration_Voir_Equipes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_administration_voir_joueurs.resx">
       <DependentUpon>Form_administration_voir_joueurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_CreateOrg.resx">
       <DependentUpon>Form_CreateOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Create_Arbo.resx">
+      <DependentUpon>Form_Create_Arbo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_ManageTeam.resx">
       <DependentUpon>Form_ManageTeam.cs</DependentUpon>
