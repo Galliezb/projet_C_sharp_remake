@@ -228,5 +228,96 @@ namespace Skarp {
 
         }
 
+        public Dictionary<string,int> getAllUserInTeam ( int idTeam ) {
+
+            dbConnect.Laconnexion.Open();
+            // creation requête et ajout à la commande
+            string sqlRequest = "SELECT user.pseudo, userinteam.idUser FROM userInTeam RIGHT JOIN user On userInTeam.idUser=user.idUser WHERE userInTeam.idTeam=@_idTeam";
+
+            dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam );
+            dbConnect.Lacommande.CommandText = sqlRequest;
+
+            MySqlDataReader monReaderMysql = dbConnect.Lacommande.ExecuteReader();
+
+            Dictionary<string,int> dictonnary = new Dictionary<string , int>();
+
+            while ( monReaderMysql.Read() ) {
+                dictonnary.Add( monReaderMysql["pseudo"].ToString() , Convert.ToInt32( monReaderMysql["idUser"].ToString() ) );
+            }
+
+            // clear commande et ferme la connection
+            dbConnect.Lacommande.Parameters.Clear();
+
+
+            // delete tout de la BDD, on les réinsère après
+            // creation requête et ajout à la commande
+            sqlRequest = "DELETE FROM userInTeam WHERE idTeam=@_idTeam";
+
+            dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam );
+            dbConnect.Lacommande.CommandText = sqlRequest;
+
+            // exécute la requête
+            dbConnect.Lacommande.ExecuteNonQuery();
+
+            // clear commande et ferme la connection
+            dbConnect.Lacommande.Parameters.Clear();
+            dbConnect.Laconnexion.Close();
+
+            return dictonnary;
+
+        }
+
+        public Dictionary<string , int> getAllUserNotInTeam ( int idTeam ) {
+
+            dbConnect.Laconnexion.Open();
+            // creation requête et ajout à la commande
+            string sqlRequest = "SELECT pseudo, idUser FROM user WHERE idUser NOT IN (SELECT idUser FROM userInTeam WHERE idTeam="+idTeam+")";
+            dbConnect.Lacommande.CommandText = sqlRequest;
+
+            MySqlDataReader monReaderMysql = dbConnect.Lacommande.ExecuteReader();
+
+            Dictionary<string , int> dictonnary = new Dictionary<string , int>();
+
+            while ( monReaderMysql.Read() ) {
+                dictonnary.Add( monReaderMysql["pseudo"].ToString() , Convert.ToInt32( monReaderMysql["idUser"].ToString() ) );
+            }
+
+            // clear commande et ferme la connection
+            dbConnect.Lacommande.Parameters.Clear();
+            dbConnect.Laconnexion.Close();
+
+            return dictonnary;
+
+        }
+
+
+        public bool addUserInTeam ( int idTeam, int idUser ) {
+
+            if ( idTeam > 0 && idUser > 0 ) {
+
+                dbConnect.Laconnexion.Open();
+                // creation requête et ajout à la commande
+                string sqlRequest = "INSERT INTO userInTeam SET idUser=@_idUser,idTeam=@_idTeam";
+
+                dbConnect.Lacommande.Parameters.AddWithValue( "@_idUser" , idUser );
+                dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam );
+                dbConnect.Lacommande.CommandText = sqlRequest;
+
+                // exécute la requête
+                dbConnect.Lacommande.ExecuteNonQuery();
+
+                // clear commande et ferme la connection
+                dbConnect.Lacommande.Parameters.Clear();
+                dbConnect.Laconnexion.Close();
+
+                return true;
+
+            } else {
+                return false;
+            }
+
+        }
+
+
     }
 }
