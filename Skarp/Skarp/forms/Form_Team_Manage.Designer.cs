@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dg_team = new System.Windows.Forms.DataGridView();
             this.lbTeam = new System.Windows.Forms.Label();
             this.btSave = new System.Windows.Forms.Button();
@@ -37,14 +37,15 @@
             // 
             // dg_team
             // 
-            this.dg_team.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_team.AllowUserToAddRows = false;
+            this.dg_team.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.dg_team.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dg_team.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_team.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.dg_team.Location = new System.Drawing.Point(156, 145);
             this.dg_team.Name = "dg_team";
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dg_team.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dg_team.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dg_team.Size = new System.Drawing.Size(485, 300);
             this.dg_team.TabIndex = 49;
             this.dg_team.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);

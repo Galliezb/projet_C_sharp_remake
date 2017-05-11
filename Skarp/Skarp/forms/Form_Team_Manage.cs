@@ -35,6 +35,8 @@ namespace Skarp.forms
             dataForGrid = team.getTeamOfTheSession();
             dg_team.DataSource = dataForGrid;
             dg_team.DataMember = "team";
+            
+
         }
     }
 }
