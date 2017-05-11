@@ -239,5 +239,12 @@ namespace Skarp.forms {
             affichage = new forms.Form_Create_Arbo();
             displayForm();
         }
+
+        private void desÉquipesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Administration_Voir_Equipes();
+            displayForm();
+        }
     }
 }
