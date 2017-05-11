@@ -30,21 +30,21 @@
         {
             this.lb_Arbo_Tournament = new System.Windows.Forms.Label();
             this.cbb_Name_Tournament = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.cbR1T1 = new System.Windows.Forms.ComboBox();
+            this.cbR1T2 = new System.Windows.Forms.ComboBox();
+            this.cbR1T3 = new System.Windows.Forms.ComboBox();
+            this.cbR1T4 = new System.Windows.Forms.ComboBox();
+            this.cbR1T5 = new System.Windows.Forms.ComboBox();
+            this.cbR1T6 = new System.Windows.Forms.ComboBox();
+            this.cbR1T7 = new System.Windows.Forms.ComboBox();
+            this.cbR1T8 = new System.Windows.Forms.ComboBox();
+            this.cbR2T1 = new System.Windows.Forms.ComboBox();
+            this.cbR2T2 = new System.Windows.Forms.ComboBox();
+            this.cbR2T3 = new System.Windows.Forms.ComboBox();
+            this.cbR2T4 = new System.Windows.Forms.ComboBox();
+            this.cbR3T1 = new System.Windows.Forms.ComboBox();
+            this.cbR3T2 = new System.Windows.Forms.ComboBox();
+            this.cbwinner = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,127 +65,126 @@
             this.cbb_Name_Tournament.Name = "cbb_Name_Tournament";
             this.cbb_Name_Tournament.Size = new System.Drawing.Size(249, 28);
             this.cbb_Name_Tournament.TabIndex = 1;
-            this.cbb_Name_Tournament.Text = "z";
             // 
-            // comboBox1
+            // cbR1T1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(37, 92);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 28);
-            this.comboBox1.TabIndex = 2;
+            this.cbR1T1.FormattingEnabled = true;
+            this.cbR1T1.Location = new System.Drawing.Point(37, 92);
+            this.cbR1T1.Name = "cbR1T1";
+            this.cbR1T1.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T1.TabIndex = 2;
             // 
-            // comboBox2
+            // cbR1T2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(37, 126);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 28);
-            this.comboBox2.TabIndex = 3;
+            this.cbR1T2.FormattingEnabled = true;
+            this.cbR1T2.Location = new System.Drawing.Point(37, 126);
+            this.cbR1T2.Name = "cbR1T2";
+            this.cbR1T2.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T2.TabIndex = 3;
             // 
-            // comboBox3
+            // cbR1T3
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(37, 191);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 28);
-            this.comboBox3.TabIndex = 4;
+            this.cbR1T3.FormattingEnabled = true;
+            this.cbR1T3.Location = new System.Drawing.Point(37, 191);
+            this.cbR1T3.Name = "cbR1T3";
+            this.cbR1T3.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T3.TabIndex = 4;
             // 
-            // comboBox4
+            // cbR1T4
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(37, 225);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 28);
-            this.comboBox4.TabIndex = 5;
+            this.cbR1T4.FormattingEnabled = true;
+            this.cbR1T4.Location = new System.Drawing.Point(37, 225);
+            this.cbR1T4.Name = "cbR1T4";
+            this.cbR1T4.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T4.TabIndex = 5;
             // 
-            // comboBox5
+            // cbR1T5
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(37, 290);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 28);
-            this.comboBox5.TabIndex = 6;
+            this.cbR1T5.FormattingEnabled = true;
+            this.cbR1T5.Location = new System.Drawing.Point(37, 290);
+            this.cbR1T5.Name = "cbR1T5";
+            this.cbR1T5.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T5.TabIndex = 6;
             // 
-            // comboBox6
+            // cbR1T6
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(37, 324);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(200, 28);
-            this.comboBox6.TabIndex = 7;
+            this.cbR1T6.FormattingEnabled = true;
+            this.cbR1T6.Location = new System.Drawing.Point(37, 324);
+            this.cbR1T6.Name = "cbR1T6";
+            this.cbR1T6.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T6.TabIndex = 7;
             // 
-            // comboBox7
+            // cbR1T7
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(37, 399);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(200, 28);
-            this.comboBox7.TabIndex = 8;
+            this.cbR1T7.FormattingEnabled = true;
+            this.cbR1T7.Location = new System.Drawing.Point(37, 399);
+            this.cbR1T7.Name = "cbR1T7";
+            this.cbR1T7.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T7.TabIndex = 8;
             // 
-            // comboBox8
+            // cbR1T8
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(37, 433);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(200, 28);
-            this.comboBox8.TabIndex = 9;
+            this.cbR1T8.FormattingEnabled = true;
+            this.cbR1T8.Location = new System.Drawing.Point(37, 433);
+            this.cbR1T8.Name = "cbR1T8";
+            this.cbR1T8.Size = new System.Drawing.Size(200, 28);
+            this.cbR1T8.TabIndex = 9;
             // 
-            // comboBox9
+            // cbR2T1
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(290, 135);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(200, 28);
-            this.comboBox9.TabIndex = 10;
+            this.cbR2T1.FormattingEnabled = true;
+            this.cbR2T1.Location = new System.Drawing.Point(290, 135);
+            this.cbR2T1.Name = "cbR2T1";
+            this.cbR2T1.Size = new System.Drawing.Size(200, 28);
+            this.cbR2T1.TabIndex = 10;
             // 
-            // comboBox10
+            // cbR2T2
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(290, 169);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(200, 28);
-            this.comboBox10.TabIndex = 11;
+            this.cbR2T2.FormattingEnabled = true;
+            this.cbR2T2.Location = new System.Drawing.Point(290, 169);
+            this.cbR2T2.Name = "cbR2T2";
+            this.cbR2T2.Size = new System.Drawing.Size(200, 28);
+            this.cbR2T2.TabIndex = 11;
             // 
-            // comboBox11
+            // cbR2T3
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(290, 339);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(200, 28);
-            this.comboBox11.TabIndex = 12;
+            this.cbR2T3.FormattingEnabled = true;
+            this.cbR2T3.Location = new System.Drawing.Point(290, 339);
+            this.cbR2T3.Name = "cbR2T3";
+            this.cbR2T3.Size = new System.Drawing.Size(200, 28);
+            this.cbR2T3.TabIndex = 12;
             // 
-            // comboBox12
+            // cbR2T4
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(290, 373);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(200, 28);
-            this.comboBox12.TabIndex = 13;
+            this.cbR2T4.FormattingEnabled = true;
+            this.cbR2T4.Location = new System.Drawing.Point(290, 373);
+            this.cbR2T4.Name = "cbR2T4";
+            this.cbR2T4.Size = new System.Drawing.Size(200, 28);
+            this.cbR2T4.TabIndex = 13;
             // 
-            // comboBox13
+            // cbR3T1
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(505, 225);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(200, 28);
-            this.comboBox13.TabIndex = 14;
+            this.cbR3T1.FormattingEnabled = true;
+            this.cbR3T1.Location = new System.Drawing.Point(505, 225);
+            this.cbR3T1.Name = "cbR3T1";
+            this.cbR3T1.Size = new System.Drawing.Size(200, 28);
+            this.cbR3T1.TabIndex = 14;
             // 
-            // comboBox14
+            // cbR3T2
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(505, 259);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(200, 28);
-            this.comboBox14.TabIndex = 15;
+            this.cbR3T2.FormattingEnabled = true;
+            this.cbR3T2.Location = new System.Drawing.Point(505, 259);
+            this.cbR3T2.Name = "cbR3T2";
+            this.cbR3T2.Size = new System.Drawing.Size(200, 28);
+            this.cbR3T2.TabIndex = 15;
             // 
-            // comboBox15
+            // cbwinner
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(449, 510);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(256, 28);
-            this.comboBox15.TabIndex = 16;
+            this.cbwinner.FormattingEnabled = true;
+            this.cbwinner.Location = new System.Drawing.Point(449, 510);
+            this.cbwinner.Name = "cbwinner";
+            this.cbwinner.Size = new System.Drawing.Size(256, 28);
+            this.cbwinner.TabIndex = 16;
             // 
             // label1
             // 
@@ -214,27 +213,27 @@
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.btSubmit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox15);
-            this.Controls.Add(this.comboBox14);
-            this.Controls.Add(this.comboBox13);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbwinner);
+            this.Controls.Add(this.cbR3T2);
+            this.Controls.Add(this.cbR3T1);
+            this.Controls.Add(this.cbR2T4);
+            this.Controls.Add(this.cbR2T3);
+            this.Controls.Add(this.cbR2T2);
+            this.Controls.Add(this.cbR2T1);
+            this.Controls.Add(this.cbR1T8);
+            this.Controls.Add(this.cbR1T7);
+            this.Controls.Add(this.cbR1T6);
+            this.Controls.Add(this.cbR1T5);
+            this.Controls.Add(this.cbR1T4);
+            this.Controls.Add(this.cbR1T3);
+            this.Controls.Add(this.cbR1T2);
+            this.Controls.Add(this.cbR1T1);
             this.Controls.Add(this.cbb_Name_Tournament);
             this.Controls.Add(this.lb_Arbo_Tournament);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Create_Arbo";
             this.Text = "Form_Create_Arbo";
             this.Load += new System.EventHandler(this.Form_Create_Arbo_Load);
@@ -247,21 +246,21 @@
 
         private System.Windows.Forms.Label lb_Arbo_Tournament;
         private System.Windows.Forms.ComboBox cbb_Name_Tournament;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox cbR1T1;
+        private System.Windows.Forms.ComboBox cbR1T2;
+        private System.Windows.Forms.ComboBox cbR1T3;
+        private System.Windows.Forms.ComboBox cbR1T4;
+        private System.Windows.Forms.ComboBox cbR1T5;
+        private System.Windows.Forms.ComboBox cbR1T6;
+        private System.Windows.Forms.ComboBox cbR1T7;
+        private System.Windows.Forms.ComboBox cbR1T8;
+        private System.Windows.Forms.ComboBox cbR2T1;
+        private System.Windows.Forms.ComboBox cbR2T2;
+        private System.Windows.Forms.ComboBox cbR2T3;
+        private System.Windows.Forms.ComboBox cbR2T4;
+        private System.Windows.Forms.ComboBox cbR3T1;
+        private System.Windows.Forms.ComboBox cbR3T2;
+        private System.Windows.Forms.ComboBox cbwinner;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btSubmit;
     }
