@@ -31,7 +31,6 @@
             this.vosÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerVosÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.supprimerUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUnJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tournoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.créerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +52,7 @@
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supprimerUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,12 +129,6 @@
             this.gérerVosÉquipesToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
             this.gérerVosÉquipesToolStripMenuItem.Text = "Gérer vos équipes";
             this.gérerVosÉquipesToolStripMenuItem.Click += new System.EventHandler(this.gérerVosÉquipesToolStripMenuItem_Click);
-            // 
-            // supprimerUneÉquipeToolStripMenuItem
-            // 
-            this.supprimerUneÉquipeToolStripMenuItem.Name = "supprimerUneÉquipeToolStripMenuItem";
-            this.supprimerUneÉquipeToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
-            this.supprimerUneÉquipeToolStripMenuItem.Text = "Supprimer une équipe";
             // 
             // ajouterUnJoueurToolStripMenuItem
             // 
@@ -292,6 +286,12 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Size = new System.Drawing.Size(301, 24);
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "j\'ajouteunmenutropfacilement";
             // 
+            // supprimerUneÉquipeToolStripMenuItem
+            // 
+            this.supprimerUneÉquipeToolStripMenuItem.Name = "supprimerUneÉquipeToolStripMenuItem";
+            this.supprimerUneÉquipeToolStripMenuItem.Size = new System.Drawing.Size(242, 24);
+            this.supprimerUneÉquipeToolStripMenuItem.Text = "Supprimer une équipe";
+            // 
             // accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -337,7 +337,6 @@
         private System.Windows.Forms.ToolStripMenuItem vosÉquipesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUneÉquipeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gérerVosÉquipesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem supprimerUneÉquipeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnJoueurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tournoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem créerToolStripMenuItem;
@@ -347,6 +346,7 @@
         private System.Windows.Forms.ToolStripMenuItem enCoursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historiqueToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem organisationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem supprimerUneÉquipeToolStripMenuItem;
     }
 }
 
