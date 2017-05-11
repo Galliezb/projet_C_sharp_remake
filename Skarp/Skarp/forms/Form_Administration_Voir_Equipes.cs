@@ -16,5 +16,15 @@ namespace Skarp.forms
         {
             InitializeComponent();
         }
+
+        private void Form_Administration_Voir_Equipes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

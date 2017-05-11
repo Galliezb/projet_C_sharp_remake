@@ -18,7 +18,7 @@ namespace Skarp.classes
             {
                 
                 DirectoryEntry Ldap = new DirectoryEntry("LDAP://192.168.1.54", "Administrateur", "Password1");
-                DirectoryEntry userADCreated = Ldap.Children.Add("cn=" + fullname, "user");
+                DirectoryEntry userADCreated = Ldap.Children.Add("cn=" + fullname, "nosUsers");
 
                 userADCreated.Properties["SAMAccountName"].Add(fullname);
 

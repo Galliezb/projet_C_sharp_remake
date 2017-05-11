@@ -24,43 +24,55 @@
         /// </summary>
         private void InitializeComponent () {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dg_joueur = new System.Windows.Forms.DataGridView();
+            this.btSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(674, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 51);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Sauvegarder";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // dg_joueur
             // 
-            this.dg_joueur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_joueur.AllowUserToAddRows = false;
+            this.dg_joueur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.dg_joueur.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_joueur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Schoolbook", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dg_joueur.DefaultCellStyle = dataGridViewCellStyle1;
             this.dg_joueur.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dg_joueur.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.dg_joueur.Location = new System.Drawing.Point(0, 84);
             this.dg_joueur.Name = "dg_joueur";
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dg_joueur.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.dg_joueur.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dg_joueur.Size = new System.Drawing.Size(800, 544);
             this.dg_joueur.TabIndex = 1;
+            // 
+            // btSave
+            // 
+            this.btSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSave.ForeColor = System.Drawing.Color.White;
+            this.btSave.Location = new System.Drawing.Point(662, 4);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(126, 67);
+            this.btSave.TabIndex = 47;
+            this.btSave.Text = "Sauvegarder";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btPromote1_Click);
             // 
             // Form_administration_voir_joueurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 628);
+            this.Controls.Add(this.btSave);
             this.Controls.Add(this.dg_joueur);
-            this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -74,8 +86,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dg_joueur;
+        private System.Windows.Forms.Button btSave;
     }
 }

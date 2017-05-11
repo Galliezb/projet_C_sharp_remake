@@ -43,11 +43,11 @@ namespace Skarp.forms {
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click ( object sender , EventArgs e ) {
 
-            userForDataGrid.update( dataForGrid );
 
+        private void btPromote1_Click(object sender, EventArgs e)
+        {
+            userForDataGrid.update(dataForGrid);
         }
-
     }
 }
