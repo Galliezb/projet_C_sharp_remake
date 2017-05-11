@@ -27,11 +27,23 @@ namespace Skarp.forms
             Users listeJoueur = new Users(-1);
             DataSet dataListeJoueur = listeJoueur.getAllUsers();
 
-            foreach ( DataRow rw in dataListeJoueur.Tables["user"].Rows ) {
+            Team t = new Team();
+            DataSet listTeam = t.getTeamOfTheSession();
+            int idTeamSelected = -1;
 
-                //lis.Items.Add( rw["pseudo"].ToString() );
+            foreach ( DataRow rw in listTeam.Tables["userInTeam"].Rows ) {
+
+                if ( cb_choisir_equipe.Text == rw["name"].ToString() ) {
+                    idTeamSelected = Convert.ToInt32(rw["idTeam"].ToString());
+                    break;
+                }
 
             }
+
+            // recupère les joueurs qui ne sont pas dans la team
+            Dictionary<string , int> playerNotInTeam = t.getAllUserNotInTeam( idTeamSelected );
+
+            // recupère les joueurs qui sont dans la team
 
 
         }
