@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Skarp.classes;
+
 
 namespace Skarp.forms
 {
     public partial class Form_Administration_Add_User : Form
     {
         Users newUser;
+        ADConnection ADCo;
         public Form_Administration_Add_User()
         {
             InitializeComponent();
+            ADCo = new ADConnection();
             cbbSelectType.SelectedIndex = 0;
         }
 
@@ -72,6 +76,8 @@ namespace Skarp.forms
 
                 if (done)
                 {
+                    ADCo.createUser(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
+
                     MessageBox.Show("User ajouté à la BDD");
 
 

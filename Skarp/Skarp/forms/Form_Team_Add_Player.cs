@@ -12,65 +12,42 @@ namespace Skarp.forms
 {
     public partial class Form_Team_Add_Player : Form
     {
-        Users allUsers, playerSelected;
-        DataSet dataSetAllUsers;
-        Team allTeams, teamSelected;
-        DataSet dataSetAllTeams;
         public Form_Team_Add_Player()
         {
-
             InitializeComponent();
-            allUsers = new Users();
-            dataSetAllUsers = allUsers.getAllUsers();
-            allTeams = new Team();
-            dataSetAllTeams = allTeams.getTeamOfTheSession();
-
-            foreach (DataRow rw in dataSetAllUsers.Tables["user"].Rows)
-            {
-
-                cbb_Player.Items.Add(rw["pseudo"].ToString());
-
-            }
-            foreach (DataRow rw in dataSetAllTeams.Tables["team"].Rows)
-            {
-
-                cbb_Team.Items.Add(rw["name"].ToString());
-
-            }
+            reloadData();
         }
 
-        private void btSubmit_Click(object sender, EventArgs e)
-        {
-            
+        private void btSubmit_Click ( object sender , EventArgs e ) {
+
         }
 
-        private void cbb_Player_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            playerSelected = new Users();
-            teamSelected = new Team();
-            foreach (DataRow rw in dataSetAllUsers.Tables["user"].Rows)
-            {
+        private void cb_choisir_equipe_SelectedIndexChanged ( object sender , EventArgs e ) {
 
-                if (rw["name"].ToString() == cbb_Player.Text)
-                {
+            Users listeJoueur = new Users(-1);
+            DataSet dataListeJoueur = listeJoueur.getAllUsers();
 
-                    playerSelected.ID = Convert.ToInt32(rw["idUser"]);
-                    break;
-                }
+            foreach ( DataRow rw in dataListeJoueur.Tables["user"].Rows ) {
+
+                //lis.Items.Add( rw["pseudo"].ToString() );
 
             }
-            foreach (DataRow rw in dataSetAllTeams.Tables["team"].Rows)
-            {
 
-                if (rw["name"].ToString() == cbb_Team.Text)
-                {
 
-                    teamSelected.idTeam = Convert.ToInt32(rw["idTeam"]);
-                    break;
-                }
+        }
+
+        private void reloadData () {
+
+            Team t = new Team();
+            DataSet listTeam = t.getTeamOfTheSession();
+
+            cb_choisir_equipe.Items.Clear();
+            foreach ( DataRow rw in listTeam.Tables["team"].Rows ) {
+
+                cb_choisir_equipe.Items.Add( rw["name"].ToString() );
 
             }
-            MessageBox.Show(teamSelected.idTeam.ToString());
+
         }
     }
 }

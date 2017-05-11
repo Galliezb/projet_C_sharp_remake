@@ -180,6 +180,10 @@ namespace Skarp {
 
         }
 
+        /// <summary>
+        /// Permet de récupérer une dataset contenant toutes les informations des team correspondant a l'ID connecté
+        /// </summary>
+        /// <returns></returns>
         public DataSet getTeamOfTheSession()
         {
 
