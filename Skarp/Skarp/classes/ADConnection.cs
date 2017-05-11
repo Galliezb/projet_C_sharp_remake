@@ -32,21 +32,21 @@ namespace Skarp.classes
                 // On va maintenant lui définir son password. L'utilisateur doit avoir été créé
 
                 // et sauvé avant de pouvoir faire cette étape
-
+                userADCreated.CommitChanges();
                 userADCreated.Invoke("SetPassword", new object[] { pass });
 
                 // On va maintenant activer le compte : ADS_UF_NORMAL_ACCOUNT
 
-                userADCreated.Properties["userAccountControl"].Value = 0x0200;
-                
-                foreach ( PropertyCollection p in userADCreated.Properties.PropertyNames ) {
-                    MessageBox.Show(p.Values.ToString()) ;
-                }
+                userADCreated.Properties["userAccountControl"].Value = 0x1000;
+
+                /* foreach ( PropertyCollection p in userADCreated.Properties.PropertyNames ) {
+                     MessageBox.Show(p.Values.ToString()) ;
+                 }*/
 
 
                 // On envoie les modifications au serveur
-
                 userADCreated.CommitChanges();
+
             }
             catch (Exception Ex)
             {
