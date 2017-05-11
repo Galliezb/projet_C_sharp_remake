@@ -33,6 +33,8 @@ namespace Skarp.forms
 
 
             forGettingAllTeams = new Team();
+
+
         }
 
         private void Form_Create_Arbo_Load(object sender, EventArgs e)
@@ -68,16 +70,17 @@ namespace Skarp.forms
             dataAllTeam = forGettingAllTeams.getAllTeam();
             foreach (DataRow r in dataAllTeam.Tables[0].Rows)
             {
-                if (r["jeu"].ToString()== game)
-                cbR1T1.Items.Add(r["name"].ToString());
-                cbR1T2.Items.Add(r["name"].ToString());
-                cbR1T3.Items.Add(r["name"].ToString());
-                cbR1T4.Items.Add(r["name"].ToString());
-                cbR1T5.Items.Add(r["name"].ToString());
-                cbR1T6.Items.Add(r["name"].ToString());
-                cbR1T7.Items.Add(r["name"].ToString());
-                cbR1T8.Items.Add(r["name"].ToString());
 
+                
+                    cbR1T1.Items.Add(r["name"].ToString());
+                    cbR1T2.Items.Add(r["name"].ToString());
+                    cbR1T3.Items.Add(r["name"].ToString());
+                    cbR1T4.Items.Add(r["name"].ToString());
+                    cbR1T5.Items.Add(r["name"].ToString());
+                    cbR1T6.Items.Add(r["name"].ToString());
+                    cbR1T7.Items.Add(r["name"].ToString());
+                    cbR1T8.Items.Add(r["name"].ToString());
+                
             }
         }
     }
