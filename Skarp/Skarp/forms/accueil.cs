@@ -232,5 +232,12 @@ namespace Skarp.forms {
             affichage = new forms.Form_Tournament_List_Started();
             displayForm();
         }
+
+        private void voirEnDétailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Create_Arbo();
+            displayForm();
+        }
     }
 }

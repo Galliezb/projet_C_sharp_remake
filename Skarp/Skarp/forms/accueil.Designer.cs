@@ -48,6 +48,7 @@
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voirEnDétailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,7 +109,8 @@
             this.créerToolStripMenuItem,
             this.modifierToolStripMenuItem1,
             this.supprimerToolStripMenuItem1,
-            this.historiqueToolStripMenuItem});
+            this.historiqueToolStripMenuItem,
+            this.voirEnDétailToolStripMenuItem});
             this.tournoiToolStripMenuItem.Name = "tournoiToolStripMenuItem";
             this.tournoiToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.tournoiToolStripMenuItem.Text = "Tournoi";
@@ -257,6 +259,13 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "Active Directory";
             this.jajouteunmenutropfacilementToolStripMenuItem.Click += new System.EventHandler(this.jajouteunmenutropfacilementToolStripMenuItem_Click);
             // 
+            // voirEnDétailToolStripMenuItem
+            // 
+            this.voirEnDétailToolStripMenuItem.Name = "voirEnDétailToolStripMenuItem";
+            this.voirEnDétailToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
+            this.voirEnDétailToolStripMenuItem.Text = "Voir en détail";
+            this.voirEnDétailToolStripMenuItem.Click += new System.EventHandler(this.voirEnDétailToolStripMenuItem_Click);
+            // 
             // accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -307,6 +316,7 @@
         private System.Windows.Forms.ToolStripMenuItem enCoursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historiqueToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem organisationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voirEnDétailToolStripMenuItem;
     }
 }
 

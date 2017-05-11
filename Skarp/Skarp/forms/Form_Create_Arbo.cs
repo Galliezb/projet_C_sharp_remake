@@ -17,13 +17,17 @@ namespace Skarp.forms
         public Form_Create_Arbo()
         {
             InitializeComponent();
-            
+            //DataSet dataAllTeam = new DataSet();
+            forGettingAllTeams = new Team();
         }
 
         private void Form_Create_Arbo_Load(object sender, EventArgs e)
         {
             dataAllTeam = forGettingAllTeams.getAllTeam();
-            dataAllTeam.Tables[0].Columns["name"].
+            foreach ( DataRow r in dataAllTeam.Tables[0].Rows)
+            {
+                cbb_Name_Tournament.Items.Add(r["name"].ToString());
+            }
         }
     }
 }

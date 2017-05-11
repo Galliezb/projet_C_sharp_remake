@@ -65,6 +65,7 @@
             this.cbb_Name_Tournament.Name = "cbb_Name_Tournament";
             this.cbb_Name_Tournament.Size = new System.Drawing.Size(249, 28);
             this.cbb_Name_Tournament.TabIndex = 1;
+            this.cbb_Name_Tournament.Text = "z";
             // 
             // comboBox1
             // 
