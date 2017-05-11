@@ -43,7 +43,7 @@ namespace Skarp.classes
 
                 // On va maintenant activer le compte : ADS_UF_NORMAL_ACCOUNT
 
-                userADCreated.Properties["userAccountControl"].Value = 0x1000;
+                userADCreated.Properties["userAccountControl"].Value = 0x0200;
 
                 /* foreach ( PropertyCollection p in userADCreated.Properties.PropertyNames ) {
                      MessageBox.Show(p.Values.ToString()) ;
