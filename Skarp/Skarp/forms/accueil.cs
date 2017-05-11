@@ -177,5 +177,11 @@ namespace Skarp.forms {
             affichage = new forms.Form_organisation();
             displayForm();
         }
+
+        private void jajouteunmenutropfacilementToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_administration_active_directory();
+            displayForm();
+        }
     }
 }
