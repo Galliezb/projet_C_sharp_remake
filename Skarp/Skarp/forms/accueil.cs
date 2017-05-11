@@ -192,15 +192,44 @@ namespace Skarp.forms {
             displayForm();
         }
 
+        private void historiqueToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_List_Ended();
+            displayForm();
+        }
+
+        private void enCoursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_List_Started();
+            displayForm();
+        }
+
         private void jajouteunmenutropfacilementToolStripMenuItem_Click ( object sender , EventArgs e ) {
             closeAll();
             affichage = new forms.Form_administration_active_directory();
             displayForm();
         }
 
-        private void ajouterUnJoueurToolStripMenuItem_Click ( object sender , EventArgs e ) {
+        private void ajouterUnJoueurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             closeAll();
             affichage = new forms.Form_Team_Add_Player();
+            displayForm();
+        }
+
+        private void historiqueToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_List_Ended();
+            displayForm();
+        }
+
+        private void enCoursToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_List_Started();
             displayForm();
         }
     }

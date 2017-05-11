@@ -41,6 +41,8 @@
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
             this.rtbDescription = new System.Windows.Forms.RichTextBox();
+            this.lb_Jeu = new System.Windows.Forms.Label();
+            this.tb_Jeu = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lbNom
@@ -91,7 +93,7 @@
             // lbDescription
             // 
             this.lbDescription.AutoSize = true;
-            this.lbDescription.Location = new System.Drawing.Point(100, 305);
+            this.lbDescription.Location = new System.Drawing.Point(100, 345);
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(101, 20);
             this.lbDescription.TabIndex = 5;
@@ -145,11 +147,40 @@
             // 
             // rtbDescription
             // 
-            this.rtbDescription.Location = new System.Drawing.Point(443, 302);
+            this.rtbDescription.Location = new System.Drawing.Point(443, 345);
             this.rtbDescription.Name = "rtbDescription";
             this.rtbDescription.Size = new System.Drawing.Size(259, 96);
             this.rtbDescription.TabIndex = 71;
             this.rtbDescription.Text = "";
+            // 
+            // lb_Jeu
+            // 
+            this.lb_Jeu.AutoSize = true;
+            this.lb_Jeu.Location = new System.Drawing.Point(100, 305);
+            this.lb_Jeu.Name = "lb_Jeu";
+            this.lb_Jeu.Size = new System.Drawing.Size(44, 20);
+            this.lb_Jeu.TabIndex = 72;
+            this.lb_Jeu.Text = "Jeu :";
+            // 
+            // tb_Jeu
+            // 
+            this.tb_Jeu.ForeColor = System.Drawing.Color.Black;
+            this.tb_Jeu.FormattingEnabled = true;
+            this.tb_Jeu.Items.AddRange(new object[] {
+            "Battlerite",
+            "League of Legends",
+            "Counter Strike GO",
+            "Dota2",
+            "Overwatch",
+            "Heavy Metal Machine",
+            "Paladin",
+            "Hearthstone",
+            "Orion Prelude",
+            "BattleBorn"});
+            this.tb_Jeu.Location = new System.Drawing.Point(443, 302);
+            this.tb_Jeu.Name = "tb_Jeu";
+            this.tb_Jeu.Size = new System.Drawing.Size(259, 28);
+            this.tb_Jeu.TabIndex = 73;
             // 
             // Form_Tournament_Add
             // 
@@ -157,6 +188,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.tb_Jeu);
+            this.Controls.Add(this.lb_Jeu);
             this.Controls.Add(this.rtbDescription);
             this.Controls.Add(this.dtpEndDate);
             this.Controls.Add(this.dtpStartDate);
@@ -173,7 +206,7 @@
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Tournament_Add";
             this.Text = "Form_Tournament_Add";
             this.ResumeLayout(false);
@@ -196,5 +229,7 @@
         private System.Windows.Forms.DateTimePicker dtpStartDate;
         private System.Windows.Forms.DateTimePicker dtpEndDate;
         private System.Windows.Forms.RichTextBox rtbDescription;
+        private System.Windows.Forms.Label lb_Jeu;
+        private System.Windows.Forms.ComboBox tb_Jeu;
     }
 }

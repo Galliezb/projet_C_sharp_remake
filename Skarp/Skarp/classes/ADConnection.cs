@@ -29,6 +29,12 @@ namespace Skarp.classes
                 userADCreated.Properties["description"].Add(description);
 
 
+                // On envoie les modifications au serveur
+
+                userADCreated.CommitChanges();
+
+
+
                 // On va maintenant lui définir son password. L'utilisateur doit avoir été créé
 
                 // et sauvé avant de pouvoir faire cette étape

@@ -201,6 +201,22 @@ namespace Skarp {
 
         }
 
+        public DataSet getAllTeam () {
+
+
+            string request = "SELECT * FROM team";
+
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter( request , dbConnect.Laconnexion );
+
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder( monDataAdapter );
+
+            DataSet monDataSet = new DataSet();
+            monDataAdapter.Fill( monDataSet , "team" );
+
+            return monDataSet;
+
+        }
+
         public void update(DataSet dataSetForUpdate)
         {
 
