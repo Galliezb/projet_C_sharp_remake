@@ -72,7 +72,7 @@
             this.menu_general.Location = new System.Drawing.Point(0, 0);
             this.menu_general.Name = "menu_general";
             this.menu_general.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menu_general.Size = new System.Drawing.Size(1066, 31);
+            this.menu_general.Size = new System.Drawing.Size(800, 31);
             this.menu_general.TabIndex = 8;
             this.menu_general.Text = "menuStrip1";
             this.menu_general.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu_general_ItemClicked);
@@ -90,19 +90,19 @@
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(181, 28);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(132, 28);
             this.userToolStripMenuItem.Text = "test1";
             // 
             // jesaispasToolStripMenuItem
             // 
             this.jesaispasToolStripMenuItem.Name = "jesaispasToolStripMenuItem";
-            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(181, 28);
+            this.jesaispasToolStripMenuItem.Size = new System.Drawing.Size(132, 28);
             this.jesaispasToolStripMenuItem.Text = "test2";
             // 
             // testToolStripMenuItem1
             // 
             this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
-            this.testToolStripMenuItem1.Size = new System.Drawing.Size(181, 28);
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(132, 28);
             this.testToolStripMenuItem1.Text = "test3";
             // 
             // vosÉquipesToolStripMenuItem
@@ -231,7 +231,7 @@
             // ajouterUnUtilisateurToolStripMenuItem
             // 
             this.ajouterUnUtilisateurToolStripMenuItem.Name = "ajouterUnUtilisateurToolStripMenuItem";
-            this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(364, 28);
+            this.ajouterUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(327, 28);
             this.ajouterUnUtilisateurToolStripMenuItem.Text = "Ajouter des utilisateurs";
             this.ajouterUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnUtilisateurToolStripMenuItem_Click_1);
             // 
@@ -240,7 +240,7 @@
             this.gestionBDDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.desJoueursToolStripMenuItem});
             this.gestionBDDToolStripMenuItem.Name = "gestionBDDToolStripMenuItem";
-            this.gestionBDDToolStripMenuItem.Size = new System.Drawing.Size(364, 28);
+            this.gestionBDDToolStripMenuItem.Size = new System.Drawing.Size(327, 28);
             this.gestionBDDToolStripMenuItem.Text = "Afficher la liste";
             // 
             // desJoueursToolStripMenuItem
@@ -253,7 +253,7 @@
             // promouvoirUnUtilisateurToolStripMenuItem
             // 
             this.promouvoirUnUtilisateurToolStripMenuItem.Name = "promouvoirUnUtilisateurToolStripMenuItem";
-            this.promouvoirUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(364, 28);
+            this.promouvoirUnUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(327, 28);
             this.promouvoirUnUtilisateurToolStripMenuItem.Text = "Promouvoir un utilisateur";
             this.promouvoirUnUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.promouvoirUnUtilisateurToolStripMenuItem_Click);
             // 
@@ -264,7 +264,7 @@
             this.modifierToolStripMenuItem,
             this.supprimerToolStripMenuItem});
             this.ajouterUnToolStripMenuItem.Name = "ajouterUnToolStripMenuItem";
-            this.ajouterUnToolStripMenuItem.Size = new System.Drawing.Size(364, 28);
+            this.ajouterUnToolStripMenuItem.Size = new System.Drawing.Size(327, 28);
             this.ajouterUnToolStripMenuItem.Text = "Les nouvelles";
             // 
             // ajouterToolStripMenuItem
@@ -300,7 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1066, 628);
+            this.ClientSize = new System.Drawing.Size(800, 628);
             this.Controls.Add(this.menu_general);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
