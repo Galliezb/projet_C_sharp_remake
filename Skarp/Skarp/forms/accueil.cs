@@ -191,5 +191,19 @@ namespace Skarp.forms {
             affichage = new forms.Form_organisation();
             displayForm();
         }
+
+        private void historiqueToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_List_Ended();
+            displayForm();
+        }
+
+        private void enCoursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            affichage = new forms.Form_Tournament_List_Started();
+            displayForm();
+        }
     }
 }
