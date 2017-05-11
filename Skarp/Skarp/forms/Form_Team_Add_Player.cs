@@ -16,5 +16,9 @@ namespace Skarp.forms
         {
             InitializeComponent();
         }
+
+        private void btSubmit_Click ( object sender , EventArgs e ) {
+
+        }
     }
 }
