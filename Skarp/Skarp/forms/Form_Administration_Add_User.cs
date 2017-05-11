@@ -76,8 +76,8 @@ namespace Skarp.forms
 
                 if (done)
                 {
-                    ADCo.createUser(newUser.pseudo, newUser.name, newUser.firstName, newUser.password,newUser.email,rtbDesc.Text.ToString());
-                   
+                    ADCo.createUser(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
+
                     MessageBox.Show("User ajouté à la BDD");
 
 
