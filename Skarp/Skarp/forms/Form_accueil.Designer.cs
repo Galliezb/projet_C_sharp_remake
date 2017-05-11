@@ -78,7 +78,7 @@
             this.tb_login.ForeColor = System.Drawing.Color.White;
             this.tb_login.Location = new System.Drawing.Point(12, 438);
             this.tb_login.Name = "tb_login";
-            this.tb_login.Size = new System.Drawing.Size(194, 27);
+            this.tb_login.Size = new System.Drawing.Size(194, 32);
             this.tb_login.TabIndex = 6;
             this.tb_login.Text = "Login";
             // 
@@ -116,7 +116,7 @@
             this.tb_pwd.ForeColor = System.Drawing.Color.White;
             this.tb_pwd.Location = new System.Drawing.Point(11, 489);
             this.tb_pwd.Name = "tb_pwd";
-            this.tb_pwd.Size = new System.Drawing.Size(194, 27);
+            this.tb_pwd.Size = new System.Drawing.Size(194, 32);
             this.tb_pwd.TabIndex = 7;
             this.tb_pwd.Text = "Password";
             // 
@@ -174,7 +174,7 @@
             this.cb_choix_langue.FormattingEnabled = true;
             this.cb_choix_langue.Location = new System.Drawing.Point(14, 467);
             this.cb_choix_langue.Name = "cb_choix_langue";
-            this.cb_choix_langue.Size = new System.Drawing.Size(194, 28);
+            this.cb_choix_langue.Size = new System.Drawing.Size(194, 31);
             this.cb_choix_langue.TabIndex = 16;
             // 
             // tb_pseudo
@@ -183,7 +183,7 @@
             this.tb_pseudo.ForeColor = System.Drawing.Color.White;
             this.tb_pseudo.Location = new System.Drawing.Point(14, 400);
             this.tb_pseudo.Name = "tb_pseudo";
-            this.tb_pseudo.Size = new System.Drawing.Size(194, 27);
+            this.tb_pseudo.Size = new System.Drawing.Size(194, 32);
             this.tb_pseudo.TabIndex = 15;
             this.tb_pseudo.Text = "Pseudonyme";
             // 
@@ -193,7 +193,7 @@
             this.tb_password2.ForeColor = System.Drawing.Color.White;
             this.tb_password2.Location = new System.Drawing.Point(14, 333);
             this.tb_password2.Name = "tb_password2";
-            this.tb_password2.Size = new System.Drawing.Size(194, 27);
+            this.tb_password2.Size = new System.Drawing.Size(194, 32);
             this.tb_password2.TabIndex = 14;
             this.tb_password2.Text = "Mot de passe";
             // 
@@ -203,7 +203,7 @@
             this.tb_password1.ForeColor = System.Drawing.Color.White;
             this.tb_password1.Location = new System.Drawing.Point(14, 267);
             this.tb_password1.Name = "tb_password1";
-            this.tb_password1.Size = new System.Drawing.Size(194, 27);
+            this.tb_password1.Size = new System.Drawing.Size(194, 32);
             this.tb_password1.TabIndex = 13;
             this.tb_password1.Text = "Mot de passe";
             // 
@@ -213,7 +213,7 @@
             this.tb_email.ForeColor = System.Drawing.Color.White;
             this.tb_email.Location = new System.Drawing.Point(14, 200);
             this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(194, 27);
+            this.tb_email.Size = new System.Drawing.Size(194, 32);
             this.tb_email.TabIndex = 12;
             this.tb_email.Text = "email";
             // 
@@ -223,7 +223,7 @@
             this.tb_nom.ForeColor = System.Drawing.Color.White;
             this.tb_nom.Location = new System.Drawing.Point(14, 133);
             this.tb_nom.Name = "tb_nom";
-            this.tb_nom.Size = new System.Drawing.Size(194, 27);
+            this.tb_nom.Size = new System.Drawing.Size(194, 32);
             this.tb_nom.TabIndex = 11;
             this.tb_nom.Text = "Nom";
             // 
@@ -233,7 +233,7 @@
             this.tb_prenom.ForeColor = System.Drawing.SystemColors.Menu;
             this.tb_prenom.Location = new System.Drawing.Point(14, 67);
             this.tb_prenom.Name = "tb_prenom";
-            this.tb_prenom.Size = new System.Drawing.Size(194, 27);
+            this.tb_prenom.Size = new System.Drawing.Size(194, 32);
             this.tb_prenom.TabIndex = 10;
             this.tb_prenom.Text = "Prénom";
             // 
@@ -273,7 +273,7 @@
             // 
             // Form_accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Skarp.Properties.Resources.dark_souls;

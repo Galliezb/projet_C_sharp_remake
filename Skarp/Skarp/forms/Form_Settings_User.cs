@@ -18,8 +18,8 @@ namespace Skarp.forms {
 
             tb_mail.Text = Session.email;
             tb_nom.Text = Session.name;
-            tb_password.Text = Session.password;
-            tb_password2.Text = Session.password;
+            tb_password.Clear();
+            tb_password2.Clear();
             tb_prenom.Text = Session.firstname;
             tb_pseudo.Text = Session.pseudo;
             cb_language.SelectedIndex = 0;
