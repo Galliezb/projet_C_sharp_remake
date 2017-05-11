@@ -139,6 +139,12 @@
     <Compile Include="forms\Form_CreateOrg.Designer.cs">
       <DependentUpon>Form_CreateOrg.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_Create_Arbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Create_Arbo.Designer.cs">
+      <DependentUpon>Form_Create_Arbo.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form_ManageTeam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_CreateOrg.resx">
       <DependentUpon>Form_CreateOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Create_Arbo.resx">
+      <DependentUpon>Form_Create_Arbo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_ManageTeam.resx">
       <DependentUpon>Form_ManageTeam.cs</DependentUpon>
