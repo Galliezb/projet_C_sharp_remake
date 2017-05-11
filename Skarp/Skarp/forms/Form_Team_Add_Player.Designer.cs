@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_choisir_equipe = new System.Windows.Forms.ComboBox();
             this.button_sauvegarder = new System.Windows.Forms.Button();
             this.lb_choix_equipe = new System.Windows.Forms.Label();
             this.listbox_joueur_equipe = new System.Windows.Forms.ListBox();
@@ -39,13 +39,14 @@
             this.lb_les_joueurs = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cb_choisir_equipe
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(209, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(327, 31);
-            this.comboBox1.TabIndex = 1;
+            this.cb_choisir_equipe.FormattingEnabled = true;
+            this.cb_choisir_equipe.Location = new System.Drawing.Point(209, 84);
+            this.cb_choisir_equipe.Name = "cb_choisir_equipe";
+            this.cb_choisir_equipe.Size = new System.Drawing.Size(327, 31);
+            this.cb_choisir_equipe.TabIndex = 1;
+            this.cb_choisir_equipe.SelectedIndexChanged += new System.EventHandler(this.cb_choisir_equipe_SelectedIndexChanged);
             // 
             // button_sauvegarder
             // 
@@ -137,7 +138,7 @@
             this.Controls.Add(this.listbox_joueur_equipe);
             this.Controls.Add(this.lb_choix_equipe);
             this.Controls.Add(this.button_sauvegarder);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_choisir_equipe);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -150,7 +151,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_choisir_equipe;
         private System.Windows.Forms.Button button_sauvegarder;
         private System.Windows.Forms.Label lb_choix_equipe;
         private System.Windows.Forms.ListBox listbox_joueur_equipe;
