@@ -48,6 +48,8 @@ namespace Skarp {
 
         }
 
+        public Users() { }
+
         /// <summary>
         /// Pour l'identification
         /// </summary>

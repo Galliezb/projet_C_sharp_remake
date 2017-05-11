@@ -30,13 +30,15 @@ namespace Skarp.forms
             dg_Tournoi.Columns["idTournament"].Visible = false;
             dg_Tournoi.Columns["idOrganizer"].Visible = false;
             
-            int taille = 135;
+            int taille = 110;
             dg_Tournoi.Columns["name"].Width = taille;
             dg_Tournoi.Columns["description"].Width = taille;
             dg_Tournoi.Columns["startDate"].Width = taille;
             dg_Tournoi.Columns["endDate"].Width = taille;
             dg_Tournoi.Columns["type"].Width = taille;
             dg_Tournoi.Columns["maxPlayer"].Width = taille;
+            dg_Tournoi.Columns["jeu"].Width = taille;
+            dg_Tournoi.Columns["jeu"].ReadOnly = true;
 
         }
 
