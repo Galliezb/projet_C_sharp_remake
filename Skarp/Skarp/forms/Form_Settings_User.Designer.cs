@@ -45,10 +45,10 @@
             this.btSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSave.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSave.ForeColor = System.Drawing.Color.White;
-            this.btSave.Location = new System.Drawing.Point(235, 432);
+            this.btSave.Location = new System.Drawing.Point(627, 569);
             this.btSave.Margin = new System.Windows.Forms.Padding(4);
             this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(282, 73);
+            this.btSave.Size = new System.Drawing.Size(160, 46);
             this.btSave.TabIndex = 27;
             this.btSave.Text = "Save";
             this.btSave.UseVisualStyleBackColor = true;

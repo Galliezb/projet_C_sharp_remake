@@ -20,7 +20,12 @@ namespace Skarp.forms
 
         private void btSubmit_Click(object sender, EventArgs e)
         {
-            if(tbNameTeam.Text.Length > 50)
+            
+        }
+
+        private void btAdd_Click(object sender, EventArgs e)
+        {
+            if (tbNameTeam.Text.Length > 50)
             {
                 MessageBox.Show("Nom trop long");
             }

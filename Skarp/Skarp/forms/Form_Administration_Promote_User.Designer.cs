@@ -68,7 +68,7 @@
             this.btPromote3.Name = "btPromote3";
             this.btPromote3.Size = new System.Drawing.Size(143, 83);
             this.btPromote3.TabIndex = 46;
-            this.btPromote3.Text = "One Admin more ?";
+            this.btPromote3.Text = "More people with rights ?";
             this.btPromote3.UseVisualStyleBackColor = true;
             this.btPromote3.Visible = false;
             this.btPromote3.Click += new System.EventHandler(this.btPromote3_Click);
@@ -99,7 +99,7 @@
             // 
             // dg_joueur
             // 
-            this.dg_joueur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.dg_joueur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.dg_joueur.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dg_joueur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_joueur.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
