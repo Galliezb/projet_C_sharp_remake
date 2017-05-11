@@ -214,6 +214,7 @@
             this.organisationToolStripMenuItem.Name = "organisationToolStripMenuItem";
             this.organisationToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.organisationToolStripMenuItem.Text = "Organisation";
+            this.organisationToolStripMenuItem.Click += new System.EventHandler(this.organisationToolStripMenuItem_Click);
             // 
             // fesdfsfsToolStripMenuItem
             // 
