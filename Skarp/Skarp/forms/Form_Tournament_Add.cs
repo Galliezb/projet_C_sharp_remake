@@ -39,6 +39,7 @@ namespace Skarp.forms
             dtpEndDate.Value =DateTime.Now.AddDays(3);           
             rtbDescription.Clear();
           
+            
         }
     }
 }

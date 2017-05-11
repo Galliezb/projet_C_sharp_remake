@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data;
+using MySql.Data.MySqlClient;
+using MySql.Data;
 namespace Skarp {
     class Tournament {
 
@@ -50,6 +52,7 @@ namespace Skarp {
         public int idTournament {
 
             get { return idTournament_; }
+            set { idTournament_ = value; }
 
         }
 
@@ -178,6 +181,34 @@ namespace Skarp {
 
             }
 
+
+        }
+
+        public DataSet getTournamentOfTheSession()
+        {
+
+
+            string request = "SELECT * FROM tournament WHERE idOrganizer =  " + Session.ID;
+
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter(request, dbConnect.Laconnexion);
+
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(monDataAdapter);
+
+            DataSet monDataSet = new DataSet();
+            monDataAdapter.Fill(monDataSet, "tournament");
+
+            return monDataSet;
+
+        }
+
+        public void update(DataSet dataSetForUpdate)
+        {
+
+            string request = "SELECT * FROM tournament";
+            MySqlDataAdapter monDataAdapter = new MySqlDataAdapter(request, dbConnect.Laconnexion);
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(monDataAdapter);
+
+            monDataAdapter.Update(dataSetForUpdate, "tournament");
 
         }
 
