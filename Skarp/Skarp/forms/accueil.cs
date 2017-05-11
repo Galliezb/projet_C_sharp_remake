@@ -197,5 +197,11 @@ namespace Skarp.forms {
             affichage = new forms.Form_administration_active_directory();
             displayForm();
         }
+
+        private void ajouterUnJoueurToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_Team_Add_Player();
+            displayForm();
+        }
     }
 }

@@ -98,8 +98,9 @@
             // ajouterUnJoueurToolStripMenuItem
             // 
             this.ajouterUnJoueurToolStripMenuItem.Name = "ajouterUnJoueurToolStripMenuItem";
-            this.ajouterUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.ajouterUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(261, 28);
             this.ajouterUnJoueurToolStripMenuItem.Text = "Ajouter un joueur";
+            this.ajouterUnJoueurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnJoueurToolStripMenuItem_Click);
             // 
             // tournoiToolStripMenuItem
             // 
