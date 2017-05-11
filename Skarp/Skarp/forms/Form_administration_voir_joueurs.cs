@@ -27,12 +27,12 @@ namespace Skarp.forms {
             dg_joueur.Columns["idUser"].Visible = false;
             dg_joueur.Columns["isAdmin"].Visible = false;
             dg_joueur.Columns["isorganizer"].Visible = false;
+            dg_joueur.Columns["password"].Visible = false;
 
-            int taille = 135;
+            int taille = 162;
             dg_joueur.Columns["name"].Width = taille;
             dg_joueur.Columns["firstName"].Width = taille;
             dg_joueur.Columns["email"].Width = taille;
-            dg_joueur.Columns["password"].Width = taille;
             dg_joueur.Columns["pseudo"].Width = taille;
             dg_joueur.Columns["language"].Width = taille;
 

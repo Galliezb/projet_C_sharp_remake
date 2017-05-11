@@ -40,7 +40,7 @@ namespace Skarp {
             name_ = name;
             firstName_ = firstName;
             email_ = email;
-            pass_ = password;
+            pass_ = Fonction.Hash(password);
             pseudo_ = pseudo;
             language_ = language;
             isOrganizer_ = isOrganizer;
@@ -63,7 +63,7 @@ namespace Skarp {
             name_ = "non défini";
             firstName_ = "non défini";
             email_ = "non défini";
-            pass_ = password;
+            pass_ = Fonction.Hash( password );
             pseudo_ = pseudo;
             language_ = "fr";
             isOrganizer_ = false;
@@ -76,13 +76,7 @@ namespace Skarp {
         /// </summary>
         public int ID {
             get { return IDUser_; }
-            set {
-                if ( value < 1 ) {
-                    MessageBox.Show( Traducteur.traduction_[2] );
-                } else {
-                    IDUser_ = value;
-                }
-            }
+            set {IDUser_ = value;}
         }
 
 
@@ -91,15 +85,7 @@ namespace Skarp {
         /// </summary>
         public string name {
             get { return name_; }
-            set {
-
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[3] );
-                } else {
-                    name_ = value;
-                }
-
-            }
+            set {name_ = value;}
         }
 
 
@@ -108,14 +94,7 @@ namespace Skarp {
         /// </summary>
         public string firstName {
             get { return firstName_; }
-            set {
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[4] );
-                } else {
-                    firstName_ = value;
-                }
-
-            }
+            set {firstName_ = value;}
         }
 
         /// <summary>
@@ -123,29 +102,17 @@ namespace Skarp {
         /// </summary>
         public string email {
             get { return email_; }
-            set {
-
-                if ( value.Length > 255 ) {
-                    MessageBox.Show( Traducteur.traduction_[5] );
-                } else {
-                    email_ = value;
-                }
-
-            }
+            set {email_ = value;  }
         }
 
 
         /// <summary>
         /// récupère ou modifie le mot de passe non crypté de l'utilisateur ( max 50 caractères )
+        /// Définir le mot de passe, crée le hash automatiquement
         /// </summary>
         public string password {
             get { return pass_; }
-            set {
-                if ( value.Length > 255 ) {
-                    MessageBox.Show( Traducteur.traduction_[6] );
-                } else {
-                    pass_ = value;
-                }
+            set {pass_ = Fonction.Hash( value );
             }
         }
 
@@ -155,13 +122,7 @@ namespace Skarp {
         /// </summary>
         public string pseudo {
             get { return pseudo_; }
-            set {
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[7] );
-                } else {
-                    pseudo_ = value;
-                }
-            }
+            set {pseudo_ = value;}
         }
 
 
@@ -170,16 +131,7 @@ namespace Skarp {
         /// </summary>
         public string language {
             get { return language_; }
-            set {
-
-                if ( value.ToString() == "fr" || value.ToString() == "en" ) {
-                    language_ = value;
-                } else {
-
-                    MessageBox.Show( Traducteur.traduction_[8] );
-
-                }
-            }
+            set {language_ = value;}
         }
 
 
@@ -188,13 +140,7 @@ namespace Skarp {
         /// </summary>
         public bool isOrganizer {
             get { return isOrganizer_; }
-            set {
-                if ( value == true || value == false ) {
-                    isOrganizer_ = value;
-                } else {
-                    MessageBox.Show( Traducteur.traduction_[9] );
-                }
-            }
+            set {isOrganizer_ = value;}
         }
 
 
@@ -203,13 +149,7 @@ namespace Skarp {
         /// </summary>
         public bool isAdmin {
             get { return isAdmin_; }
-            set {
-                if ( value == true || value == false ) {
-                    isAdmin_ = value;
-                } else {
-                    MessageBox.Show( Traducteur.traduction_[10] );
-                }
-            }
+            set {isAdmin_ = value;}
         }
 
 
@@ -420,14 +360,13 @@ namespace Skarp {
         public bool identification () {
 
             bool result;
-
             maConnexionMysql.Laconnexion.Open();
             // creation requête et ajout à la commande
             string sqlRequest = "SELECT * FROM user where pseudo = @_pseudo && password =@_password ";
             maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_pseudo" , pseudo_ );
             maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_password" , pass_ );
             maConnexionMysql.Lacommande.CommandText = sqlRequest;
-            
+
             MySqlDataReader monReaderMysql = maConnexionMysql.Lacommande.ExecuteReader();
 
             // y'a une ligne go dans session sinon fail

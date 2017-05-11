@@ -205,5 +205,11 @@ namespace Skarp.forms {
             affichage = new forms.Form_Tournament_List_Started();
             displayForm();
         }
+
+        private void jajouteunmenutropfacilementToolStripMenuItem_Click ( object sender , EventArgs e ) {
+            closeAll();
+            affichage = new forms.Form_administration_active_directory();
+            displayForm();
+        }
     }
 }

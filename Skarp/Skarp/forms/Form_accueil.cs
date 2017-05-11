@@ -50,6 +50,7 @@ namespace Skarp.forms {
         }
 
         private void bt_identification_Click_1 ( object sender , EventArgs e ) {
+
             Users userConnexion = new Users( tb_login.Text , tb_pwd.Text );
 
             if ( userConnexion.identification() ) {
@@ -61,7 +62,7 @@ namespace Skarp.forms {
                 this.Hide();
 
             } else {
-                MessageBox.Show(Traducteur.traduction_[2]);
+                MessageBox.Show(Traducteur.traduction_[1]);
             }
 
 
@@ -90,6 +91,8 @@ namespace Skarp.forms {
                 newUser.name = tb_nom.Text;
                 newUser.email = tb_email.Text;
                 newUser.password = tb_password1.Text;
+                newUser.pseudo = tb_pseudo.Text;
+
                 if ( cb_choix_langue.SelectedItem.ToString() == Traducteur.traduction_[55] ) {
                     newUser.language = "fr";
                 } else if ( cb_choix_langue.SelectedItem.ToString() == Traducteur.traduction_[56] ) {
