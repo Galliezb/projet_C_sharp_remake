@@ -27,6 +27,7 @@ namespace Skarp.forms
             monTournoi.endDate = dtpEndDate.Value;
             monTournoi.Description = rtbDescription.Text;
             monTournoi.maxPlayer = Convert.ToInt32(tbMaxPlayer.Text);
+            monTournoi.jeu = tb_Jeu.Text;
 
 
             monTournoi.insert();
@@ -38,6 +39,7 @@ namespace Skarp.forms
             dtpStartDate.Value = DateTime.Now;
             dtpEndDate.Value =DateTime.Now.AddDays(3);           
             rtbDescription.Clear();
+            tb_Jeu.Items.Clear();
           
             
         }

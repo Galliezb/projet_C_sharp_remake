@@ -19,6 +19,7 @@ namespace Skarp {
         string type_;
         int maxPlayer_;
         DatabaseConnection dbConnect = new DatabaseConnection();
+        string jeu_;
 
 
         public Tournament () { }
@@ -93,6 +94,11 @@ namespace Skarp {
             set { maxPlayer_ = value;}
             
         }
+        public string jeu
+        {
+            get { return jeu_; }
+            set { jeu_ = value; }
+        }
 
         public void update () {
 
@@ -100,7 +106,7 @@ namespace Skarp {
 
                 dbConnect.Laconnexion.Open();
                 // creation requête et ajout à la commande
-                string sqlRequest = "UPDATE tournament SET idOrganizer=@_idOrganizer , name=@_name , description=@_description , startDate = @_startDate , endDate = @_endDate , type=@_type , maxPlayer=@_maxPlayer WHERE idTournament = @_idTournament ";
+                string sqlRequest = "UPDATE tournament SET idOrganizer=@_idOrganizer , name=@_name , description=@_description , startDate = @_startDate , endDate = @_endDate , type=@_type , maxPlayer=@_maxPlayer, jeu=@_jeu WHERE idTournament = @_idTournament ";
                 dbConnect.Lacommande.Parameters.AddWithValue( "@_idOrganizer" , idOrganizer_ );
                 dbConnect.Lacommande.Parameters.AddWithValue( "@_name" , name_ );
                 dbConnect.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
@@ -110,6 +116,7 @@ namespace Skarp {
                 dbConnect.Lacommande.Parameters.AddWithValue( "@_type" , type_ );
                 dbConnect.Lacommande.Parameters.AddWithValue( "@_maxPlayer" , maxPlayer_ );
                 dbConnect.Lacommande.Parameters.AddWithValue( "@_idTournament" , idTournament_ );
+                dbConnect.Lacommande.Parameters.AddWithValue( "@_jeu" , jeu_ );
 
                 dbConnect.Lacommande.CommandText = sqlRequest;
 
@@ -131,7 +138,7 @@ namespace Skarp {
 
             dbConnect.Laconnexion.Open();
             // creation requête et ajout à la commande
-            string sqlRequest = "INSERT INTO tournament SET idOrganizer=@_idOrganizer , name=@_name , description=@_description , startDate = @_startDate , endDate = @_endDate , type=@_type , maxPlayer=@_maxPlayer";
+            string sqlRequest = "INSERT INTO tournament SET idOrganizer=@_idOrganizer , name=@_name , description=@_description , startDate = @_startDate , endDate = @_endDate , type=@_type , maxPlayer=@_maxPlayer, jeu=@_jeu";
             dbConnect.Lacommande.Parameters.AddWithValue( "@_idOrganizer" , idOrganizer_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_name" , name_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_description" , description_ );
@@ -139,6 +146,8 @@ namespace Skarp {
             dbConnect.Lacommande.Parameters.AddWithValue( "@_endDate" , endDate_.ToString("yyyy-MM-dd"));
             dbConnect.Lacommande.Parameters.AddWithValue( "@_type" , type_ );
             dbConnect.Lacommande.Parameters.AddWithValue( "@_maxPlayer" , maxPlayer_ );
+            dbConnect.Lacommande.Parameters.AddWithValue("@_jeu", jeu_);
+
 
             dbConnect.Lacommande.CommandText = sqlRequest;
             MessageBox.Show(dbConnect.Lacommande.CommandText.ToString());

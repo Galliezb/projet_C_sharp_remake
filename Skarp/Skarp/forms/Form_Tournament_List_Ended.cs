@@ -24,7 +24,7 @@ namespace Skarp.forms
             foreach (DataRow rw in dataSetAllTournaments.Tables["tournament"].Rows)
             {
                 DateTime check = Convert.ToDateTime(rw["endDate"]);
-                if (DateTime.Now < check)
+                if (DateTime.Now > check)
                 {
                     cb_Name_Tournament.Items.Add(rw["name"].ToString());
                 }
@@ -45,6 +45,7 @@ namespace Skarp.forms
                     dateTimePicker1.Text = rw["startDate"].ToString();
                     dateTimePicker2.Text = rw["endDate"].ToString();
                     tb_Type.Text = rw["type"].ToString();
+                    tb_Jeu.Text = rw["jeu"].ToString();
                     break;
 
                 }

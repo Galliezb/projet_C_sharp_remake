@@ -38,6 +38,8 @@
             this.lb_Description = new System.Windows.Forms.Label();
             this.lb_explication = new System.Windows.Forms.Label();
             this.cb_Name_Tournament = new System.Windows.Forms.ComboBox();
+            this.lbJeu = new System.Windows.Forms.Label();
+            this.tb_Jeu = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // dateTimePicker2
@@ -130,12 +132,33 @@
             this.cb_Name_Tournament.TabIndex = 42;
             this.cb_Name_Tournament.SelectedIndexChanged += new System.EventHandler(this.cb_Name_Tournament_SelectedIndexChanged);
             // 
+            // lbJeu
+            // 
+            this.lbJeu.Font = new System.Drawing.Font("Century Schoolbook", 12F);
+            this.lbJeu.Location = new System.Drawing.Point(46, 407);
+            this.lbJeu.Name = "lbJeu";
+            this.lbJeu.Size = new System.Drawing.Size(124, 24);
+            this.lbJeu.TabIndex = 52;
+            this.lbJeu.Text = "Jeu :";
+            this.lbJeu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tb_Jeu
+            // 
+            this.tb_Jeu.Location = new System.Drawing.Point(516, 406);
+            this.tb_Jeu.Multiline = true;
+            this.tb_Jeu.Name = "tb_Jeu";
+            this.tb_Jeu.ReadOnly = true;
+            this.tb_Jeu.Size = new System.Drawing.Size(238, 24);
+            this.tb_Jeu.TabIndex = 53;
+            // 
             // Form_Tournament_List_Started
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.tb_Jeu);
+            this.Controls.Add(this.lbJeu);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lb_EndDate);
@@ -149,7 +172,7 @@
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Tournament_List_Started";
             this.Text = "Form_Tournament_List_Started";
             this.Load += new System.EventHandler(this.Form_Tournament_List_Started_Load);
@@ -170,5 +193,7 @@
         private System.Windows.Forms.Label lb_Description;
         private System.Windows.Forms.Label lb_explication;
         private System.Windows.Forms.ComboBox cb_Name_Tournament;
+        private System.Windows.Forms.Label lbJeu;
+        private System.Windows.Forms.TextBox tb_Jeu;
     }
 }
