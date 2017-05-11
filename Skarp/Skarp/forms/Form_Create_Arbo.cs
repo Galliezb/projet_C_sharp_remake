@@ -17,7 +17,7 @@ namespace Skarp.forms
         public Form_Create_Arbo()
         {
             InitializeComponent();
-            //DataSet dataAllTeam = new DataSet();
+            
             forGettingAllTeams = new Team();
         }
 
