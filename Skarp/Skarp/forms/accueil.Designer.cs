@@ -43,13 +43,14 @@
             this.ajouterUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionBDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desJoueursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promouvoirUnUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.desÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.webServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,8 @@
             this.toolStripMenuItem1,
             this.test2ToolStripMenuItem,
             this.organisationToolStripMenuItem,
-            this.fesdfsfsToolStripMenuItem});
+            this.fesdfsfsToolStripMenuItem,
+            this.webServiceToolStripMenuItem});
             this.menu_general.Location = new System.Drawing.Point(0, 0);
             this.menu_general.Name = "menu_general";
             this.menu_general.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -223,6 +225,13 @@
             this.desJoueursToolStripMenuItem.Text = "Des joueurs";
             this.desJoueursToolStripMenuItem.Click += new System.EventHandler(this.desJoueursToolStripMenuItem_Click_1);
             // 
+            // desÉquipesToolStripMenuItem
+            // 
+            this.desÉquipesToolStripMenuItem.Name = "desÉquipesToolStripMenuItem";
+            this.desÉquipesToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.desÉquipesToolStripMenuItem.Text = "Des équipes";
+            this.desÉquipesToolStripMenuItem.Click += new System.EventHandler(this.desÉquipesToolStripMenuItem_Click);
+            // 
             // promouvoirUnUtilisateurToolStripMenuItem
             // 
             this.promouvoirUnUtilisateurToolStripMenuItem.Name = "promouvoirUnUtilisateurToolStripMenuItem";
@@ -268,12 +277,12 @@
             this.jajouteunmenutropfacilementToolStripMenuItem.Text = "Active Directory";
             this.jajouteunmenutropfacilementToolStripMenuItem.Click += new System.EventHandler(this.jajouteunmenutropfacilementToolStripMenuItem_Click);
             // 
-            // desÉquipesToolStripMenuItem
+            // webServiceToolStripMenuItem
             // 
-            this.desÉquipesToolStripMenuItem.Name = "desÉquipesToolStripMenuItem";
-            this.desÉquipesToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
-            this.desÉquipesToolStripMenuItem.Text = "Des équipes";
-            this.desÉquipesToolStripMenuItem.Click += new System.EventHandler(this.desÉquipesToolStripMenuItem_Click);
+            this.webServiceToolStripMenuItem.Name = "webServiceToolStripMenuItem";
+            this.webServiceToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.webServiceToolStripMenuItem.Text = "Web Service";
+            this.webServiceToolStripMenuItem.Click += new System.EventHandler(this.webServiceToolStripMenuItem_Click);
             // 
             // accueil
             // 
@@ -327,6 +336,7 @@
         private System.Windows.Forms.ToolStripMenuItem organisationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem voirEnDétailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desÉquipesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem webServiceToolStripMenuItem;
     }
 }
 
