@@ -40,6 +40,7 @@
             this.cb_Name_Tournament = new System.Windows.Forms.ComboBox();
             this.tb_Jeu = new System.Windows.Forms.TextBox();
             this.lbJeu = new System.Windows.Forms.Label();
+            this.lb_voir_detail = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // dateTimePicker2
@@ -151,12 +152,24 @@
             this.lbJeu.Text = "Jeu :";
             this.lbJeu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // lb_voir_detail
+            // 
+            this.lb_voir_detail.AutoSize = true;
+            this.lb_voir_detail.Location = new System.Drawing.Point(650, 449);
+            this.lb_voir_detail.Name = "lb_voir_detail";
+            this.lb_voir_detail.Size = new System.Drawing.Size(120, 20);
+            this.lb_voir_detail.TabIndex = 57;
+            this.lb_voir_detail.TabStop = true;
+            this.lb_voir_detail.Text = "Voir le résultat";
+            this.lb_voir_detail.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_voir_detail_LinkClicked);
+            // 
             // Form_Tournament_List_Ended
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.lb_voir_detail);
             this.Controls.Add(this.tb_Jeu);
             this.Controls.Add(this.lbJeu);
             this.Controls.Add(this.dateTimePicker2);
@@ -194,5 +207,6 @@
         private System.Windows.Forms.ComboBox cb_Name_Tournament;
         private System.Windows.Forms.TextBox tb_Jeu;
         private System.Windows.Forms.Label lbJeu;
+        private System.Windows.Forms.LinkLabel lb_voir_detail;
     }
 }

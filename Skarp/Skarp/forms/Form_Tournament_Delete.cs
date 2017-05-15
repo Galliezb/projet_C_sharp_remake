@@ -72,5 +72,9 @@ namespace Skarp.forms
             dateTimePicker1.Value = DateTime.Now;
             dateTimePicker2.Value = DateTime.Now;
         }
+
+        private void Form_Tournament_Delete_Load ( object sender , EventArgs e ) {
+
+        }
     }
 }

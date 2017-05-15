@@ -74,6 +74,7 @@
             this.cbR1T1.Name = "cbR1T1";
             this.cbR1T1.Size = new System.Drawing.Size(200, 28);
             this.cbR1T1.TabIndex = 2;
+            this.cbR1T1.SelectedIndexChanged += new System.EventHandler(this.r1t1r1t2SelectionChanged);
             // 
             // cbR1T2
             // 
@@ -82,6 +83,7 @@
             this.cbR1T2.Name = "cbR1T2";
             this.cbR1T2.Size = new System.Drawing.Size(200, 28);
             this.cbR1T2.TabIndex = 3;
+            this.cbR1T2.SelectedIndexChanged += new System.EventHandler(this.r1t1r1t2SelectionChanged);
             // 
             // cbR1T3
             // 
@@ -90,6 +92,7 @@
             this.cbR1T3.Name = "cbR1T3";
             this.cbR1T3.Size = new System.Drawing.Size(200, 28);
             this.cbR1T3.TabIndex = 4;
+            this.cbR1T3.SelectedIndexChanged += new System.EventHandler(this.r1t3r1t4SelectionChanged);
             // 
             // cbR1T4
             // 
@@ -98,6 +101,7 @@
             this.cbR1T4.Name = "cbR1T4";
             this.cbR1T4.Size = new System.Drawing.Size(200, 28);
             this.cbR1T4.TabIndex = 5;
+            this.cbR1T4.SelectedIndexChanged += new System.EventHandler(this.r1t3r1t4SelectionChanged);
             // 
             // cbR1T5
             // 
@@ -106,6 +110,7 @@
             this.cbR1T5.Name = "cbR1T5";
             this.cbR1T5.Size = new System.Drawing.Size(200, 28);
             this.cbR1T5.TabIndex = 6;
+            this.cbR1T5.SelectedIndexChanged += new System.EventHandler(this.r1t5r1t6SelectionChanged);
             // 
             // cbR1T6
             // 
@@ -114,6 +119,7 @@
             this.cbR1T6.Name = "cbR1T6";
             this.cbR1T6.Size = new System.Drawing.Size(200, 28);
             this.cbR1T6.TabIndex = 7;
+            this.cbR1T6.SelectedIndexChanged += new System.EventHandler(this.r1t5r1t6SelectionChanged);
             // 
             // cbR1T7
             // 
@@ -122,6 +128,7 @@
             this.cbR1T7.Name = "cbR1T7";
             this.cbR1T7.Size = new System.Drawing.Size(200, 28);
             this.cbR1T7.TabIndex = 8;
+            this.cbR1T7.SelectedIndexChanged += new System.EventHandler(this.r1t7r1t8SelectionChanged);
             // 
             // cbR1T8
             // 
@@ -130,6 +137,7 @@
             this.cbR1T8.Name = "cbR1T8";
             this.cbR1T8.Size = new System.Drawing.Size(200, 28);
             this.cbR1T8.TabIndex = 9;
+            this.cbR1T8.SelectedIndexChanged += new System.EventHandler(this.r1t7r1t8SelectionChanged);
             // 
             // cbR2T1
             // 
@@ -138,6 +146,7 @@
             this.cbR2T1.Name = "cbR2T1";
             this.cbR2T1.Size = new System.Drawing.Size(200, 28);
             this.cbR2T1.TabIndex = 10;
+            this.cbR2T1.SelectedIndexChanged += new System.EventHandler(this.r2t1r2t2SelectionChanged);
             // 
             // cbR2T2
             // 
@@ -146,6 +155,7 @@
             this.cbR2T2.Name = "cbR2T2";
             this.cbR2T2.Size = new System.Drawing.Size(200, 28);
             this.cbR2T2.TabIndex = 11;
+            this.cbR2T2.SelectedIndexChanged += new System.EventHandler(this.r2t1r2t2SelectionChanged);
             // 
             // cbR2T3
             // 
@@ -154,6 +164,7 @@
             this.cbR2T3.Name = "cbR2T3";
             this.cbR2T3.Size = new System.Drawing.Size(200, 28);
             this.cbR2T3.TabIndex = 12;
+            this.cbR2T3.SelectedIndexChanged += new System.EventHandler(this.r2t3r2t4SelectionChanged);
             // 
             // cbR2T4
             // 
@@ -162,6 +173,7 @@
             this.cbR2T4.Name = "cbR2T4";
             this.cbR2T4.Size = new System.Drawing.Size(200, 28);
             this.cbR2T4.TabIndex = 13;
+            this.cbR2T4.SelectedIndexChanged += new System.EventHandler(this.r2t3r2t4SelectionChanged);
             // 
             // cbR3T1
             // 
@@ -170,6 +182,7 @@
             this.cbR3T1.Name = "cbR3T1";
             this.cbR3T1.Size = new System.Drawing.Size(200, 28);
             this.cbR3T1.TabIndex = 14;
+            this.cbR3T1.SelectedIndexChanged += new System.EventHandler(this.r3t1r3t2SelectionChanged);
             // 
             // cbR3T2
             // 
@@ -178,6 +191,7 @@
             this.cbR3T2.Name = "cbR3T2";
             this.cbR3T2.Size = new System.Drawing.Size(200, 28);
             this.cbR3T2.TabIndex = 15;
+            this.cbR3T2.SelectedIndexChanged += new System.EventHandler(this.r3t1r3t2SelectionChanged);
             // 
             // cbwinner
             // 
@@ -205,6 +219,7 @@
             this.btSubmit.TabIndex = 66;
             this.btSubmit.Text = "SUBMIT";
             this.btSubmit.UseVisualStyleBackColor = true;
+            this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
             // 
             // Form_Create_Arbo
             // 

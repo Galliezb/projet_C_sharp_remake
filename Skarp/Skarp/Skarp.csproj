@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\ADConnection.cs" />
+    <Compile Include="classes\Arbo.cs" />
     <Compile Include="classes\DatabaseConnection.cs" />
     <Compile Include="classes\Fonction.cs" />
     <Compile Include="classes\News.cs" />
@@ -206,6 +207,12 @@
     <Compile Include="forms\Form_Tournament_Delete.Designer.cs">
       <DependentUpon>Form_Tournament_Delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_tournament_details_read_only.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_tournament_details_read_only.Designer.cs">
+      <DependentUpon>Form_tournament_details_read_only.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form_Tournament_List_Ended.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Tournament_Delete.resx">
       <DependentUpon>Form_Tournament_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_tournament_details_read_only.resx">
+      <DependentUpon>Form_tournament_details_read_only.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Tournament_List_Ended.resx">
       <DependentUpon>Form_Tournament_List_Ended.cs</DependentUpon>
@@ -430,6 +440,7 @@
     <None Include="Ressources\button_news %281%29.png" />
     <None Include="Ressources\calendar.png" />
     <None Include="Ressources\dark-souls.jpg" />
+    <None Include="Ressources\details_tournament.png" />
     <Content Include="Ressources\DLL\MySql.Data.dll" />
   </ItemGroup>
   <ItemGroup>

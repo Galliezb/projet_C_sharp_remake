@@ -165,6 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Tournament_Delete";
             this.Text = "Form_Tournament_Delete";
+            this.Load += new System.EventHandler(this.Form_Tournament_Delete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
