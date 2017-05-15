@@ -16,11 +16,11 @@ namespace Skarp.forms
     {
         Users newUser;
         ADConnection ADCo = new ADConnection();
-        string result;
+        
         public Form_Administration_Add_User()
         {
             InitializeComponent();
-            //ADCo = new ADConnection();
+            
             cbbSelectType.SelectedIndex = 0;
             cbLanguage.Text = Session.language;
         }
@@ -30,7 +30,7 @@ namespace Skarp.forms
 
         private void btSubmit_Click_1(object sender, EventArgs e)
         {
-            /*if (tbFirstName.Text.Length > 50)
+            if (tbFirstName.Text.Length > 50)
             {
                 MessageBox.Show(Traducteur.traduction_[4]);
             }
@@ -50,13 +50,17 @@ namespace Skarp.forms
             {
                 MessageBox.Show(Traducteur.traduction_[57]);
             }
+            else if (tbPwd.Text == tbPseudo.Text)
+            {
+                MessageBox.Show("pseudo et mdp identiques");
+            }
             else if (cbLanguage.SelectedItem.ToString() != "fr" && cbLanguage.SelectedItem.ToString() != "en")
             {
                 MessageBox.Show(Traducteur.traduction_[8]);
             }
             else
             {
-                /*
+                
                 bool done = false;
                 if (cbbSelectType.SelectedItem.ToString() == "Administrator")
                 {
@@ -79,18 +83,18 @@ namespace Skarp.forms
                 {
                     MessageBox.Show("Error : Aucune insertion en BDD");
                 }
-                */
                 
-                if (true) //done
+                
+                if (done) 
                 {
-                // ok donc on sait que tout ce qui arrive ici est correct, go débug plus loin
-                //MessageBox.Show(newUser.pseudo + " " + newUser.name + " " + newUser.firstName + " " + tbPwd.Text + " " + newUser.email + " " + rtbDesc.Text.ToString());
+                
 
-                result = ADCo.CreateUserAccount(tbPseudo.Text.ToString(), tbPwd.Text.ToString());
-                    // ok ici, il faut vérifier que toutes les valeurs sont ok genre
-                    //MessageBox.Show("User ajouté à l AD: "+result);
+                    ADCo.CreateUserAccount(tbPseudo.Text.ToString(), tbPwd.Text.ToString());
+                    
 
-                    // y'a pas d'ajout en BDD ??? Ha merde au dessus :D
+                    MessageBox.Show("User ajouté à l AD et a la BDD: ");
+
+                    
 
                     cbbSelectType.SelectedIndex = 0;
                     tbNameUser.Text = "";
@@ -102,7 +106,7 @@ namespace Skarp.forms
                     rtbDesc.Text = "";
                     textBox1.Text = "";
                 }
-           // }
+            }
 
                 
 
