@@ -228,36 +228,25 @@ namespace Skarp {
 
         }
 
-        public Dictionary<string,int> getAllUserInTeam ( int idTeam ) {
+        public Dictionary<int , string> getAllUserInTeam ( int idTeam ) {
 
             dbConnect.Laconnexion.Open();
-            // creation requête et ajout à la commande
-            string sqlRequest = "SELECT user.pseudo, userinteam.idUser FROM userInTeam RIGHT JOIN user On userInTeam.idUser=user.idUser WHERE userInTeam.idTeam=@_idTeam";
+            // creation requête et ajout à la commande                       gauche              DROIT
+            string sqlRequest = "SELECT user.pseudo, userInTeam.idUser FROM userInTeam LEFT JOIN user ON user.idUser=userInTeam.idUser WHERE userInTeam.idTeam=@_idTeam";
+            // Bruno du passé, merci d'éviter les requêtes tordues basé sur des concepts du LEFT JOIN quand un IN simple suffit, merci !
+            // celle-ci aurait été tellement plus simple et compréhensible ! Dommage... Je t'ai connu meilleur
+            ///string sqlRequest = "SELECT pseudo, idUser FROM user WHERE idUser IN (SELECT idUser FROM userInTeam WHERE idTeam=" + idTeam + ")";
 
             dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam );
             dbConnect.Lacommande.CommandText = sqlRequest;
 
             MySqlDataReader monReaderMysql = dbConnect.Lacommande.ExecuteReader();
 
-            Dictionary<string,int> dictonnary = new Dictionary<string , int>();
+            Dictionary<int , string> dictonnary = new Dictionary<int , string>();
 
             while ( monReaderMysql.Read() ) {
-                dictonnary.Add( monReaderMysql["pseudo"].ToString() , Convert.ToInt32( monReaderMysql["idUser"].ToString() ) );
+                dictonnary.Add( Convert.ToInt32( monReaderMysql["idUser"].ToString() ) , monReaderMysql["pseudo"].ToString() );
             }
-
-            // clear commande et ferme la connection
-            dbConnect.Lacommande.Parameters.Clear();
-
-
-            // delete tout de la BDD, on les réinsère après
-            // creation requête et ajout à la commande
-            sqlRequest = "DELETE FROM userInTeam WHERE idTeam=@_idTeam";
-
-            dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam );
-            dbConnect.Lacommande.CommandText = sqlRequest;
-
-            // exécute la requête
-            dbConnect.Lacommande.ExecuteNonQuery();
 
             // clear commande et ferme la connection
             dbConnect.Lacommande.Parameters.Clear();
@@ -267,19 +256,19 @@ namespace Skarp {
 
         }
 
-        public Dictionary<string , int> getAllUserNotInTeam ( int idTeam ) {
+        public Dictionary<int,string> getAllUserNotInTeam ( int idTeam ) {
 
             dbConnect.Laconnexion.Open();
-            // creation requête et ajout à la commande
+            // creation requête et ajout à la commande                                (15,24)
             string sqlRequest = "SELECT pseudo, idUser FROM user WHERE idUser NOT IN (SELECT idUser FROM userInTeam WHERE idTeam="+idTeam+")";
             dbConnect.Lacommande.CommandText = sqlRequest;
 
             MySqlDataReader monReaderMysql = dbConnect.Lacommande.ExecuteReader();
 
-            Dictionary<string , int> dictonnary = new Dictionary<string , int>();
+            Dictionary<int , string> dictonnary = new Dictionary<int , string>();
 
             while ( monReaderMysql.Read() ) {
-                dictonnary.Add( monReaderMysql["pseudo"].ToString() , Convert.ToInt32( monReaderMysql["idUser"].ToString() ) );
+                dictonnary.Add( Convert.ToInt32( monReaderMysql["idUser"].ToString()), monReaderMysql["pseudo"].ToString() );
             }
 
             // clear commande et ferme la connection
@@ -317,7 +306,32 @@ namespace Skarp {
             }
 
         }
+        public bool delUserInTeam ( int idTeam , int idUser ) {
 
+            if ( idTeam > 0 && idUser > 0 ) {
+
+                dbConnect.Laconnexion.Open();
+                // creation requête et ajout à la commande
+                string sqlRequest = "DELETE FROM userInTeam WHERE idUser=@_idUser && idTeam=@_idTeam";
+
+                dbConnect.Lacommande.Parameters.AddWithValue( "@_idUser" , idUser );
+                dbConnect.Lacommande.Parameters.AddWithValue( "@_idTeam" , idTeam );
+                dbConnect.Lacommande.CommandText = sqlRequest;
+
+                // exécute la requête
+                dbConnect.Lacommande.ExecuteNonQuery();
+
+                // clear commande et ferme la connection
+                dbConnect.Lacommande.Parameters.Clear();
+                dbConnect.Laconnexion.Close();
+
+                return true;
+
+            } else {
+                return false;
+            }
+
+        }
 
     }
 }

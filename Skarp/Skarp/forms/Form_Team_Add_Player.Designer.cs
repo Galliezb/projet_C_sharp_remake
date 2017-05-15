@@ -44,7 +44,7 @@
             this.cb_choisir_equipe.FormattingEnabled = true;
             this.cb_choisir_equipe.Location = new System.Drawing.Point(209, 84);
             this.cb_choisir_equipe.Name = "cb_choisir_equipe";
-            this.cb_choisir_equipe.Size = new System.Drawing.Size(327, 31);
+            this.cb_choisir_equipe.Size = new System.Drawing.Size(327, 28);
             this.cb_choisir_equipe.TabIndex = 1;
             this.cb_choisir_equipe.SelectedIndexChanged += new System.EventHandler(this.cb_choisir_equipe_SelectedIndexChanged);
             // 
@@ -71,20 +71,20 @@
             // listbox_joueur_equipe
             // 
             this.listbox_joueur_equipe.FormattingEnabled = true;
-            this.listbox_joueur_equipe.ItemHeight = 23;
+            this.listbox_joueur_equipe.ItemHeight = 20;
             this.listbox_joueur_equipe.Location = new System.Drawing.Point(50, 166);
             this.listbox_joueur_equipe.Name = "listbox_joueur_equipe";
-            this.listbox_joueur_equipe.Size = new System.Drawing.Size(300, 326);
+            this.listbox_joueur_equipe.Size = new System.Drawing.Size(300, 324);
             this.listbox_joueur_equipe.Sorted = true;
             this.listbox_joueur_equipe.TabIndex = 2;
             // 
             // listbox_joueurs
             // 
             this.listbox_joueurs.FormattingEnabled = true;
-            this.listbox_joueurs.ItemHeight = 23;
+            this.listbox_joueurs.ItemHeight = 20;
             this.listbox_joueurs.Location = new System.Drawing.Point(450, 166);
             this.listbox_joueurs.Name = "listbox_joueurs";
-            this.listbox_joueurs.Size = new System.Drawing.Size(300, 326);
+            this.listbox_joueurs.Size = new System.Drawing.Size(300, 324);
             this.listbox_joueurs.Sorted = true;
             this.listbox_joueurs.TabIndex = 5;
             // 
@@ -96,6 +96,7 @@
             this.button_supprimer.TabIndex = 68;
             this.button_supprimer.Text = ">>>>>";
             this.button_supprimer.UseVisualStyleBackColor = true;
+            this.button_supprimer.Click += new System.EventHandler(this.button_supprimer_Click);
             // 
             // button_ajouter
             // 
@@ -105,6 +106,7 @@
             this.button_ajouter.TabIndex = 69;
             this.button_ajouter.Text = "<<<<<";
             this.button_ajouter.UseVisualStyleBackColor = true;
+            this.button_ajouter.Click += new System.EventHandler(this.button_ajouter_Click);
             // 
             // lb_equipe_joueur
             // 
@@ -126,7 +128,7 @@
             // 
             // Form_Team_Add_Player
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
