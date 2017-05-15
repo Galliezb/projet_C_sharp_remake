@@ -279,6 +279,7 @@
             this.Name = "Form_Administration_Add_User";
             this.Text = "Form_Administration_Add_User";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_Administration_Add_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

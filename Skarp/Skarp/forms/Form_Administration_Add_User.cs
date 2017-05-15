@@ -15,12 +15,14 @@ namespace Skarp.forms
     public partial class Form_Administration_Add_User : Form
     {
         Users newUser;
-        ADConnection ADCo;
+        ADConnection ADCo = new ADConnection();
+        string result;
         public Form_Administration_Add_User()
         {
             InitializeComponent();
-            ADCo = new ADConnection();
+            //ADCo = new ADConnection();
             cbbSelectType.SelectedIndex = 0;
+            cbLanguage.Text = Session.language;
         }
 
        
@@ -54,6 +56,7 @@ namespace Skarp.forms
             }
             else
             {
+                /*
                 bool done = false;
                 if (cbbSelectType.SelectedItem.ToString() == "Administrator")
                 {
@@ -76,16 +79,16 @@ namespace Skarp.forms
                 {
                     MessageBox.Show("Error : Aucune insertion en BDD");
                 }
-                
+                */
 
-                if (done)
+                if (true) //done
                 {
                     // ok donc on sait que tout ce qui arrive ici est correct, go débug plus loin
                     //MessageBox.Show(newUser.pseudo + " " + newUser.name + " " + newUser.firstName + " " + tbPwd.Text + " " + newUser.email + " " + rtbDesc.Text.ToString());
-
-                    ADCo.createUser(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
+                    
+                     result =  ADCo.CreateUserAccount("MAMADOU","SuperMAMA123");
                     // ok ici, il faut vérifier que toutes les valeurs sont ok genre
-                    MessageBox.Show("User ajouté à la BDD");
+                    MessageBox.Show("User ajouté à l AD: "+result);
 
                     // y'a pas d'ajout en BDD ??? Ha merde au dessus :D
 
@@ -103,6 +106,11 @@ namespace Skarp.forms
 
                 
 
+        }
+
+        private void Form_Administration_Add_User_Load(object sender, EventArgs e)
+        {
+            
         }
     }
     

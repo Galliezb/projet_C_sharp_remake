@@ -21,14 +21,16 @@ namespace Skarp.classes
         {
             try
             {
-                DirectoryEntry dirEntry = new DirectoryEntry("LDAP://10.11.1.143/ CN=groupe,OU=nosUser,DC=EVILCORP,DC=COM", "Administrateur", "Azer123");
-                dirEntry.Properties["member"].Add("CN=" + user + ",OU=nosUser,DC=EVILCORP,DC=com");
+                DirectoryEntry dirEntry = new DirectoryEntry("LDAP://192.168.1.54/CN=groupeUtilisateurs,OU=nosUtilisateurs,DC=BNN,DC=BE");
+
+               // DirectoryEntry dirEntry = new DirectoryEntry(@"LDAP://192.168.1.54", "Administrateur", "Password1");
+                dirEntry.Properties["member"].Add("CN=" + user + ",OU=nosUtilisateurs,DC=BNN,DC=be");
                 dirEntry.CommitChanges();
                 dirEntry.Close();
             }
             catch (System.DirectoryServices.DirectoryServicesCOMException E)
             {
-                Console.Write(E.Message.ToString());
+                MessageBox.Show(E.Message.ToString());
 
             }
         }
@@ -37,31 +39,46 @@ namespace Skarp.classes
             string oGUID = string.Empty;
             try
             {
+               
+                // on se connecte
+                string connectionPrefix = "OU=nosUtilisateurs,DC=BNN,DC=be";
+                DirectoryEntry dirEntry = new DirectoryEntry(@"LDAP://192.168.1.54" , "Administrateur", "Password1");
 
-                string connectionPrefix = "LDAP://192.168.1.54/ OU=nosUtilisateurs,dc=BBN,dc=be";
-                DirectoryEntry dirEntry = new DirectoryEntry(connectionPrefix, "Administrateur", "Password1");
+                int test = 1;
+
+                // crée un nouveau membre
                 DirectoryEntry newUser = dirEntry.Children.Add("CN=" + userName, "user");
+                // on définit ses proprité
+                //newUser.Properties["samAccountName"].Value = userName; // son nom de compte
+                //newUser.Properties["userAccountControl"].Value = 0x0200; // user compte normal 
+                // on enregistre les infos
+                //newUser.CommitChanges();
 
-                newUser.Properties["samAccountName"].Value = userName;
-                newUser.CommitChanges();
+                //oGUID = newUser.Guid.ToString();
+                /*
+                try
 
-                oGUID = newUser.Guid.ToString();
-
-                newUser.Invoke("SetPassword", new object[] { userPassword });
-                newUser.CommitChanges();
-
-                newUser.Properties["userAccountControl"].Value = 0x0200;
+                {
+                    newUser.Invoke("SetPassword", userPassword);
+                }
+                catch (System.Reflection.TargetInvocationException E)
+                {
+                    MessageBox.Show("erreur mdp PUTAIN " + E.Message.ToString());
+                }
+                */
 
                 newUser.CommitChanges();
                 AddToGroup(userName);
+                
                 dirEntry.Close();
-                newUser.Close();
+                //newUser.Close();
+               
 
             }
             catch (System.DirectoryServices.DirectoryServicesCOMException E)
             {
-
-
+                MessageBox.Show("erreur try "+E.Message.ToString());
+                
             }
             return oGUID;
         }
