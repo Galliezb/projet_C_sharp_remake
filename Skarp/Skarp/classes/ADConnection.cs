@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.DirectoryServices;
 using System.Windows.Forms;
-
+using System.DirectoryServices.AccountManagement;
 namespace Skarp.classes
 {
     class ADConnection
@@ -58,6 +58,8 @@ namespace Skarp.classes
             {
                 MessageBox.Show(Ex.Message);
             }
+
+            GroupPrincipal nosUsers = GroupPrincipal.FindByIdentity()
         }
     }
 
