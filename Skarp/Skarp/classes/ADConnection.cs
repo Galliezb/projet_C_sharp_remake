@@ -21,9 +21,9 @@ namespace Skarp.classes
         {
             try
             {
-                DirectoryEntry dirEntry = new DirectoryEntry("LDAP://192.168.1.54/CN=groupeUtilisateurs,OU=nosUtilisateurs,DC=BNN,DC=BE");
+                DirectoryEntry dirEntry = new DirectoryEntry("LDAP://192.168.1.54/ CN=groupeUtilisateurs,OU=nosUtilisateurs,DC=BNN,DC=BE","Administrateur","Password1");
 
-               // DirectoryEntry dirEntry = new DirectoryEntry(@"LDAP://192.168.1.54", "Administrateur", "Password1");
+               // DirectoryEntry dirEntry = new DirectoryEntry("LDAP://192.168.1.54", "Administrateur", "Password1");
                 dirEntry.Properties["member"].Add("CN=" + user + ",OU=nosUtilisateurs,DC=BNN,DC=be");
                 dirEntry.CommitChanges();
                 dirEntry.Close();
@@ -42,31 +42,33 @@ namespace Skarp.classes
                
                 // on se connecte
                 string connectionPrefix = "OU=nosUtilisateurs,DC=BNN,DC=be";
-                DirectoryEntry dirEntry = new DirectoryEntry(@"LDAP://192.168.1.54" , "Administrateur", "Password1");
+                DirectoryEntry dirEntry = new DirectoryEntry("LDAP://192.168.1.54/ OU=nosUtilisateurs,DC=BNN,DC=be", "Administrateur","Password1");
 
                 int test = 1;
 
                 // crée un nouveau membre
                 DirectoryEntry newUser = dirEntry.Children.Add("CN=" + userName, "user");
                 // on définit ses proprité
-                //newUser.Properties["samAccountName"].Value = userName; // son nom de compte
-                //newUser.Properties["userAccountControl"].Value = 0x0200; // user compte normal 
+                newUser.Properties["samAccountName"].Value = userName; // son nom de compte
+                 // user compte normal 
                 // on enregistre les infos
-                //newUser.CommitChanges();
+                newUser.CommitChanges();
 
-                //oGUID = newUser.Guid.ToString();
+                oGUID = newUser.Guid.ToString();
+                MessageBox.Show("oguid :  " + oGUID);
                 /*
                 try
 
-                {
-                    newUser.Invoke("SetPassword", userPassword);
-                }
-                catch (System.Reflection.TargetInvocationException E)
-                {
-                    MessageBox.Show("erreur mdp PUTAIN " + E.Message.ToString());
-                }
-                */
+                {*/
+                newUser.Invoke("SetPassword", userPassword);
+                newUser.CommitChanges();
+                //}
+                //catch (System.Reflection.TargetInvocationException E)
+                //{
+                //    MessageBox.Show("erreur mdp PUTAIN " + E.Message.ToString());
+                //}
 
+                newUser.Properties["userAccountControl"].Value = 0x0200;
                 newUser.CommitChanges();
                 AddToGroup(userName);
                 

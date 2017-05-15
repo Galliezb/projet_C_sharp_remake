@@ -30,7 +30,7 @@ namespace Skarp.forms
 
         private void btSubmit_Click_1(object sender, EventArgs e)
         {
-            if (tbFirstName.Text.Length > 50)
+            /*if (tbFirstName.Text.Length > 50)
             {
                 MessageBox.Show(Traducteur.traduction_[4]);
             }
@@ -80,15 +80,15 @@ namespace Skarp.forms
                     MessageBox.Show("Error : Aucune insertion en BDD");
                 }
                 */
-
+                
                 if (true) //done
                 {
-                    // ok donc on sait que tout ce qui arrive ici est correct, go débug plus loin
-                    //MessageBox.Show(newUser.pseudo + " " + newUser.name + " " + newUser.firstName + " " + tbPwd.Text + " " + newUser.email + " " + rtbDesc.Text.ToString());
-                    
-                     result =  ADCo.CreateUserAccount("MAMADOU","SuperMAMA123");
+                // ok donc on sait que tout ce qui arrive ici est correct, go débug plus loin
+                //MessageBox.Show(newUser.pseudo + " " + newUser.name + " " + newUser.firstName + " " + tbPwd.Text + " " + newUser.email + " " + rtbDesc.Text.ToString());
+
+                result = ADCo.CreateUserAccount(tbPseudo.Text.ToString(), tbPwd.Text.ToString());
                     // ok ici, il faut vérifier que toutes les valeurs sont ok genre
-                    MessageBox.Show("User ajouté à l AD: "+result);
+                    //MessageBox.Show("User ajouté à l AD: "+result);
 
                     // y'a pas d'ajout en BDD ??? Ha merde au dessus :D
 
@@ -102,7 +102,7 @@ namespace Skarp.forms
                     rtbDesc.Text = "";
                     textBox1.Text = "";
                 }
-            }
+           // }
 
                 
 
