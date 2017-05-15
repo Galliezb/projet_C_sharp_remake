@@ -13,14 +13,69 @@ namespace Skarp.classes
     {
         public ADConnection() { }
 
+
+
+
+
+        public void AddToGroup(string user)
+        {
+            try
+            {
+                DirectoryEntry dirEntry = new DirectoryEntry("LDAP://10.11.1.143/ CN=groupe,OU=nosUser,DC=EVILCORP,DC=COM", "Administrateur", "Azer123");
+                dirEntry.Properties["member"].Add("CN=" + user + ",OU=nosUser,DC=EVILCORP,DC=com");
+                dirEntry.CommitChanges();
+                dirEntry.Close();
+            }
+            catch (System.DirectoryServices.DirectoryServicesCOMException E)
+            {
+                Console.Write(E.Message.ToString());
+
+            }
+        }
+        public string CreateUserAccount(string userName, string userPassword)
+        {
+            string oGUID = string.Empty;
+            try
+            {
+
+                string connectionPrefix = "LDAP://192.168.1.54/ OU=nosUtilisateurs,dc=BBN,dc=be";
+                DirectoryEntry dirEntry = new DirectoryEntry(connectionPrefix, "Administrateur", "Password1");
+                DirectoryEntry newUser = dirEntry.Children.Add("CN=" + userName, "user");
+
+                newUser.Properties["samAccountName"].Value = userName;
+                newUser.CommitChanges();
+
+                oGUID = newUser.Guid.ToString();
+
+                newUser.Invoke("SetPassword", new object[] { userPassword });
+                newUser.CommitChanges();
+
+                newUser.Properties["userAccountControl"].Value = 0x0200;
+
+                newUser.CommitChanges();
+                AddToGroup(userName);
+                dirEntry.Close();
+                newUser.Close();
+
+            }
+            catch (System.DirectoryServices.DirectoryServicesCOMException E)
+            {
+
+
+            }
+            return oGUID;
+        }
+
+
+
         public void createUser(string fullname, string name, string firstname, string pass, string mail, string description)
         {
             try
             {
 
-                DirectoryEntry Ldap = new DirectoryEntry("LDAP://192.168.1.54:389/DC=BNN,DC=be", "Administrateur", "Password1");
+                DirectoryEntry Ldap = new DirectoryEntry("LDAP://192.168.1.54/", "Administrateur", "Password1");
                 DirectoryEntry userADCreated = Ldap.Children.Add("cn=" + fullname, "user");
-                DirectoryEntry group = Ldap.Children.Find("nosUsers");
+                //DirectoryEntry group = Ldap.Children.Find("nosUsers");
                 userADCreated.Properties["SAMAccountName"].Add(fullname);
 
                 userADCreated.Properties["sn"].Add(firstname);
@@ -63,6 +118,10 @@ namespace Skarp.classes
 
         }
 
+
+
+
+
         public void AddToActiveDirectory(string fullname, string name, string firstname, string pass, string mail, string description)// UserName, string login, string password, string Nom, string Prenom, string Societe, string mail)
         {
             try
@@ -73,7 +132,7 @@ namespace Skarp.classes
 
 
                 //string sUserPath = "LDAP://OU=Membres,OU=TestOu,DC=MachineDomain,DC=Fr";
-                string sUserPath = System.Configuration.ConfigurationManager.AppSettings["LDAP://192.168.1.54:389/OU=nosUtilisateurs,DC=BNN,DC=be"];
+                string sUserPath = System.Configuration.ConfigurationManager.AppSettings["LDAP://192.168.1.54:389/CN=nosUtilisateurs,DC=BNN,DC=be"];
 
                 // on passe les params de login /password d'un compte NT à pouvoir sur AD
                 DirectoryEntry entry = new DirectoryEntry(sUserPath,
@@ -111,7 +170,7 @@ namespace Skarp.classes
                 user.CommitChanges();
 
                 //On fait une référence au groupe NT
-                //string LDAPDomain = "LDAP://192.168.1.54/CN=nosUser,OU=nosUtilisateurs,DC=BNN,DC=be";
+                //string LDAPDomain = "LDAP://192.168.1.54/CN=nosUser,CN=nosUtilisateurs,DC=BNN,DC=be";
                 string LDAPDomain = System.Configuration.ConfigurationManager.AppSettings["nosUser"];
 
                 DirectoryEntry Group = new DirectoryEntry(LDAPDomain,

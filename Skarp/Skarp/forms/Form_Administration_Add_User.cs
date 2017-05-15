@@ -83,7 +83,7 @@ namespace Skarp.forms
                     // ok donc on sait que tout ce qui arrive ici est correct, go débug plus loin
                     //MessageBox.Show(newUser.pseudo + " " + newUser.name + " " + newUser.firstName + " " + tbPwd.Text + " " + newUser.email + " " + rtbDesc.Text.ToString());
 
-                    ADCo.AddToActiveDirectory(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
+                    ADCo.createUser(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
                     // ok ici, il faut vérifier que toutes les valeurs sont ok genre
                     MessageBox.Show("User ajouté à la BDD");
 
