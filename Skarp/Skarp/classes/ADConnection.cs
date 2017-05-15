@@ -59,7 +59,7 @@ namespace Skarp.classes
                 MessageBox.Show(Ex.Message);
             }
 
-            GroupPrincipal nosUsers = GroupPrincipal.FindByIdentity()
+            //GroupPrincipal nosUsers = GroupPrincipal.FindByIdentity();
         }
     }
 
