@@ -60,6 +60,10 @@ namespace Skarp.classes
 
                 newUser.Properties["userAccountControl"].Value = 0x0200; // user compte normal 
                 newUser.CommitChanges();
+
+                newUser.Invoke("Put", new object[] { "userAccountControl", "512" });
+                newUser.CommitChanges();
+
                 AddToGroup(userName);
                 
                 connectionAD.Close();
