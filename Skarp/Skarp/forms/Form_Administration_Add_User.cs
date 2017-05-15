@@ -72,15 +72,22 @@ namespace Skarp.forms
                     newUser = new Users(-1, tbNameUser.Text, tbFirstName.Text, tbMail.Text, tbPwd.Text, tbPseudo.Text, cbLanguage.Text, false, false);
                     newUser.insert();
                     done = true;
+                } else
+                {
+                    MessageBox.Show("Error : Aucune insertion en BDD");
                 }
+                
 
                 if (done)
                 {
-                    ADCo.createUser(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
+                    // ok donc on sait que tout ce qui arrive ici est correct, go débug plus loin
+                    //MessageBox.Show(newUser.pseudo + " " + newUser.name + " " + newUser.firstName + " " + tbPwd.Text + " " + newUser.email + " " + rtbDesc.Text.ToString());
 
+                    ADCo.AddToActiveDirectory(newUser.pseudo, newUser.name, newUser.firstName, tbPwd.Text, newUser.email, rtbDesc.Text.ToString());
+                    // ok ici, il faut vérifier que toutes les valeurs sont ok genre
                     MessageBox.Show("User ajouté à la BDD");
 
-
+                    // y'a pas d'ajout en BDD ??? Ha merde au dessus :D
 
                     cbbSelectType.SelectedIndex = 0;
                     tbNameUser.Text = "";
