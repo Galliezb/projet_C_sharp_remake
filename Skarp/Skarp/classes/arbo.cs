@@ -162,7 +162,7 @@ namespace Skarp {
             } else {
 
                 maConnexionMysql.Laconnexion.Open();
-                string sqlRequest = "UPDATYE arbo SET r1t1=@_r1t1,r1t2=@_r1t2,r1t3=@_r1t3,r1t4=@_r1t4,r1t5=@_r1t5,r1t6=@_r1t6,r1t7=@_r1t7,r1t8=@_r1t8,r2t1=@_r2t1,r2t2=@_r2t2,r2t3=@_r2t3,r2t4=@_r2t4,r3t1=@_r3t1,r3t2=@_r3t2,vainqueur=@_vainqueur WHERE idTournament=@_idTournament";
+                string sqlRequest = "UPDATE arbo SET r1t1=@_r1t1,r1t2=@_r1t2,r1t3=@_r1t3,r1t4=@_r1t4,r1t5=@_r1t5,r1t6=@_r1t6,r1t7=@_r1t7,r1t8=@_r1t8,r2t1=@_r2t1,r2t2=@_r2t2,r2t3=@_r2t3,r2t4=@_r2t4,r3t1=@_r3t1,r3t2=@_r3t2,vainqueur=@_vainqueur WHERE idTournament=@_idTournament";
                 maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_idTournament" , idTournament_ );
                 maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_r1t1" , r1t1_ );
                 maConnexionMysql.Lacommande.Parameters.AddWithValue( "@_r1t2" , r1t2_ );
@@ -184,7 +184,7 @@ namespace Skarp {
 
                 // exécute la requête
                 maConnexionMysql.Lacommande.ExecuteNonQuery();
-
+                
                 // clear commande et ferme la connection
                 maConnexionMysql.Lacommande.Parameters.Clear();
                 maConnexionMysql.Laconnexion.Close();

@@ -14,6 +14,7 @@ namespace Skarp.forms
     {
         string game;
         int rowSelected = 0;
+        int idTournament = -1;
         Team forGettingAllTeams;
         DataSet dataAllTeam;
         Tournament allTournaments;
@@ -35,6 +36,9 @@ namespace Skarp.forms
 
             forGettingAllTeams = new Team();
 
+            // on affiche le bouton SUBMIT PAR DEFAUT et a la selection on vérifie
+            button_update.Visible = false;
+            btSubmit.Visible = true;
 
         }
 
@@ -58,7 +62,7 @@ namespace Skarp.forms
 
         private void cbb_Name_Tournament_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int idTournament=-1;
+            
             foreach (DataRow rw in dataSetAllTournaments.Tables["tournament"].Rows)
             {
 
@@ -76,15 +80,23 @@ namespace Skarp.forms
             dataAllTeam = forGettingAllTeams.getAllTeam();
             foreach (DataRow r in dataAllTeam.Tables[0].Rows)
             {
+                cbR1T1.Items.Clear();
+                cbR1T2.Items.Clear();
+                cbR1T3.Items.Clear();
+                cbR1T4.Items.Clear();
+                cbR1T5.Items.Clear();
+                cbR1T6.Items.Clear();
+                cbR1T7.Items.Clear();
+                cbR1T8.Items.Clear();
 
-                    cbR1T1.Items.Add(r["name"].ToString());
-                    cbR1T2.Items.Add(r["name"].ToString());
-                    cbR1T3.Items.Add(r["name"].ToString());
-                    cbR1T4.Items.Add(r["name"].ToString());
-                    cbR1T5.Items.Add(r["name"].ToString());
-                    cbR1T6.Items.Add(r["name"].ToString());
-                    cbR1T7.Items.Add(r["name"].ToString());
-                    cbR1T8.Items.Add(r["name"].ToString());
+                cbR1T1.Items.Add(r["name"].ToString());
+                cbR1T2.Items.Add(r["name"].ToString());
+                cbR1T3.Items.Add(r["name"].ToString());
+                cbR1T4.Items.Add(r["name"].ToString());
+                cbR1T5.Items.Add(r["name"].ToString());
+                cbR1T6.Items.Add(r["name"].ToString());
+                cbR1T7.Items.Add(r["name"].ToString());
+                cbR1T8.Items.Add(r["name"].ToString());
                 
             }
 
@@ -109,8 +121,30 @@ namespace Skarp.forms
                 cbR3T1.Text = liste[12];
                 cbR3T2.Text = liste[13];
                 cbwinner.Text = liste[14];
+                // on affiche le bouton UPATE
+                button_update.Visible = true;
+                btSubmit.Visible = false;
 
+            } else {
+                cbR1T1.Text = "";
+                cbR1T2.Text = "";
+                cbR1T3.Text = "";
+                cbR1T4.Text = "";
+                cbR1T5.Text = "";
+                cbR1T6.Text = "";
+                cbR1T7.Text = "";
+                cbR1T8.Text = "";
+                cbR2T1.Text = "";
+                cbR2T2.Text = "";
+                cbR2T3.Text = "";
+                cbR2T4.Text = "";
+                cbR3T1.Text = "";
+                cbR3T2.Text = "";
+                cbwinner.Text = "";
 
+                // on affiche le bouton SUBMIT
+                button_update.Visible = false;
+                btSubmit.Visible = true;
             }
 
         }
@@ -136,7 +170,9 @@ namespace Skarp.forms
             arborescence.R3T2 = cbR3T2.Text;
             arborescence.vainqueur = cbwinner.Text;
 
-            arborescence.insert();
+            if ( arborescence.insert() ) {
+                MessageBox.Show( "Informations enregistrées" );
+            }
 
         }
 
@@ -194,6 +230,31 @@ namespace Skarp.forms
             cbwinner.Items.Add( cbR3T1.Text );
             cbwinner.Items.Add( cbR3T2.Text );
 
+        }
+
+        private void button_update_Click ( object sender , EventArgs e ) {
+            Arbo arborescence = new Arbo();
+
+            arborescence.IDtournament = Convert.ToInt32( dataSetAllTournaments.Tables["tournament"].Rows[rowSelected]["idTournament"] );
+            arborescence.R1T1 = cbR1T1.Text;
+            arborescence.R1T2 = cbR1T2.Text;
+            arborescence.R1T3 = cbR1T3.Text;
+            arborescence.R1T4 = cbR1T4.Text;
+            arborescence.R1T5 = cbR1T5.Text;
+            arborescence.R1T6 = cbR1T6.Text;
+            arborescence.R1T7 = cbR1T7.Text;
+            arborescence.R1T8 = cbR1T8.Text;
+            arborescence.R2T1 = cbR2T1.Text;
+            arborescence.R2T2 = cbR2T2.Text;
+            arborescence.R2T3 = cbR2T3.Text;
+            arborescence.R2T4 = cbR2T4.Text;
+            arborescence.R3T1 = cbR3T1.Text;
+            arborescence.R3T2 = cbR3T2.Text;
+            arborescence.vainqueur = cbwinner.Text;
+
+            if ( arborescence.update() ){
+                MessageBox.Show( "Informations mises à jour" );
+            }
         }
     }
 }

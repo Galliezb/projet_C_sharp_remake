@@ -47,6 +47,7 @@
             this.cbwinner = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btSubmit = new System.Windows.Forms.Button();
+            this.button_update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_Arbo_Tournament
@@ -221,12 +222,24 @@
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
             // 
+            // button_update
+            // 
+            this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_update.Location = new System.Drawing.Point(689, 556);
+            this.button_update.Name = "button_update";
+            this.button_update.Size = new System.Drawing.Size(99, 32);
+            this.button_update.TabIndex = 67;
+            this.button_update.Text = "UPDATE";
+            this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
+            // 
             // Form_Create_Arbo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.button_update);
             this.Controls.Add(this.btSubmit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbwinner);
@@ -279,5 +292,6 @@
         private System.Windows.Forms.ComboBox cbwinner;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btSubmit;
+        private System.Windows.Forms.Button button_update;
     }
 }
