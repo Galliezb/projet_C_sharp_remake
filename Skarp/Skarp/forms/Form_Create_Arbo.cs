@@ -77,17 +77,19 @@ namespace Skarp.forms
             }
 
 
+            cbR1T1.Items.Clear();
+            cbR1T2.Items.Clear();
+            cbR1T3.Items.Clear();
+            cbR1T4.Items.Clear();
+            cbR1T5.Items.Clear();
+            cbR1T6.Items.Clear();
+            cbR1T7.Items.Clear();
+            cbR1T8.Items.Clear();
+
             dataAllTeam = forGettingAllTeams.getAllTeam();
-            foreach (DataRow r in dataAllTeam.Tables[0].Rows)
+
+            foreach (DataRow r in dataAllTeam.Tables["team"].Rows)
             {
-                cbR1T1.Items.Clear();
-                cbR1T2.Items.Clear();
-                cbR1T3.Items.Clear();
-                cbR1T4.Items.Clear();
-                cbR1T5.Items.Clear();
-                cbR1T6.Items.Clear();
-                cbR1T7.Items.Clear();
-                cbR1T8.Items.Clear();
 
                 cbR1T1.Items.Add(r["name"].ToString());
                 cbR1T2.Items.Add(r["name"].ToString());
