@@ -73,12 +73,12 @@ namespace Skarp.classes
 
 
                 //string sUserPath = "LDAP://OU=Membres,OU=TestOu,DC=MachineDomain,DC=Fr";
-                string sUserPath = ConfigurationSettings.AppSettings["LDAP://192.168.1.54:389/OU=nosUtilisateurs,DC=BNN,DC=be"];
+                string sUserPath = System.Configuration.ConfigurationManager.AppSettings["LDAP://192.168.1.54:389/OU=nosUtilisateurs,DC=BNN,DC=be"];
 
                 // on passe les params de login /password d'un compte NT à pouvoir sur AD
                 DirectoryEntry entry = new DirectoryEntry(sUserPath,
-                     ConfigurationSettings.AppSettings["Administrateur"],
-                     ConfigurationSettings.AppSettings["Password1"]);
+                     System.Configuration.ConfigurationManager.AppSettings["Administrateur"],
+                     System.Configuration.ConfigurationManager.AppSettings["Password1"]);
 
                 // On cré le user avec ses propriétés
                 //--------------------------------------------
@@ -90,11 +90,13 @@ namespace Skarp.classes
 
                 //propriétés supplémentaires
                 //--------------------------------------------
-                user.Properties["displayName"].Add(name + " " + firstname + "[]");
-                user.Properties["userPrincipalName"].Add(string.Format("{0}@{1}", fullname, ConfigurationSettings.AppSettings["BNN.be"]));   // Mail de login
+                user.Properties["displayName"].Add(name + " " + firstname);
+                user.Properties["userPrincipalName"].Add(string.Format("{0}@{1}", fullname, System.Configuration.ConfigurationManager.AppSettings["BNN.be"]));   // Mail de login
                 user.Properties["Mail"].Add(mail);
 
-
+                // et le try plante certainement ici
+                // tu peux le ping sur le port 389 ? tu peux ping un port 
+                // c'est ce que je me demande aussi , go goole :D j pene pas
                 user.CommitChanges();
 
                 // lui retourne un objet, on va essayer de voir ce qu'il retourne
@@ -109,12 +111,12 @@ namespace Skarp.classes
                 user.CommitChanges();
 
                 //On fait une référence au groupe NT
-                string LDAPDomain = "LDAP://192.168.1.54/CN=nosUser,OU=nosUtilisateurs,DC=BNN,DC=be";
-                //string LDAPDomain = System.Configuration.ConfigurationSettings.AppSettings["nosUser"];
+                //string LDAPDomain = "LDAP://192.168.1.54/CN=nosUser,OU=nosUtilisateurs,DC=BNN,DC=be";
+                string LDAPDomain = System.Configuration.ConfigurationManager.AppSettings["nosUser"];
 
                 DirectoryEntry Group = new DirectoryEntry(LDAPDomain,
-                  ConfigurationSettings.AppSettings["Administrateur"],
-                  ConfigurationSettings.AppSettings["Password1"]);
+                  System.Configuration.ConfigurationManager.AppSettings["Administrateur"],
+                  System.Configuration.ConfigurationManager.AppSettings["Password1"]);
 
                 
                 //on ajoute l'utilisateur au groupe
