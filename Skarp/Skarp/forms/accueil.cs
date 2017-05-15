@@ -195,7 +195,7 @@ namespace Skarp.forms {
         private void historiqueToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             closeAll();
-            affichage = new forms.Form_Tournament_List_Ended();
+            affichage = new forms.Form_Tournament_List_Ended( this );
             displayForm();
         }
 
@@ -222,7 +222,7 @@ namespace Skarp.forms {
         private void historiqueToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             closeAll();
-            affichage = new forms.Form_Tournament_List_Ended();
+            affichage = new forms.Form_Tournament_List_Ended(this);
             displayForm();
         }
 
@@ -250,6 +250,12 @@ namespace Skarp.forms {
         private void webServiceToolStripMenuItem_Click ( object sender , EventArgs e ) {
             closeAll();
             affichage = new forms.Form_WebService();
+            displayForm();
+        }
+
+        public void voirDetailsTournament ( int idArboToSee) {
+            closeAll();
+            affichage = new forms.Form_tournament_details_read_only( idArboToSee );
             displayForm();
         }
     }

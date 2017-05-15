@@ -113,6 +113,16 @@ namespace Skarp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap details_tournament {
+            get {
+                object obj = ResourceManager.GetObject("details_tournament", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap en {
             get {
                 object obj = ResourceManager.GetObject("en", resourceCulture);
