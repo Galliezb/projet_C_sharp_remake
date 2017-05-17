@@ -52,10 +52,19 @@ namespace Skarp.forms {
 
         private void button_sauvegarder_Click ( object sender , EventArgs e ) {
 
-            if ( allNews.delete() ) {
-                MessageBox.Show( Traducteur.traduction_[66] );
-            } else {
-                MessageBox.Show( Traducteur.traduction_[67] );
+            
+
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            if (allNews.delete())
+            {
+                MessageBox.Show(Traducteur.traduction_[66]);
+            }
+            else
+            {
+                MessageBox.Show(Traducteur.traduction_[67]);
             }
 
             dataSetAllNews.Tables["News"].Rows[ligneDelete].Delete();
@@ -64,7 +73,6 @@ namespace Skarp.forms {
             cb_titre_news.Text = "";
             tb_auteur.Clear();
             tb_message.Clear();
-
         }
     }
 }

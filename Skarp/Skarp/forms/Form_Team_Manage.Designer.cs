@@ -60,11 +60,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dg_team.DefaultCellStyle = dataGridViewCellStyle2;
             this.dg_team.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.dg_team.Location = new System.Drawing.Point(156, 145);
+            this.dg_team.Location = new System.Drawing.Point(1, 145);
             this.dg_team.Name = "dg_team";
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             this.dg_team.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dg_team.Size = new System.Drawing.Size(485, 300);
+            this.dg_team.Size = new System.Drawing.Size(798, 300);
             this.dg_team.TabIndex = 49;
             this.dg_team.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);
             // 

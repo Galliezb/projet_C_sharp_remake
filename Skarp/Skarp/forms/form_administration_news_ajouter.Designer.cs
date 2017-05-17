@@ -27,9 +27,9 @@
             this.lb_language = new System.Windows.Forms.Label();
             this.tb_message = new System.Windows.Forms.TextBox();
             this.lb_message = new System.Windows.Forms.Label();
-            this.button_sauvegarder = new System.Windows.Forms.Button();
             this.tb_titre = new System.Windows.Forms.TextBox();
             this.lb_titre = new System.Windows.Forms.Label();
+            this.btSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cb_language
@@ -70,17 +70,6 @@
             this.lb_message.TabIndex = 3;
             this.lb_message.Text = "Message";
             // 
-            // button_sauvegarder
-            // 
-            this.button_sauvegarder.BackColor = System.Drawing.Color.Black;
-            this.button_sauvegarder.Location = new System.Drawing.Point(629, 506);
-            this.button_sauvegarder.Name = "button_sauvegarder";
-            this.button_sauvegarder.Size = new System.Drawing.Size(121, 50);
-            this.button_sauvegarder.TabIndex = 4;
-            this.button_sauvegarder.Text = "Sauvegarder";
-            this.button_sauvegarder.UseVisualStyleBackColor = false;
-            this.button_sauvegarder.Click += new System.EventHandler(this.button_sauvegarder_Click);
-            // 
             // tb_titre
             // 
             this.tb_titre.Location = new System.Drawing.Point(50, 68);
@@ -98,15 +87,26 @@
             this.lb_titre.TabIndex = 6;
             this.lb_titre.Text = "Titre";
             // 
+            // btSave
+            // 
+            this.btSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSave.Location = new System.Drawing.Point(667, 504);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(121, 54);
+            this.btSave.TabIndex = 54;
+            this.btSave.Text = "Sauvegarder";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
+            // 
             // Form_administration_news_ajouter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.btSave);
             this.Controls.Add(this.lb_titre);
             this.Controls.Add(this.tb_titre);
-            this.Controls.Add(this.button_sauvegarder);
             this.Controls.Add(this.lb_message);
             this.Controls.Add(this.tb_message);
             this.Controls.Add(this.lb_language);
@@ -129,8 +129,8 @@
         private System.Windows.Forms.Label lb_language;
         private System.Windows.Forms.TextBox tb_message;
         private System.Windows.Forms.Label lb_message;
-        private System.Windows.Forms.Button button_sauvegarder;
         private System.Windows.Forms.TextBox tb_titre;
         private System.Windows.Forms.Label lb_titre;
+        private System.Windows.Forms.Button btSave;
     }
 }

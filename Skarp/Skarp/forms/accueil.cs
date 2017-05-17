@@ -30,6 +30,17 @@ namespace Skarp.forms {
             // charge la langue depuis le fichier
             Traducteur.traduction_.Clear();
             Traducteur.loadText( "fr" );
+            if (Session.isAdmin == false )
+            {
+                menu_general.Items[5].Visible = false;
+                
+            }
+            if (Session.isOrganizer == false)
+            {
+                menu_general.Items[4].Visible = false;
+            }
+           
+            MessageBox.Show("" + Session.isAdmin + "\n " +Session.isOrganizer);
             /*
             Form form = new forms.Form_accueil();
             form.MdiParent = this;

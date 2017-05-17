@@ -109,5 +109,10 @@ namespace Skarp.forms {
                 tbDescription.Text = "ORION Dino Horde est un jeu de tir disponible en téléchargement sur PC. Il s'agit d'une version améliorée du jeu de base, ORION : Dino Beatdown offrant 5 modes de jeu supplémentaires, de nouvelles armes et des améliorations supplémentaires.";
             }
         }
+
+        private void Form_Top10_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

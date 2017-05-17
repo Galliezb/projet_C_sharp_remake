@@ -19,6 +19,12 @@ namespace Skarp.forms {
 
         private void button_sauvegarder_Click ( object sender , EventArgs e ) {
 
+            
+
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
             News newsToInsert = new News();
 
             newsToInsert.auteur = Session.pseudo;
@@ -29,15 +35,17 @@ namespace Skarp.forms {
 
 
 
-            if ( newsToInsert.insert() ) {
+            if (newsToInsert.insert())
+            {
                 tb_titre.Clear();
                 tb_message.Clear();
                 cb_language.SelectedIndex = 0;
-                MessageBox.Show( Traducteur.traduction_[62] );
-            } else {
-                MessageBox.Show( Traducteur.traduction_[63] );
+                MessageBox.Show(Traducteur.traduction_[62]);
             }
-
+            else
+            {
+                MessageBox.Show(Traducteur.traduction_[63]);
+            }
         }
     }
 }

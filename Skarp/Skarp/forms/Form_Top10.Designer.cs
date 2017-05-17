@@ -93,6 +93,7 @@
             this.Text = "Form_Create_Organization";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.panel1_Leave);
+            this.Load += new System.EventHandler(this.Form_Top10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

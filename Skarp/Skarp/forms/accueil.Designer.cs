@@ -56,7 +56,7 @@
             // 
             // menu_general
             // 
-            this.menu_general.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menu_general.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.menu_general.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.menu_general.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu_general.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -288,7 +288,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 628);
             this.Controls.Add(this.menu_general);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F);

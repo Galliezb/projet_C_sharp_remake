@@ -44,6 +44,11 @@ namespace Skarp.forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
             TournamentsForDataGrid.update(dataForGrid);
         }
     }
