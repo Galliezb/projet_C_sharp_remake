@@ -61,7 +61,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(126, 67);
             this.btSave.TabIndex = 47;
-            this.btSave.Text = "Sauvegarder";
+            this.btSave.Text = Traducteur.traduction_[67];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btPromote1_Click);
             // 
@@ -77,7 +77,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_administration_voir_joueurs";
-            this.Text = "Form_administration_voir_joueurs";
+            this.Text = Traducteur.traduction_[82];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_administration_voir_joueurs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).EndInit();

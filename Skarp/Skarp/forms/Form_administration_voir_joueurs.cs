@@ -48,6 +48,7 @@ namespace Skarp.forms {
         private void btPromote1_Click(object sender, EventArgs e)
         {
             userForDataGrid.update(dataForGrid);
+            MessageBox.Show( Traducteur.traduction_[5] );
         }
     }
 }
