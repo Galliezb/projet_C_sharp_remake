@@ -66,19 +66,19 @@ namespace Skarp.forms
             {
                 
                 bool done = false;
-                if (cbbSelectType.SelectedItem.ToString() == "Administrator")
+                if (cbbSelectType.SelectedItem.ToString() == Traducteur.traduction_[58] )
                 {
                     newUser = new Users(-1, tbNameUser.Text, tbFirstName.Text, tbMail.Text, tbPwd.Text, tbPseudo.Text, cbLanguage.Text, false, true);
                     newUser.insert();
                     done = true;
                 }
-                else if (cbbSelectType.SelectedItem.ToString() == "Organizer")
+                else if (cbbSelectType.SelectedItem.ToString() == Traducteur.traduction_[59] )
                 {
                     newUser = new Users(-1, tbNameUser.Text, tbFirstName.Text, tbMail.Text, tbPwd.Text, tbPseudo.Text, cbLanguage.Text, true, false);
                     newUser.insert();
                     done = true;
                 }
-                else if (cbbSelectType.SelectedItem.ToString() == "User")
+                else if (cbbSelectType.SelectedItem.ToString() == Traducteur.traduction_[60] )
                 {
                     newUser = new Users(-1, tbNameUser.Text, tbFirstName.Text, tbMail.Text, tbPwd.Text, tbPseudo.Text, cbLanguage.Text, false, false);
                     newUser.insert();
@@ -113,6 +113,10 @@ namespace Skarp.forms
             }
 
                 
+
+        }
+
+        private void Form_Administration_Add_User_Load ( object sender , EventArgs e ) {
 
         }
     }

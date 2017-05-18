@@ -57,7 +57,7 @@
             this.lb_Arbo_Tournament.Name = "lb_Arbo_Tournament";
             this.lb_Arbo_Tournament.Size = new System.Drawing.Size(185, 20);
             this.lb_Arbo_Tournament.TabIndex = 0;
-            this.lb_Arbo_Tournament.Text = "Sélectionnez le tournoi :";
+            this.lb_Arbo_Tournament.Text = Traducteur.traduction_[83];
             // 
             // cbb_Name_Tournament
             // 
@@ -209,7 +209,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 20);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Vainqueur : ";
+            this.label1.Text = Traducteur.traduction_[84];
             // 
             // btSubmit
             // 
@@ -218,7 +218,7 @@
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(99, 32);
             this.btSubmit.TabIndex = 66;
-            this.btSubmit.Text = "SUBMIT";
+            this.btSubmit.Text = Traducteur.traduction_[52];
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
             // 
@@ -229,7 +229,7 @@
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(99, 32);
             this.button_update.TabIndex = 67;
-            this.button_update.Text = "UPDATE";
+            this.button_update.Text = Traducteur.traduction_[72];
             this.button_update.UseVisualStyleBackColor = true;
             this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
@@ -264,7 +264,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Create_Arbo";
-            this.Text = "Form_Create_Arbo";
+            this.Text = Traducteur.traduction_[85];
             this.Load += new System.EventHandler(this.Form_Create_Arbo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,7 +62,7 @@
             "en"});
             this.cbLanguage.Location = new System.Drawing.Point(484, 386);
             this.cbLanguage.Name = "cbLanguage";
-            this.cbLanguage.Size = new System.Drawing.Size(151, 28);
+            this.cbLanguage.Size = new System.Drawing.Size(151, 31);
             this.cbLanguage.TabIndex = 63;
             // 
             // tbFirstName
@@ -71,7 +71,7 @@
             this.tbFirstName.ForeColor = System.Drawing.Color.White;
             this.tbFirstName.Location = new System.Drawing.Point(484, 142);
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(151, 27);
+            this.tbFirstName.Size = new System.Drawing.Size(151, 32);
             this.tbFirstName.TabIndex = 59;
             // 
             // rtbDesc
@@ -89,27 +89,24 @@
             this.lbDesc.AutoSize = true;
             this.lbDesc.Location = new System.Drawing.Point(187, 467);
             this.lbDesc.Name = "lbDesc";
-            this.lbDesc.Size = new System.Drawing.Size(101, 20);
+            this.lbDesc.Size = new System.Drawing.Size(0, 23);
             this.lbDesc.TabIndex = 61;
-            this.lbDesc.Text = Traducteur.traduction_[49];
             // 
             // lbLanguage
             // 
             this.lbLanguage.AutoSize = true;
             this.lbLanguage.Location = new System.Drawing.Point(190, 389);
             this.lbLanguage.Name = "lbLanguage";
-            this.lbLanguage.Size = new System.Drawing.Size(96, 20);
+            this.lbLanguage.Size = new System.Drawing.Size(0, 23);
             this.lbLanguage.TabIndex = 60;
-            this.lbLanguage.Text = Traducteur.traduction_[56] + " :";
             // 
             // lbFirstName
             // 
             this.lbFirstName.AutoSize = true;
             this.lbFirstName.Location = new System.Drawing.Point(187, 145);
             this.lbFirstName.Name = "lbFirstName";
-            this.lbFirstName.Size = new System.Drawing.Size(94, 20);
+            this.lbFirstName.Size = new System.Drawing.Size(0, 23);
             this.lbFirstName.TabIndex = 58;
-            this.lbFirstName.Text = Traducteur.traduction_[36] + " :";
             // 
             // tbPseudo
             // 
@@ -117,7 +114,7 @@
             this.tbPseudo.ForeColor = System.Drawing.Color.White;
             this.tbPseudo.Location = new System.Drawing.Point(484, 288);
             this.tbPseudo.Name = "tbPseudo";
-            this.tbPseudo.Size = new System.Drawing.Size(151, 27);
+            this.tbPseudo.Size = new System.Drawing.Size(151, 32);
             this.tbPseudo.TabIndex = 57;
             // 
             // lbPseudo
@@ -125,9 +122,8 @@
             this.lbPseudo.AutoSize = true;
             this.lbPseudo.Location = new System.Drawing.Point(187, 291);
             this.lbPseudo.Name = "lbPseudo";
-            this.lbPseudo.Size = new System.Drawing.Size(74, 20);
+            this.lbPseudo.Size = new System.Drawing.Size(0, 23);
             this.lbPseudo.TabIndex = 56;
-            this.lbPseudo.Text = Traducteur.traduction_[34] + " :";
             // 
             // tbMail
             // 
@@ -135,7 +131,7 @@
             this.tbMail.ForeColor = System.Drawing.Color.White;
             this.tbMail.Location = new System.Drawing.Point(484, 337);
             this.tbMail.Name = "tbMail";
-            this.tbMail.Size = new System.Drawing.Size(151, 27);
+            this.tbMail.Size = new System.Drawing.Size(151, 32);
             this.tbMail.TabIndex = 55;
             // 
             // lbMail
@@ -143,9 +139,8 @@
             this.lbMail.AutoSize = true;
             this.lbMail.Location = new System.Drawing.Point(190, 340);
             this.lbMail.Name = "lbMail";
-            this.lbMail.Size = new System.Drawing.Size(51, 20);
+            this.lbMail.Size = new System.Drawing.Size(0, 23);
             this.lbMail.TabIndex = 54;
-            this.lbMail.Text = Traducteur.traduction_[38] + " :";
             // 
             // textBox1
             // 
@@ -153,7 +148,7 @@
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(484, 240);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 27);
+            this.textBox1.Size = new System.Drawing.Size(151, 32);
             this.textBox1.TabIndex = 53;
             // 
             // label1
@@ -161,9 +156,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(187, 243);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(0, 23);
             this.label1.TabIndex = 52;
-            this.label1.Text = Traducteur.traduction_[57] + " :";
             // 
             // tbPwd
             // 
@@ -171,7 +165,7 @@
             this.tbPwd.ForeColor = System.Drawing.Color.White;
             this.tbPwd.Location = new System.Drawing.Point(484, 188);
             this.tbPwd.Name = "tbPwd";
-            this.tbPwd.Size = new System.Drawing.Size(151, 27);
+            this.tbPwd.Size = new System.Drawing.Size(151, 32);
             this.tbPwd.TabIndex = 51;
             // 
             // lbPwd
@@ -179,9 +173,8 @@
             this.lbPwd.AutoSize = true;
             this.lbPwd.Location = new System.Drawing.Point(187, 197);
             this.lbPwd.Name = "lbPwd";
-            this.lbPwd.Size = new System.Drawing.Size(86, 20);
+            this.lbPwd.Size = new System.Drawing.Size(0, 23);
             this.lbPwd.TabIndex = 50;
-            this.lbPwd.Text = Traducteur.traduction_[35] + " :";
             // 
             // cbbSelectType
             // 
@@ -193,10 +186,10 @@
             this.cbbSelectType.Items.AddRange(new object[] {
             "",
             "",
-            ""} );
+            ""});
             this.cbbSelectType.Location = new System.Drawing.Point(484, 44);
             this.cbbSelectType.Name = "cbbSelectType";
-            this.cbbSelectType.Size = new System.Drawing.Size(151, 28);
+            this.cbbSelectType.Size = new System.Drawing.Size(151, 31);
             this.cbbSelectType.TabIndex = 49;
             // 
             // lbSelectType
@@ -204,18 +197,16 @@
             this.lbSelectType.AutoSize = true;
             this.lbSelectType.Location = new System.Drawing.Point(187, 47);
             this.lbSelectType.Name = "lbSelectType";
-            this.lbSelectType.Size = new System.Drawing.Size(243, 20);
+            this.lbSelectType.Size = new System.Drawing.Size(0, 23);
             this.lbSelectType.TabIndex = 48;
-            this.lbSelectType.Text = Traducteur.traduction_[61]+" :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 20);
+            this.label2.Size = new System.Drawing.Size(0, 23);
             this.label2.TabIndex = 47;
-            this.label2.Text = Traducteur.traduction_[62] + " :";
             // 
             // tbNameUser
             // 
@@ -223,7 +214,7 @@
             this.tbNameUser.ForeColor = System.Drawing.Color.White;
             this.tbNameUser.Location = new System.Drawing.Point(484, 97);
             this.tbNameUser.Name = "tbNameUser";
-            this.tbNameUser.Size = new System.Drawing.Size(151, 27);
+            this.tbNameUser.Size = new System.Drawing.Size(151, 32);
             this.tbNameUser.TabIndex = 46;
             // 
             // lbNameUser
@@ -231,9 +222,8 @@
             this.lbNameUser.AutoSize = true;
             this.lbNameUser.Location = new System.Drawing.Point(187, 100);
             this.lbNameUser.Name = "lbNameUser";
-            this.lbNameUser.Size = new System.Drawing.Size(61, 20);
+            this.lbNameUser.Size = new System.Drawing.Size(0, 23);
             this.lbNameUser.TabIndex = 45;
-            this.lbNameUser.Text = Traducteur.traduction_[37] + " :";
             // 
             // btSubmit
             // 
@@ -242,13 +232,12 @@
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(99, 32);
             this.btSubmit.TabIndex = 64;
-            this.btSubmit.Text = Traducteur.traduction_[52];
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click_1);
             // 
             // Form_Administration_Add_User
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
@@ -277,8 +266,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Administration_Add_User";
-            this.Text = Traducteur.traduction_[63];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_Administration_Add_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -173,7 +173,7 @@ namespace Skarp.forms
             arborescence.vainqueur = cbwinner.Text;
 
             if ( arborescence.insert() ) {
-                MessageBox.Show( "Informations enregistrées" );
+                MessageBox.Show( Traducteur.traduction_[5] );
             }
 
         }
@@ -255,7 +255,7 @@ namespace Skarp.forms
             arborescence.vainqueur = cbwinner.Text;
 
             if ( arborescence.update() ){
-                MessageBox.Show( "Informations mises à jour" );
+                MessageBox.Show( Traducteur.traduction_[5] );
             }
         }
     }
