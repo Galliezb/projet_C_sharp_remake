@@ -22,6 +22,10 @@ namespace Skarp.forms
             InitializeComponent();
             
             cbbSelectType.SelectedIndex = 0;
+            cbbSelectType.Items.Clear();
+            cbbSelectType.Items.Add( Traducteur.traduction_[58] );
+            cbbSelectType.Items.Add( Traducteur.traduction_[59] );
+            cbbSelectType.Items.Add( Traducteur.traduction_[60] );
             cbLanguage.Text = Session.language;
         }
 
@@ -32,31 +36,31 @@ namespace Skarp.forms
         {
             if (tbFirstName.Text.Length > 50)
             {
-                MessageBox.Show(Traducteur.traduction_[4]);
+                MessageBox.Show(Traducteur.traduction_[42]);
             }
             else if (tbNameUser.Text.Length > 50)
             {
-                MessageBox.Show(Traducteur.traduction_[3]);
+                MessageBox.Show(Traducteur.traduction_[43]);
             }
             else if (tbMail.Text.Length > 255)
             {
-                MessageBox.Show(Traducteur.traduction_[5]);
+                MessageBox.Show(Traducteur.traduction_[44]);
             }
             else if (tbPwd.Text.Length > 255)
             {
-                MessageBox.Show(Traducteur.traduction_[6]);
+                MessageBox.Show(Traducteur.traduction_[45]);
             }
             else if (tbPwd.Text != textBox1.Text)
             {
-                MessageBox.Show(Traducteur.traduction_[57]);
+                MessageBox.Show(Traducteur.traduction_[53]);
             }
             else if (tbPwd.Text == tbPseudo.Text)
             {
-                MessageBox.Show("pseudo et mdp identiques");
+                MessageBox.Show( Traducteur.traduction_[54] );
             }
             else if (cbLanguage.SelectedItem.ToString() != "fr" && cbLanguage.SelectedItem.ToString() != "en")
             {
-                MessageBox.Show(Traducteur.traduction_[8]);
+                MessageBox.Show(Traducteur.traduction_[46] +" "+ Traducteur.traduction_[40] + " " + Traducteur.traduction_[48] + " " + Traducteur.traduction_[41]);
             }
             else
             {
@@ -81,7 +85,7 @@ namespace Skarp.forms
                     done = true;
                 } else
                 {
-                    MessageBox.Show("Error : Aucune insertion en BDD");
+                    MessageBox.Show( Traducteur.traduction_[3] );
                 }
                 
                 
@@ -92,7 +96,7 @@ namespace Skarp.forms
                     ADCo.CreateUserAccount(tbPseudo.Text.ToString(), tbPwd.Text.ToString());
                     
 
-                    MessageBox.Show("User ajouté à l AD et a la BDD: ");
+                    MessageBox.Show( Traducteur.traduction_[55] );
 
                     
 
@@ -110,11 +114,6 @@ namespace Skarp.forms
 
                 
 
-        }
-
-        private void Form_Administration_Add_User_Load(object sender, EventArgs e)
-        {
-            
         }
     }
     

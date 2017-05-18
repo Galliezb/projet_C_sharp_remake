@@ -51,3 +51,14 @@ Desription :
 Ajouter
 Ajouter une team
 Soumettre
+Les mots de passes sont différents
+Le mot de passe ne peut pas être identique au pseudonyme
+Utilisateur ajouté à la BDD
+Langue
+Confirmation
+Administrateur
+Organisateur
+Utilisateur
+Sélectionnez le type d'utilisateur
+Entrez les informations requises
+Form admin : Ajout d'utilisateur

@@ -91,7 +91,7 @@
             this.lbDesc.Name = "lbDesc";
             this.lbDesc.Size = new System.Drawing.Size(101, 20);
             this.lbDesc.TabIndex = 61;
-            this.lbDesc.Text = "Description :";
+            this.lbDesc.Text = Traducteur.traduction_[49];
             // 
             // lbLanguage
             // 
@@ -100,7 +100,7 @@
             this.lbLanguage.Name = "lbLanguage";
             this.lbLanguage.Size = new System.Drawing.Size(96, 20);
             this.lbLanguage.TabIndex = 60;
-            this.lbLanguage.Text = "Language : ";
+            this.lbLanguage.Text = Traducteur.traduction_[56] + " :";
             // 
             // lbFirstName
             // 
@@ -109,7 +109,7 @@
             this.lbFirstName.Name = "lbFirstName";
             this.lbFirstName.Size = new System.Drawing.Size(94, 20);
             this.lbFirstName.TabIndex = 58;
-            this.lbFirstName.Text = "Firstname :";
+            this.lbFirstName.Text = Traducteur.traduction_[36] + " :";
             // 
             // tbPseudo
             // 
@@ -127,7 +127,7 @@
             this.lbPseudo.Name = "lbPseudo";
             this.lbPseudo.Size = new System.Drawing.Size(74, 20);
             this.lbPseudo.TabIndex = 56;
-            this.lbPseudo.Text = "Pseudo : ";
+            this.lbPseudo.Text = Traducteur.traduction_[34] + " :";
             // 
             // tbMail
             // 
@@ -145,7 +145,7 @@
             this.lbMail.Name = "lbMail";
             this.lbMail.Size = new System.Drawing.Size(51, 20);
             this.lbMail.TabIndex = 54;
-            this.lbMail.Text = "Mail :";
+            this.lbMail.Text = Traducteur.traduction_[38] + " :";
             // 
             // textBox1
             // 
@@ -163,7 +163,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 52;
-            this.label1.Text = "Confirm :";
+            this.label1.Text = Traducteur.traduction_[57] + " :";
             // 
             // tbPwd
             // 
@@ -181,7 +181,7 @@
             this.lbPwd.Name = "lbPwd";
             this.lbPwd.Size = new System.Drawing.Size(86, 20);
             this.lbPwd.TabIndex = 50;
-            this.lbPwd.Text = "Password :";
+            this.lbPwd.Text = Traducteur.traduction_[35] + " :";
             // 
             // cbbSelectType
             // 
@@ -191,9 +191,9 @@
             this.cbbSelectType.ForeColor = System.Drawing.Color.White;
             this.cbbSelectType.FormattingEnabled = true;
             this.cbbSelectType.Items.AddRange(new object[] {
-            "Administrator",
-            "Organizer",
-            "User"});
+            "",
+            "",
+            ""} );
             this.cbbSelectType.Location = new System.Drawing.Point(484, 44);
             this.cbbSelectType.Name = "cbbSelectType";
             this.cbbSelectType.Size = new System.Drawing.Size(151, 28);
@@ -206,7 +206,7 @@
             this.lbSelectType.Name = "lbSelectType";
             this.lbSelectType.Size = new System.Drawing.Size(243, 20);
             this.lbSelectType.TabIndex = 48;
-            this.lbSelectType.Text = "Select the type of the new user : ";
+            this.lbSelectType.Text = Traducteur.traduction_[61]+" :";
             // 
             // label2
             // 
@@ -215,7 +215,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(257, 20);
             this.label2.TabIndex = 47;
-            this.label2.Text = "Enter the required informations : ";
+            this.label2.Text = Traducteur.traduction_[62] + " :";
             // 
             // tbNameUser
             // 
@@ -233,7 +233,7 @@
             this.lbNameUser.Name = "lbNameUser";
             this.lbNameUser.Size = new System.Drawing.Size(61, 20);
             this.lbNameUser.TabIndex = 45;
-            this.lbNameUser.Text = "Name :";
+            this.lbNameUser.Text = Traducteur.traduction_[37] + " :";
             // 
             // btSubmit
             // 
@@ -242,7 +242,7 @@
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(99, 32);
             this.btSubmit.TabIndex = 64;
-            this.btSubmit.Text = "SUBMIT";
+            this.btSubmit.Text = Traducteur.traduction_[52];
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click_1);
             // 
@@ -277,9 +277,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Administration_Add_User";
-            this.Text = "Form_Administration_Add_User";
+            this.Text = Traducteur.traduction_[63];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form_Administration_Add_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

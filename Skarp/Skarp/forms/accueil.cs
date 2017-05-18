@@ -213,12 +213,6 @@ namespace Skarp.forms {
             displayForm();
         }
 
-        private void jajouteunmenutropfacilementToolStripMenuItem_Click ( object sender , EventArgs e ) {
-            closeAll();
-            affichage = new forms.Form_administration_active_directory();
-            displayForm();
-        }
-
         private void ajouterUnJoueurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             closeAll();
