@@ -120,3 +120,11 @@ Choisissez un tournoi à supprimer
 Choisissez un tournoi terminé à observer
 Voir le résultat
 Choisissez un tournoi en cours à observer
+Ville
+Code du pays
+Pays
+Région
+Latitude
+Longitude
+Zone horaire
+Code postal
