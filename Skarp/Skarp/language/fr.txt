@@ -84,3 +84,10 @@ Form admin : Lister les joueurs
 Sélectionnez le tournoi
 Vainqueur
 Créer une organisation
+Créer un tournoi
+Date de début
+Date de fin
+Nombre maximal de joueurs
+Championnat toute ronde
+Eliminiation directe
+Phase de groupe
