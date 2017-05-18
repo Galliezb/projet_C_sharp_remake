@@ -60,11 +60,11 @@ namespace Skarp.forms {
         {
             if (allNews.delete())
             {
-                MessageBox.Show(Traducteur.traduction_[66]);
+                MessageBox.Show(Traducteur.traduction_[4]);
             }
             else
             {
-                MessageBox.Show(Traducteur.traduction_[67]);
+                MessageBox.Show(Traducteur.traduction_[68]);
             }
 
             dataSetAllNews.Tables["News"].Rows[ligneDelete].Delete();

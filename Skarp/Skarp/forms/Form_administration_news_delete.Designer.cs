@@ -38,7 +38,7 @@
             this.lb_explication.Name = "lb_explication";
             this.lb_explication.Size = new System.Drawing.Size(700, 33);
             this.lb_explication.TabIndex = 18;
-            this.lb_explication.Text = "Choisissez une news à supprimer :";
+            this.lb_explication.Text = Traducteur.traduction_[69]+ " :";
             this.lb_explication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cb_titre_news
@@ -57,7 +57,7 @@
             this.lb_message.Name = "lb_message";
             this.lb_message.Size = new System.Drawing.Size(124, 24);
             this.lb_message.TabIndex = 17;
-            this.lb_message.Text = "Message";
+            this.lb_message.Text = Traducteur.traduction_[65]+" :";
             this.lb_message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_message
@@ -76,7 +76,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 24);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Auteur : ";
+            this.label1.Text = Traducteur.traduction_[70]+" : ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_auteur
@@ -94,7 +94,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(113, 54);
             this.btSave.TabIndex = 53;
-            this.btSave.Text = "Supprimer";
+            this.btSave.Text = Traducteur.traduction_[13];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
@@ -116,7 +116,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_administration_news_delete";
-            this.Text = "Form_administration_news_delete";
+            this.Text = Traducteur.traduction_[71];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();

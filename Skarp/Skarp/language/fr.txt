@@ -66,3 +66,7 @@ Informations insérées en BDD
 Message
 Titre
 Sauvegarder
+Erreur de suppression des données en BDD
+Choisissez une news à supprimer
+Auteur
+Form administration : supppression de news
