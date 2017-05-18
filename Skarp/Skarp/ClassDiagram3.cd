@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Skarp.classes.ADConnection">
+    <Position X="25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>classes\ADConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Arbo">
+    <Position X="4.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAYAgAAAEBAeAIAAAAAAYAHAAAgIMAfAAAAJPhnAAA=</HashCode>
+      <FileName>classes\Arbo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.DatabaseConnection">
+    <Position X="10.5" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAQAAAAEgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>classes\DatabaseConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Fonction">
+    <Position X="25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAQAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>classes\Fonction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.News">
+    <Position X="16.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgEAAQgARAgAkAAAAAAQAAAAAAAAAQAAgAIAAEACA=</HashCode>
+      <FileName>classes\News.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Organisation">
+    <Position X="15.75" Y="12.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEgAAAIBggAAAIAAAAQQBAAAAAAIEAAAAIQAEIAA=</HashCode>
+      <FileName>classes\Organization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Session">
+    <Position X="19.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgAAAABAgBggAAAABAAAgAAEAAgAAAAABgAAIAA=</HashCode>
+      <FileName>classes\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Team">
+    <Position X="10.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAAABBAAKAAaAQAAYAAAAAEAAAAgAAAAFAkIAA=</HashCode>
+      <FileName>classes\Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Tournament">
+    <Position X="9.75" Y="12.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAgAGBgAAEAKCACAQAAQgAEAADEAAAAAADEIAA=</HashCode>
+      <FileName>classes\Tournament.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Traducteur">
+    <Position X="15" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>classes\Traducteur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skarp.Users">
+    <Position X="5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEQAgAAAABBgAggAAAABQAAgAAEIAgAAAAAJgAEIAA=</HashCode>
+      <FileName>classes\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
