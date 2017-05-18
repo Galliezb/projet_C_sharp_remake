@@ -16,7 +16,6 @@ namespace Skarp.forms {
         public Form_tournament_details_read_only (int idArboToSee) {
             InitializeComponent();
             idArboToSee_ = idArboToSee;
-            MessageBox.Show( "id reçu:" + idArboToSee_ );
         }
 
         private void Form_tournament_details_read_only_Load ( object sender , EventArgs e ) {

@@ -13,10 +13,6 @@ namespace Skarp.classes
     {
         public ADConnection() { }
 
-
-
-
-
         public void AddToGroup(string user)
         {
             try
@@ -53,19 +49,24 @@ namespace Skarp.classes
                 // on enregistre les infos
                 newUser.CommitChanges();
 
+                // on récupère le GUID
                 guid_utilisateur = newUser.Guid.ToString();
                 
+                // on insert sont password 
                 newUser.Invoke("SetPassword", userPassword);
                 newUser.CommitChanges();
 
+                // on le déclare en compte normal
                 newUser.Properties["userAccountControl"].Value = 0x0200; // user compte normal 
                 newUser.CommitChanges();
 
-                newUser.Invoke("Put", new object[] { "userAccountControl", "512" });
-                newUser.CommitChanges();
+                //newUser.Invoke("Put", new object[] { "userAccountControl", "512" });
+                //newUser.CommitChanges();
 
+                // on l'ajoute au groupe pour lui permettre de se connecter
                 AddToGroup(userName);
                 
+                // on ferme les connexions
                 connectionAD.Close();
                 newUser.Close();
                

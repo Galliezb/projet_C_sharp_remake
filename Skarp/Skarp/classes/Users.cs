@@ -240,7 +240,7 @@ namespace Skarp {
         public void update ( List<Users> listPlayer ) {
 
             if ( listPlayer.Count < 1 ) {
-                MessageBox.Show( Traducteur.traduction_[11] ); ;
+                MessageBox.Show( Traducteur.traduction_[0] );
             } else {
 
                 foreach ( Users player in listPlayer ) {
@@ -281,7 +281,7 @@ namespace Skarp {
 
                 // sinon on préviens de l'erreur
             } else {
-                MessageBox.Show( Traducteur.traduction_[12] );
+                MessageBox.Show( Traducteur.traduction_[1] );
             }
 
         }
@@ -294,7 +294,7 @@ namespace Skarp {
         public void delete ( List<Users> listPlayer ) {
 
             if ( listPlayer.Count < 1 ) {
-                MessageBox.Show( Traducteur.traduction_[13] );
+                MessageBox.Show( Traducteur.traduction_[0] );
             } else {
 
                 string sqlRequest = "DELETE FROM user WHERE idUser IN(";
