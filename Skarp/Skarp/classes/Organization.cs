@@ -51,14 +51,7 @@ namespace Skarp {
         /// </summary>
         public string Name {
             get { return nameOrganization_; }
-            set {
-                if ( value.Length > 50 ) {
-                    MessageBox.Show( Traducteur.traduction_[14] );
-                } else {
-                    nameOrganization_ = value;
-
-                }
-            }
+            set { nameOrganization_ = value; }
         }
 
 
@@ -124,7 +117,7 @@ namespace Skarp {
 
                 
             } else {
-                MessageBox.Show( Traducteur.traduction_[19] );
+                MessageBox.Show( Traducteur.traduction_[2] );
             }
         }
 
@@ -151,7 +144,7 @@ namespace Skarp {
                 if ( idReturn > 0 ) {
                     idOrganization_ = Convert.ToInt32( idReturn );
                 } else {
-                    MessageBox.Show( Traducteur.traduction_[20] );
+                    MessageBox.Show( Traducteur.traduction_[3] );
                 }
 
                 // clear commande et ferme la connection
@@ -168,7 +161,7 @@ namespace Skarp {
 
             if ( idOrganization_ < 0 ) {
 
-                MessageBox.Show( Traducteur.traduction_[21] );
+                MessageBox.Show( Traducteur.traduction_[1] );
 
             } else {
                 maConnexionMysql.Laconnexion.Open();
@@ -180,7 +173,7 @@ namespace Skarp {
 
                 // exécute la requête
                 maConnexionMysql.Lacommande.ExecuteNonQuery();
-                MessageBox.Show( Traducteur.traduction_[22] );
+                MessageBox.Show( Traducteur.traduction_[4] );
 
                 // clear commande et ferme la connection
                 maConnexionMysql.Lacommande.Parameters.Clear();

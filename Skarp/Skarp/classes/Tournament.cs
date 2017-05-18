@@ -128,7 +128,7 @@ namespace Skarp {
                 dbConnect.Laconnexion.Close();
 
             } else {
-                MessageBox.Show( Traducteur.traduction_[42] );
+                MessageBox.Show( Traducteur.traduction_[3] );
             }
 
         }
@@ -150,7 +150,7 @@ namespace Skarp {
 
 
             dbConnect.Lacommande.CommandText = sqlRequest;
-            MessageBox.Show(dbConnect.Lacommande.CommandText.ToString());
+
             // exécute la requête
             dbConnect.Lacommande.ExecuteNonQuery();
 
@@ -159,7 +159,7 @@ namespace Skarp {
             if ( idReturn > 0 ) {
                 idTournament_ = Convert.ToInt32( idReturn );
             } else {
-                MessageBox.Show( Traducteur.traduction_[43] );
+                MessageBox.Show( Traducteur.traduction_[3] );
             }
 
             // clear commande et ferme la connection
@@ -171,7 +171,7 @@ namespace Skarp {
         public void delete( ) {
 
             if ( idTournament_ < 0 ) {
-                MessageBox.Show( Traducteur.traduction_[44] );
+                MessageBox.Show( Traducteur.traduction_[1] );
             } else {
                 dbConnect.Laconnexion.Open();
                 // creation requête et ajout à la commande
@@ -182,7 +182,7 @@ namespace Skarp {
 
                 // exécute la requête
                 dbConnect.Lacommande.ExecuteNonQuery();
-                MessageBox.Show( Traducteur.traduction_[45] );
+                MessageBox.Show( Traducteur.traduction_[4] );
 
                 // clear commande et ferme la connection
                 dbConnect.Lacommande.Parameters.Clear();

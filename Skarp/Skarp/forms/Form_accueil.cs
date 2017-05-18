@@ -33,10 +33,10 @@ namespace Skarp.forms {
             if ( userToIdentification.identification() ) {
 
                 // identification correct, on entre
-                MessageBox.Show( this , Traducteur.traduction_[48] + " " + tb_login.Text );
+                MessageBox.Show( this , Traducteur.traduction_[31] + " " + tb_login.Text );
 
             } else {
-                MessageBox.Show( Traducteur.traduction_[1] );
+                MessageBox.Show( Traducteur.traduction_[32] );
             }
 
         }
@@ -152,7 +152,7 @@ namespace Skarp.forms {
         public void loadData () {
             
 
-            Traducteur.loadText( "fr" );
+            Traducteur.loadText( Session.language );
             
 
             // traduction du panel de gauche

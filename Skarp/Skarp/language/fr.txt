@@ -1,69 +1,33 @@
-﻿Créer un compte
-Login et / ou mot de passe incorrect
-L'ID est incorrect
-Le nom ne peut dépasser 50 caractères
-Le prenom ne peut dépasser 50 caractères
-L'email ne peut dépasser 255 caractères
-Le mot de passe ne peut dépasser 255 caractères
-Le pseudo ne peut dépasser 50 caractères
-La langue ne peut être que 'fr' ou 'en'
-isOrganizer nécessite un booléen
-isAdmin nécessite un booléen
-Impossible d'update depuis une liste vide
-Impossible de supprimer un utilisateur sans IDuser défini ( nom : 
-Impossible de supprimer depuis une liste vide
-Le nom ne peut dépasser 50 caractères
-Le nom du responsable ne peut dépasser 50 caractères
-Le mail ne peut dépasser 255 caractères
-La date ne peut être passée
-La description ne peut dépasser 255 caractères
-Id de l'organisation incorrect pour une mise à jour en BDD
-Erreur de retour d'ID après insertion en BDD
-Id de l'organisation incorrect pour suppression en BDD
-Organisation surpprimée
-Le nom ne peut dépasser 50 caractères
-L'id du capitaine ne peut-être négatif
-L'id de la team ne peut-être négatif
-La description ne peut dépasser 255 caractères
-La date ne peut être passée
-ID incorrect pour update de la BDD
-Retour d'id incorrect après insertion
-Id Team incorrect pour une suppression en BDD
-Equipe surpprimée
-Le nom est trop long ( 50 charactères maximum )
-La description doit faire plus de 10 caractères
-La date ne peut être passée
-Il faut d'abord enregistré la startDate de start avant la endDate
-Les tournois doivent avoir minimum 3 jours d'écart entre le début et la fin
-Championnat toute ronde
-Elimination directe
-Phase de groupe
-Le type de tournoi est incorrect
-Minimum 12 joueurs nécessaire pour un tournoi
-L'id du tournoi n'est pas défini
-La BDD n'as pas retourné l'idTournament créée et l'idTournament n'as donc pas pu être mis à jour.
-Impossible de supprimer le tournoi. L'ID n'est pas défini.
-Tournoi surpprimé
-Pseudonyme
-Mot de passe
+﻿La liste est vide. Update annulé.
+Impossible de supprimer une ligne sans un ID correct.
+Impossible de mettre à jour, ID non renseigné.
+Erreur d'insertion : La BDD n'as pas retourné d'ID après un insert.
+Informations supprimées.
+Informations mises à jour.
+Équipes
+Ajouter une équipe
+Gérer vos équipes
+Ajouter un joueur
+Tournoi
+Créer
+Modifier
+Supprimer
+Lister
+En cours
+Fini
+Voir en détail
+Top 10
+Options
+Organisation
+Administration
+Ajouter des utilisateurs
+Afficher la liste
+Des joueurs
+Des équipes
+Promouvoir un utilisateur
+Les nouvelles
+Ajouter
+Active Directory
+Service Web
 Bienvenue
-Créer un compte
-Prénom
-Nom
-Email
-Mot de passe
-Pseudonyme
-Français
-Anglais
-Les mots de passe ne correspondent pas
-La langue ne peut être que
-ou
-Langue
-Organisateur
-News insérée
-Erreur : La news n'as pas été insérée
-News modifié
-Erreur : La news n'as pas pu être modifié
-News supprimé
-Erreur : Impossible de supprimer la news
-Informations sauvegardées
+Identifiants icorrects

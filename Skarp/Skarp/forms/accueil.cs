@@ -28,8 +28,11 @@ namespace Skarp.forms {
             // défini la langue par défaut au démarrage applicatif
             Session.language = "fr";
             // charge la langue depuis le fichier
+            // l'identification avec les infos en BDD a peut-être changer cette valeure, on recharge donc
             Traducteur.traduction_.Clear();
-            Traducteur.loadText( "fr" );
+            Traducteur.loadText( Session.language );
+
+
             if (Session.isAdmin == false )
             {
                 menu_general.Items[5].Visible = false;
@@ -66,15 +69,6 @@ namespace Skarp.forms {
         private void closeAll() {
 
             foreach(Form f in this.MdiChildren ) {
-                int x = 0;
-                while ( true ) {
-                    f.Location = new Point( x , 0 );
-                    x++;
-                    if ( x > 800 ) {
-                        break;
-                    }
-                }
-
                 f.Close();
             }
 
@@ -82,6 +76,7 @@ namespace Skarp.forms {
 
         private void displayForm () {
 
+            // paramètre par défaut de tout enfant du MDI
             affichage.MdiParent = this;
             affichage.FormBorderStyle = FormBorderStyle.None;
             affichage.StartPosition = FormStartPosition.Manual;
@@ -106,7 +101,6 @@ namespace Skarp.forms {
         private void desJoueursToolStripMenuItem_Click ( object sender , EventArgs e ) {
             closeAll();
             affichage = new forms.Form_administration_voir_joueurs();
-            affichage.MdiParent = this;
             displayForm();
         }
 
@@ -162,11 +156,6 @@ namespace Skarp.forms {
             closeAll();
             affichage = new forms.Form_administration_news_delete();
             displayForm();
-        }
-
-        private void menu_general_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-           
         }
 
         private void ajouterUneÉquipeToolStripMenuItem_Click(object sender, EventArgs e)

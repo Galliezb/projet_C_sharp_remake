@@ -72,7 +72,6 @@
     <Compile Include="classes\News.cs" />
     <Compile Include="classes\Organization.cs" />
     <Compile Include="classes\Session.cs" />
-    <Compile Include="classes\sql_non_identifie.cs" />
     <Compile Include="classes\Team.cs" />
     <Compile Include="classes\Tournament.cs" />
     <Compile Include="classes\Traducteur.cs" />
