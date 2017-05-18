@@ -38,8 +38,8 @@
             this.lbPseudo = new System.Windows.Forms.Label();
             this.tbMail = new System.Windows.Forms.TextBox();
             this.lbMail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbpwd2 = new System.Windows.Forms.TextBox();
+            this.lbpwd2 = new System.Windows.Forms.Label();
             this.tbPwd = new System.Windows.Forms.TextBox();
             this.lbPwd = new System.Windows.Forms.Label();
             this.cbbSelectType = new System.Windows.Forms.ComboBox();
@@ -142,22 +142,23 @@
             this.lbMail.Size = new System.Drawing.Size(0, 23);
             this.lbMail.TabIndex = 54;
             // 
-            // textBox1
+            // tbpwd2
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(484, 240);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 32);
-            this.textBox1.TabIndex = 53;
+            this.tbpwd2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
+            this.tbpwd2.ForeColor = System.Drawing.Color.White;
+            this.tbpwd2.Location = new System.Drawing.Point(484, 240);
+            this.tbpwd2.Name = "tbpwd2";
+            this.tbpwd2.Size = new System.Drawing.Size(151, 32);
+            this.tbpwd2.TabIndex = 53;
             // 
-            // label1
+            // lbpwd2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 243);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 23);
-            this.label1.TabIndex = 52;
+            this.lbpwd2.AutoSize = true;
+            this.lbpwd2.Location = new System.Drawing.Point(187, 243);
+            this.lbpwd2.Name = "lbpwd2";
+            this.lbpwd2.Size = new System.Drawing.Size(90, 23);
+            this.lbpwd2.TabIndex = 52;
+            this.lbpwd2.Text = Traducteur.traduction_[35];
             // 
             // tbPwd
             // 
@@ -175,6 +176,7 @@
             this.lbPwd.Name = "lbPwd";
             this.lbPwd.Size = new System.Drawing.Size(0, 23);
             this.lbPwd.TabIndex = 50;
+            this.lbPwd.Text = Traducteur.traduction_[35];
             // 
             // cbbSelectType
             // 
@@ -199,6 +201,7 @@
             this.lbSelectType.Name = "lbSelectType";
             this.lbSelectType.Size = new System.Drawing.Size(0, 23);
             this.lbSelectType.TabIndex = 48;
+            this.lbSelectType.Text = Traducteur.traduction_[56];
             // 
             // label2
             // 
@@ -224,6 +227,7 @@
             this.lbNameUser.Name = "lbNameUser";
             this.lbNameUser.Size = new System.Drawing.Size(0, 23);
             this.lbNameUser.TabIndex = 45;
+            this.lbNameUser.Text = Traducteur.traduction_[37];
             // 
             // btSubmit
             // 
@@ -234,6 +238,7 @@
             this.btSubmit.TabIndex = 64;
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click_1);
+            this.btSubmit.Text = Traducteur.traduction_[52];
             // 
             // Form_Administration_Add_User
             // 
@@ -252,8 +257,8 @@
             this.Controls.Add(this.lbPseudo);
             this.Controls.Add(this.tbMail);
             this.Controls.Add(this.lbMail);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbpwd2);
+            this.Controls.Add(this.lbpwd2);
             this.Controls.Add(this.tbPwd);
             this.Controls.Add(this.lbPwd);
             this.Controls.Add(this.cbbSelectType);
@@ -284,8 +289,8 @@
         private System.Windows.Forms.Label lbPseudo;
         private System.Windows.Forms.TextBox tbMail;
         private System.Windows.Forms.Label lbMail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbpwd2;
+        private System.Windows.Forms.Label lbpwd2;
         private System.Windows.Forms.TextBox tbPwd;
         private System.Windows.Forms.Label lbPwd;
         private System.Windows.Forms.ComboBox cbbSelectType;

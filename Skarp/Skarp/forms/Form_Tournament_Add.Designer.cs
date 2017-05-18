@@ -52,7 +52,7 @@
             this.lbNom.Name = "lbNom";
             this.lbNom.Size = new System.Drawing.Size(56, 20);
             this.lbNom.TabIndex = 0;
-            this.lbNom.Text = "Nom : ";
+            this.lbNom.Text = Traducteur.traduction_[49];
             // 
             // lbType
             // 
@@ -61,7 +61,7 @@
             this.lbType.Name = "lbType";
             this.lbType.Size = new System.Drawing.Size(54, 20);
             this.lbType.TabIndex = 1;
-            this.lbType.Text = "Type :";
+            this.lbType.Text = Traducteur.traduction_[115];
             // 
             // lbMaxPlayer
             // 
@@ -70,7 +70,7 @@
             this.lbMaxPlayer.Name = "lbMaxPlayer";
             this.lbMaxPlayer.Size = new System.Drawing.Size(117, 20);
             this.lbMaxPlayer.TabIndex = 2;
-            this.lbMaxPlayer.Text = "Max. Joueurs :";
+            this.lbMaxPlayer.Text = Traducteur.traduction_[116];
             // 
             // lbStartDate
             // 
@@ -79,7 +79,7 @@
             this.lbStartDate.Name = "lbStartDate";
             this.lbStartDate.Size = new System.Drawing.Size(119, 20);
             this.lbStartDate.TabIndex = 3;
-            this.lbStartDate.Text = "Date de début :";
+            this.lbStartDate.Text = Traducteur.traduction_[87];
             // 
             // lbEndDate
             // 
@@ -88,7 +88,7 @@
             this.lbEndDate.Name = "lbEndDate";
             this.lbEndDate.Size = new System.Drawing.Size(97, 20);
             this.lbEndDate.TabIndex = 4;
-            this.lbEndDate.Text = "Date de fin :";
+            this.lbEndDate.Text = Traducteur.traduction_[88];
             // 
             // lbDescription
             // 
@@ -97,7 +97,7 @@
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(101, 20);
             this.lbDescription.TabIndex = 5;
-            this.lbDescription.Text = "Description :";
+            this.lbDescription.Text = Traducteur.traduction_[49];
             // 
             // btSubmit
             // 
@@ -106,7 +106,7 @@
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(99, 32);
             this.btSubmit.TabIndex = 65;
-            this.btSubmit.Text = "SUBMIT";
+            this.btSubmit.Text = Traducteur.traduction_[52];
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
             // 
@@ -160,7 +160,7 @@
             this.lb_Jeu.Name = "lb_Jeu";
             this.lb_Jeu.Size = new System.Drawing.Size(44, 20);
             this.lb_Jeu.TabIndex = 72;
-            this.lb_Jeu.Text = "Jeu :";
+            this.lb_Jeu.Text = Traducteur.traduction_[117];
             // 
             // tb_Jeu
             // 

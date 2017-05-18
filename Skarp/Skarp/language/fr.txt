@@ -47,7 +47,7 @@ Votre mot de passe ne peut faire plus de 255 caractères
 Le choix de la langue ne peut être que
 ou
 Nom :
-Desription : 
+Description : 
 Ajouter
 Ajouter une team
 Soumettre
@@ -113,3 +113,6 @@ L'apocalypse touche à sa fin, et il ne reste que les Heavy Metal Machines. Bien
 Paladins est un jeu de tir en équipe combinant des éléments de stratégie à un système de personnalisation de personnages unique via des cartes à collectionner. Ces cartes permettent d'améliorer et de renforcer les compétences d'un champion de nombreuses façons.
 Sortez votre deck et préparez-vous pour Hearthstone. Les règles de ce jeu de cartes et de stratégie sont simples, mais vous pouvez vous attendre à des défis épiques et intenses ! Jouez gratuitement, utilisez vos cartes pour jeter des sorts, invoquer des créatures et donner des ordres aux héros de Warcraft lors de duels légendaires et stratégiques
 ORION Dino Horde est un jeu de tir disponible en téléchargement sur PC. Il s'agit d'une version améliorée du jeu de base, ORION : Dino Beatdown offrant 5 modes de jeu supplémentaires, de nouvelles armes et des améliorations supplémentaires.
+Type
+Max joueurs
+Jeu
