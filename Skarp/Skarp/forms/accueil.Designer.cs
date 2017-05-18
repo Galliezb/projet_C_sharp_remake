@@ -49,7 +49,6 @@
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jajouteunmenutropfacilementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_general.SuspendLayout();
             this.SuspendLayout();
@@ -195,8 +194,7 @@
             this.ajouterUnUtilisateurToolStripMenuItem,
             this.gestionBDDToolStripMenuItem,
             this.promouvoirUnUtilisateurToolStripMenuItem,
-            this.ajouterUnToolStripMenuItem,
-            this.jajouteunmenutropfacilementToolStripMenuItem});
+            this.ajouterUnToolStripMenuItem});
             this.fesdfsfsToolStripMenuItem.Name = "fesdfsfsToolStripMenuItem";
             this.fesdfsfsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.fesdfsfsToolStripMenuItem.Text = Traducteur.traduction_[21];
@@ -269,13 +267,6 @@
             this.supprimerToolStripMenuItem.Text = Traducteur.traduction_[14];
             this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
-            // jajouteunmenutropfacilementToolStripMenuItem
-            // 
-            this.jajouteunmenutropfacilementToolStripMenuItem.Name = "jajouteunmenutropfacilementToolStripMenuItem";
-            this.jajouteunmenutropfacilementToolStripMenuItem.Size = new System.Drawing.Size(271, 24);
-            this.jajouteunmenutropfacilementToolStripMenuItem.Text = Traducteur.traduction_[29];
-            this.jajouteunmenutropfacilementToolStripMenuItem.Click += new System.EventHandler(this.jajouteunmenutropfacilementToolStripMenuItem_Click);
-            // 
             // webServiceToolStripMenuItem
             // 
             this.webServiceToolStripMenuItem.Name = "webServiceToolStripMenuItem";
@@ -314,7 +305,6 @@
         private System.Windows.Forms.ToolStripMenuItem gestionBDDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem promouvoirUnUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jajouteunmenutropfacilementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem top10ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desJoueursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;

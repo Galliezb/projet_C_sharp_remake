@@ -37,7 +37,7 @@
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(99, 32);
             this.btSubmit.TabIndex = 65;
-            this.btSubmit.Text = "SUBMIT";
+            this.btSubmit.Text = Traducteur.traduction_[52];
             this.btSubmit.UseVisualStyleBackColor = true;
             // 
             // textBox1
