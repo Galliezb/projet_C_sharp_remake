@@ -79,3 +79,4 @@ Plus de gens avec des droits ?
 Etes-vous inconscient ?
 Faille détecté, cliquez pour corriger
 Form admin : Promouvoir un utilisateur
+Form admin : Lister les équipes

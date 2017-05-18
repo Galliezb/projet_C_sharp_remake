@@ -43,7 +43,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(126, 67);
             this.btSave.TabIndex = 48;
-            this.btSave.Text = "Sauvegarder";
+            this.btSave.Text = Traducteur.traduction_[67];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
@@ -82,7 +82,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Name = "Form_Administration_Voir_Equipes";
+            this.Name = Traducteur.traduction_[81];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_Administration_Voir_Equipes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_team)).EndInit();
