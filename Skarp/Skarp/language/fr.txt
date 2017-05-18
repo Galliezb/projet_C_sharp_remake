@@ -117,3 +117,5 @@ Type
 Max joueurs
 Jeu
 Choisissez un tournoi à supprimer
+Choisissez un tournoi terminé à observer
+Voir le résultat
