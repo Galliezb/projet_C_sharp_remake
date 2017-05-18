@@ -30,4 +30,19 @@ Ajouter
 Active Directory
 Service Web
 Bienvenue
-Identifiants icorrects
+Identifiants incorrects
+Créer un compte
+Nom d'utilisateur
+Mot de passe
+Prénom
+Nom
+Email
+Pseudonyme
+fr
+en
+Votre prénom ne peut faire plus de 50 caractères
+Votre nom ne peut faire plus de 50 caractères
+Votre email ne peut faire plus de 255 caractères
+Votre mot de passe ne peut faire plus de 255 caractères
+Le choix de la langue ne peut être que
+ou

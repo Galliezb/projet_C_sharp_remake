@@ -25,22 +25,6 @@ namespace Skarp.forms {
 
         }
 
-        private void bt_identification_Click ( object sender , EventArgs e ) {
-
-            // pour l'identification joueur
-            Users userToIdentification = new Users( tb_login.Text , tb_pwd.Text );
-
-            if ( userToIdentification.identification() ) {
-
-                // identification correct, on entre
-                MessageBox.Show( this , Traducteur.traduction_[31] + " " + tb_login.Text );
-
-            } else {
-                MessageBox.Show( Traducteur.traduction_[32] );
-            }
-
-        }
-
         private void label_se_connecter_Click ( object sender , EventArgs e ) {
             panel_create_account.Visible = false;
             panel_login.Visible = true;
@@ -51,11 +35,14 @@ namespace Skarp.forms {
             panel_login.Visible = false;
         }
 
+        
         private void bt_identification_Click_1 ( object sender , EventArgs e ) {
 
             Users userConnexion = new Users( tb_login.Text , tb_pwd.Text );
 
             if ( userConnexion.identification() ) {
+
+                MessageBox.Show( Traducteur.traduction_[31] +" "+ Session.pseudo );
 
                 Form f = new forms.accueil();
                 Fonction.centerWindows( f );
@@ -64,26 +51,27 @@ namespace Skarp.forms {
                 this.Hide();
 
             } else {
-                MessageBox.Show(Traducteur.traduction_[1]);
+                MessageBox.Show(Traducteur.traduction_[32]);
             }
 
 
         }
+        
 
         private void bouton_inscription_Click ( object sender , EventArgs e ) {
 
             if ( tb_prenom.Text.Length > 50 ) {
-                MessageBox.Show( Traducteur.traduction_[4] );
+                MessageBox.Show( Traducteur.traduction_[42] );
             } else if ( tb_nom.Text.Length > 50 ) {
-                MessageBox.Show( Traducteur.traduction_[3] );
+                MessageBox.Show( Traducteur.traduction_[43] );
             } else if ( tb_email.Text.Length > 255 ) {
-                MessageBox.Show( Traducteur.traduction_[5] );
+                MessageBox.Show( Traducteur.traduction_[44] );
             } else if ( tb_password1.Text.Length > 255 ) {
-                MessageBox.Show( Traducteur.traduction_[6] );
+                MessageBox.Show( Traducteur.traduction_[45] );
             } else if ( tb_password1.Text != tb_password2.Text ) {
-                MessageBox.Show( Traducteur.traduction_[57] );
-            } else if ( cb_choix_langue.SelectedItem.ToString() != Traducteur.traduction_[55] && cb_choix_langue.SelectedItem.ToString() != Traducteur.traduction_[56] ) {
-                MessageBox.Show( Traducteur.traduction_[58] +" "+ Traducteur.traduction_[55] + " " + Traducteur.traduction_[60] + " " + Traducteur.traduction_[56] );
+                MessageBox.Show( Traducteur.traduction_[46] );
+            } else if ( cb_choix_langue.SelectedItem.ToString() != Traducteur.traduction_[40] && cb_choix_langue.SelectedItem.ToString() != Traducteur.traduction_[41] ) {
+                MessageBox.Show( Traducteur.traduction_[47] +" "+ Traducteur.traduction_[40] + " " + Traducteur.traduction_[48] + " " + Traducteur.traduction_[41] );
             } else {
 
                 // on insert le nouvelle utilisateur en BDD avec les infos du form
@@ -95,9 +83,9 @@ namespace Skarp.forms {
                 newUser.password = tb_password1.Text;
                 newUser.pseudo = tb_pseudo.Text;
 
-                if ( cb_choix_langue.SelectedItem.ToString() == Traducteur.traduction_[55] ) {
+                if ( cb_choix_langue.SelectedItem.ToString() == Traducteur.traduction_[40] ) {
                     newUser.language = "fr";
-                } else if ( cb_choix_langue.SelectedItem.ToString() == Traducteur.traduction_[56] ) {
+                } else if ( cb_choix_langue.SelectedItem.ToString() == Traducteur.traduction_[41] ) {
                     newUser.language = "en";
                 }
 
@@ -156,22 +144,21 @@ namespace Skarp.forms {
             
 
             // traduction du panel de gauche
-            lb_createAccount.Text = Traducteur.traduction_[0];
-            tb_login.Text = Traducteur.traduction_[46];
-            tb_pwd.Text = Traducteur.traduction_[47];
+            lb_createAccount.Text = Traducteur.traduction_[33];
+            tb_login.Text = Traducteur.traduction_[34];
+            tb_pwd.Text = Traducteur.traduction_[35];
 
             // traduction du panel de droite
-            lb_create_account.Text = Traducteur.traduction_[49];
-            tb_prenom.Text = Traducteur.traduction_[50];
-            tb_nom.Text = Traducteur.traduction_[51];
-            tb_email.Text = Traducteur.traduction_[52];
-            tb_password1.Text = Traducteur.traduction_[53];
-            tb_password2.Text = Traducteur.traduction_[53];
-            tb_pseudo.Text = Traducteur.traduction_[54];
+            tb_prenom.Text = Traducteur.traduction_[36];
+            tb_nom.Text = Traducteur.traduction_[37];
+            tb_email.Text = Traducteur.traduction_[38];
+            tb_password1.Text = Traducteur.traduction_[35];
+            tb_password2.Text = Traducteur.traduction_[35];
+            tb_pseudo.Text = Traducteur.traduction_[39];
 
             cb_choix_langue.Items.Clear();
-            cb_choix_langue.Items.Add( Traducteur.traduction_[55] );
-            cb_choix_langue.Items.Add( Traducteur.traduction_[56] );
+            cb_choix_langue.Items.Add( Traducteur.traduction_[40] );
+            cb_choix_langue.Items.Add( Traducteur.traduction_[40] );
             cb_choix_langue.SelectedIndex = 0;
 
             allNews = new News();
