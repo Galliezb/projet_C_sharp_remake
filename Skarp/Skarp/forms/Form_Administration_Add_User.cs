@@ -116,9 +116,6 @@ namespace Skarp.forms
 
         }
 
-        private void Form_Administration_Add_User_Load ( object sender , EventArgs e ) {
-
-        }
     }
     
 }
