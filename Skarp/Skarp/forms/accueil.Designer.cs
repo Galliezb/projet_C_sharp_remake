@@ -23,6 +23,7 @@
         /// le contenu de cette méthode avec l'éditeur de code.
         /// </summary>
         private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(accueil));
             this.menu_general = new System.Windows.Forms.MenuStrip();
             this.vosÉquipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneÉquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -284,6 +285,7 @@
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menu_general;
             this.Margin = new System.Windows.Forms.Padding(4);
