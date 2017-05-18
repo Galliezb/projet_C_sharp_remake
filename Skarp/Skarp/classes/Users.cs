@@ -385,8 +385,8 @@ namespace Skarp {
                 Session.password = monReaderMysql["password"].ToString();
                 Session.pseudo = monReaderMysql["pseudo"].ToString();
                 Session.language = monReaderMysql["language"].ToString();
-                Session.isAdmin = Convert.ToBoolean( monReaderMysql["idUser"] ); ;
-                Session.isOrganizer = Convert.ToBoolean( monReaderMysql["idUser"] ); ;
+                Session.isAdmin = Convert.ToBoolean( monReaderMysql["isAdmin"] ); ;
+                Session.isOrganizer = Convert.ToBoolean( monReaderMysql["isOrganizer"]); ;
 
                 // on préviens qu'on a su trouver un joueur avec ce mot de passe
                 result = true;
