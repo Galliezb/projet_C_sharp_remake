@@ -94,12 +94,6 @@
     <Compile Include="forms\Form_AddTeam.Designer.cs">
       <DependentUpon>Form_AddTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Form_administration_active_directory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\Form_administration_active_directory.Designer.cs">
-      <DependentUpon>Form_administration_active_directory.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\Form_Administration_Add_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,9 +247,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_AddTeam.resx">
       <DependentUpon>Form_AddTeam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\Form_administration_active_directory.resx">
-      <DependentUpon>Form_administration_active_directory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Administration_Add_User.resx">
       <DependentUpon>Form_Administration_Add_User.cs</DependentUpon>
