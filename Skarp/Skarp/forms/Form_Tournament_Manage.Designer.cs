@@ -45,7 +45,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(113, 54);
             this.btSave.TabIndex = 52;
-            this.btSave.Text = "Save";
+            this.btSave.Text = Traducteur.traduction_[67];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
