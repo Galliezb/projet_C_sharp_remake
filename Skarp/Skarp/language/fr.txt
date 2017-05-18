@@ -47,7 +47,7 @@ Votre mot de passe ne peut faire plus de 255 caractères
 Le choix de la langue ne peut être que
 ou
 Nom :
-Desription : 
+Description : 
 Ajouter
 Ajouter une team
 Soumettre
@@ -95,3 +95,36 @@ Nom de l'organisation
 Email du responsable
 Date de création
 Gérer l'organisation
+Les mots de passes sont différents
+Options utilisateurs
+Choisissez une équipe
+Les joueurs de l'équipe
+Joueurs disponible
+Gérer les joueurs d'une équipe
+Vos équipes
+Gestion des équipes
+Dans les Champs de justice, la victoire dépend de plusieurs facteurs. Dans le guide du débutant, vous apprendrez à contrôler votre champion, à connaître les bâtiments dispersés sur le champ de bataille et vous verrez aussi le didacticiel. Une fois prêt, vous pourrez rejoindre le combat dans votre première partie compétitive de League of Legends.
+Battlerite is an action-packed Team Arena Brawler focused on competitive PvP combat. Fight side by side with teammates to the sound of the roaring crowd in vibrant, colosseum-style surroundings. Welcome to a world where champions dedicate their lives to the arena.
+Une bande de héros survitaminés aux pouvoirs extraordinaires lutte pour la protection de la dernière étoile de l'univers, menacée par un mal mystérieux. Pour vous battre, vous pourrez compter sur des personnages et des armes d'une variété inimaginable : cyborgs hommes-oiseaux, vampires samouraïs, montagnes de muscles équipées de sulfateuses.
+Counter-Strike: Global Offensive (CS:GO) expands upon the team-based action gameplay that the franchise pioneered when it was launched 12 years ago.CS:GO features new maps, characters, and weapons and delivers updated versions of the classic CS content (de_dust, etc.). In addition, CS:GO introduces new gameplay modes, matchmaking, leader boards, and more.
+Dota 2 se joue en matchs indépendants opposant deux équipes de cinq joueurs, chacune possédant une base située en coin de carte contenant un bâtiment appelé l'« Ancient », dont la destruction mène à la victoire de l'équipe ennemie. Chaque joueur contrôle un « Héros » et est amené à accumuler de l’expérience, gagner de l'or, s'équiper d'objets et combattre l'équipe ennemie pour parvenir à la victoire.
+Dans Overwatch, vous contrôlez un héros dans des parties compétitives opposant des équipes de 6 personnes. Livrez bataille pour contrôler des objectifs, éliminez l’équipe ennemie et savourez votre victoire.
+L'apocalypse touche à sa fin, et il ne reste que les Heavy Metal Machines. Bienvenue dans un monde de folie motorisée, où seuls les plus forts sortiront indemnes du chaos et de la destruction incessants. Vous devrez décimer vos ennemis pour vous en sortir.
+Paladins est un jeu de tir en équipe combinant des éléments de stratégie à un système de personnalisation de personnages unique via des cartes à collectionner. Ces cartes permettent d'améliorer et de renforcer les compétences d'un champion de nombreuses façons.
+Sortez votre deck et préparez-vous pour Hearthstone. Les règles de ce jeu de cartes et de stratégie sont simples, mais vous pouvez vous attendre à des défis épiques et intenses ! Jouez gratuitement, utilisez vos cartes pour jeter des sorts, invoquer des créatures et donner des ordres aux héros de Warcraft lors de duels légendaires et stratégiques
+ORION Dino Horde est un jeu de tir disponible en téléchargement sur PC. Il s'agit d'une version améliorée du jeu de base, ORION : Dino Beatdown offrant 5 modes de jeu supplémentaires, de nouvelles armes et des améliorations supplémentaires.
+Type
+Max joueurs
+Jeu
+Choisissez un tournoi à supprimer
+Choisissez un tournoi terminé à observer
+Voir le résultat
+Choisissez un tournoi en cours à observer
+Ville
+Code du pays
+Pays
+Région
+Latitude
+Longitude
+Zone horaire
+Code postal

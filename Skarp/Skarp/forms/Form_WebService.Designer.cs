@@ -47,7 +47,7 @@
             this.lb_ville.Name = "lb_ville";
             this.lb_ville.Size = new System.Drawing.Size(168, 31);
             this.lb_ville.TabIndex = 0;
-            this.lb_ville.Text = "Ville";
+            this.lb_ville.Text = Traducteur.traduction_[122];
             this.lb_ville.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_code_pays
@@ -56,7 +56,7 @@
             this.lb_code_pays.Name = "lb_code_pays";
             this.lb_code_pays.Size = new System.Drawing.Size(168, 31);
             this.lb_code_pays.TabIndex = 1;
-            this.lb_code_pays.Text = "Code Pays";
+            this.lb_code_pays.Text = Traducteur.traduction_[123];
             this.lb_code_pays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_pays
@@ -65,7 +65,7 @@
             this.lb_pays.Name = "lb_pays";
             this.lb_pays.Size = new System.Drawing.Size(168, 31);
             this.lb_pays.TabIndex = 2;
-            this.lb_pays.Text = "Pays";
+            this.lb_pays.Text = Traducteur.traduction_[124];
             this.lb_pays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_region
@@ -74,7 +74,7 @@
             this.lb_region.Name = "lb_region";
             this.lb_region.Size = new System.Drawing.Size(168, 31);
             this.lb_region.TabIndex = 3;
-            this.lb_region.Text = "Région";
+            this.lb_region.Text = Traducteur.traduction_[125];
             this.lb_region.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_latitude
@@ -83,7 +83,7 @@
             this.lb_latitude.Name = "lb_latitude";
             this.lb_latitude.Size = new System.Drawing.Size(168, 31);
             this.lb_latitude.TabIndex = 4;
-            this.lb_latitude.Text = "Latitude";
+            this.lb_latitude.Text = Traducteur.traduction_[126];
             this.lb_latitude.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_longitude
@@ -92,7 +92,7 @@
             this.lb_longitude.Name = "lb_longitude";
             this.lb_longitude.Size = new System.Drawing.Size(168, 31);
             this.lb_longitude.TabIndex = 5;
-            this.lb_longitude.Text = "Longitude";
+            this.lb_longitude.Text = Traducteur.traduction_[127];
             this.lb_longitude.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_zone_horaire
@@ -101,7 +101,7 @@
             this.lb_zone_horaire.Name = "lb_zone_horaire";
             this.lb_zone_horaire.Size = new System.Drawing.Size(168, 31);
             this.lb_zone_horaire.TabIndex = 6;
-            this.lb_zone_horaire.Text = "Zone horaire";
+            this.lb_zone_horaire.Text = Traducteur.traduction_[128];
             this.lb_zone_horaire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_code_postal
@@ -110,7 +110,7 @@
             this.lb_code_postal.Name = "lb_code_postal";
             this.lb_code_postal.Size = new System.Drawing.Size(168, 31);
             this.lb_code_postal.TabIndex = 7;
-            this.lb_code_postal.Text = "Code Postal";
+            this.lb_code_postal.Text = Traducteur.traduction_[129];
             this.lb_code_postal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbr_code_postal

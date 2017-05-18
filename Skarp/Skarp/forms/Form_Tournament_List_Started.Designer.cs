@@ -63,7 +63,7 @@
             this.lb_EndDate.Name = "lb_EndDate";
             this.lb_EndDate.Size = new System.Drawing.Size(124, 24);
             this.lb_EndDate.TabIndex = 49;
-            this.lb_EndDate.Text = "Date de fin : ";
+            this.lb_EndDate.Text = Traducteur.traduction_[88];
             this.lb_EndDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_StartDate
@@ -73,7 +73,7 @@
             this.lb_StartDate.Name = "lb_StartDate";
             this.lb_StartDate.Size = new System.Drawing.Size(124, 24);
             this.lb_StartDate.TabIndex = 48;
-            this.lb_StartDate.Text = "Date de début :";
+            this.lb_StartDate.Text = Traducteur.traduction_[87];
             this.lb_StartDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_Type
@@ -92,7 +92,7 @@
             this.lb_Type.Name = "lb_Type";
             this.lb_Type.Size = new System.Drawing.Size(124, 24);
             this.lb_Type.TabIndex = 46;
-            this.lb_Type.Text = "Type :";
+            this.lb_Type.Text = Traducteur.traduction_[115];
             this.lb_Type.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_description
@@ -111,7 +111,7 @@
             this.lb_Description.Name = "lb_Description";
             this.lb_Description.Size = new System.Drawing.Size(124, 24);
             this.lb_Description.TabIndex = 44;
-            this.lb_Description.Text = "Description :";
+            this.lb_Description.Text = Traducteur.traduction_[49];
             this.lb_Description.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_explication
@@ -120,7 +120,7 @@
             this.lb_explication.Name = "lb_explication";
             this.lb_explication.Size = new System.Drawing.Size(700, 33);
             this.lb_explication.TabIndex = 43;
-            this.lb_explication.Text = "Choisissez un tournoi (en cours) à oberver :";
+            this.lb_explication.Text = Traducteur.traduction_[121];
             this.lb_explication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cb_Name_Tournament
@@ -139,7 +139,7 @@
             this.lbJeu.Name = "lbJeu";
             this.lbJeu.Size = new System.Drawing.Size(124, 24);
             this.lbJeu.TabIndex = 52;
-            this.lbJeu.Text = "Jeu :";
+            this.lbJeu.Text = Traducteur.traduction_[117];
             this.lbJeu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_Jeu
@@ -175,7 +175,6 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Tournament_List_Started";
             this.Text = "Form_Tournament_List_Started";
-            this.Load += new System.EventHandler(this.Form_Tournament_List_Started_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

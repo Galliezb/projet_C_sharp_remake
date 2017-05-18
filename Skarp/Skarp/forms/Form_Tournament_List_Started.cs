@@ -33,10 +33,6 @@ namespace Skarp.forms
             }
         }
 
-        private void Form_Tournament_List_Started_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void cb_Name_Tournament_SelectedIndexChanged(object sender, EventArgs e)
         {

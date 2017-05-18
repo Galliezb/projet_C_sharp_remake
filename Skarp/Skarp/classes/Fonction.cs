@@ -16,7 +16,7 @@ namespace Skarp {
         /// Centre la fenêtre windows envoyé en paramètre
         /// </summary>
         /// <param name="formToCenter">La fenêtre à centrer</param>
-        static public void centerWindows (Form formToCenter) {
+        static public void centerWindows ( Form formToCenter ) {
             formToCenter.Location = new Point( Screen.FromControl( formToCenter ).Bounds.Width / 2 - formToCenter.Size.Width / 2 ,
                       Screen.FromControl( formToCenter ).Bounds.Height / 2 - formToCenter.Size.Height / 2 );
 
@@ -37,7 +37,7 @@ namespace Skarp {
         }
 
 
-        static public Dictionary<string,string> CiaSeeYou () {
+        static public Dictionary<string , string> CiaSeeYou () {
 
             string ipAddress;
             using ( WebClient client = new WebClient() ) {
@@ -59,28 +59,20 @@ namespace Skarp {
             dynamic item = serializer.Deserialize<object>( content );
 
             //displaying the result
-            Dictionary<string , string> toReturn= new Dictionary<string , string>();
+            Dictionary<string , string> toReturn = new Dictionary<string , string>();
 
 
-            if ( item["response"] == "DEMO QUOTA EXCEED" ) {
-                toReturn.Add( "ville" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "codePays" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "pays" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "region" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "latitude" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "longitude" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "zoneHoraire" , "DEMO QUOTA EXCEED" );
-                toReturn.Add( "codePostal" , "DEMO QUOTA EXCEED" );
-            } else {
-                toReturn.Add( "ville" , item["city_name"] );
-                toReturn.Add( "codePays" , item["country_code"] );
-                toReturn.Add( "pays" , item["country_name"] );
-                toReturn.Add( "region" , item["region_name"] );
-                toReturn.Add( "latitude" , item["latitude"] );
-                toReturn.Add( "longitude" , item["longitude"] );
-                toReturn.Add( "zoneHoraire" , item["time_zone"] );
-                toReturn.Add( "codePostal" , item["zip_code"] );
-            }
+            /*
+            toReturn.Add( "ville" , item["city_name"] );
+            toReturn.Add( "codePays" , item["country_code"] );
+            toReturn.Add( "pays" , item["country_name"] );
+            toReturn.Add( "region" , item["region_name"] );
+            toReturn.Add( "latitude" , item["latitude"] );
+            toReturn.Add( "longitude" , item["longitude"] );
+            toReturn.Add( "zoneHoraire" , item["time_zone"] );
+            toReturn.Add( "codePostal" , item["zip_code"] );
+            */
+
 
 
             return toReturn;

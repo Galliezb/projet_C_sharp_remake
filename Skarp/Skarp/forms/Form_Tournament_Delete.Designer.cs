@@ -56,7 +56,7 @@
             this.lb_explication.Name = "lb_explication";
             this.lb_explication.Size = new System.Drawing.Size(700, 33);
             this.lb_explication.TabIndex = 19;
-            this.lb_explication.Text = "Choisissez un tournoi à supprimer :";
+            this.lb_explication.Text = Traducteur.traduction_[118];
             this.lb_explication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_Description
@@ -66,7 +66,7 @@
             this.lb_Description.Name = "lb_Description";
             this.lb_Description.Size = new System.Drawing.Size(124, 24);
             this.lb_Description.TabIndex = 20;
-            this.lb_Description.Text = "Description :";
+            this.lb_Description.Text = Traducteur.traduction_[49];
             this.lb_Description.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_description
@@ -85,7 +85,7 @@
             this.lb_Type.Name = "lb_Type";
             this.lb_Type.Size = new System.Drawing.Size(124, 24);
             this.lb_Type.TabIndex = 22;
-            this.lb_Type.Text = "Type :";
+            this.lb_Type.Text = Traducteur.traduction_[115];
             this.lb_Type.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_Type
@@ -104,7 +104,7 @@
             this.lb_StartDate.Name = "lb_StartDate";
             this.lb_StartDate.Size = new System.Drawing.Size(124, 24);
             this.lb_StartDate.TabIndex = 24;
-            this.lb_StartDate.Text = "Date de début :";
+            this.lb_StartDate.Text = Traducteur.traduction_[87];
             this.lb_StartDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_EndDate
@@ -114,7 +114,7 @@
             this.lb_EndDate.Name = "lb_EndDate";
             this.lb_EndDate.Size = new System.Drawing.Size(124, 24);
             this.lb_EndDate.TabIndex = 27;
-            this.lb_EndDate.Text = "Date de fin : ";
+            this.lb_EndDate.Text = Traducteur.traduction_[88];
             this.lb_EndDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button_sauvegarder
@@ -124,7 +124,7 @@
             this.button_sauvegarder.Name = "button_sauvegarder";
             this.button_sauvegarder.Size = new System.Drawing.Size(121, 50);
             this.button_sauvegarder.TabIndex = 28;
-            this.button_sauvegarder.Text = "Supprimer";
+            this.button_sauvegarder.Text = Traducteur.traduction_[13];
             this.button_sauvegarder.UseVisualStyleBackColor = false;
             this.button_sauvegarder.Click += new System.EventHandler(this.button_sauvegarder_Click);
             // 
@@ -165,7 +165,6 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Tournament_Delete";
             this.Text = "Form_Tournament_Delete";
-            this.Load += new System.EventHandler(this.Form_Tournament_Delete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

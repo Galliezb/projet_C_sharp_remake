@@ -50,7 +50,7 @@ namespace Skarp.forms
             {
                 MessageBox.Show(Traducteur.traduction_[45]);
             }
-            else if (tbPwd.Text != textBox1.Text)
+            else if (tbPwd.Text != tbpwd2.Text)
             {
                 MessageBox.Show(Traducteur.traduction_[53]);
             }
@@ -108,7 +108,7 @@ namespace Skarp.forms
                     tbPwd.Text = "";
                     cbLanguage.SelectedIndex = 0;
                     rtbDesc.Text = "";
-                    textBox1.Text = "";
+                    tbpwd2.Text = "";
                 }
             }
 
@@ -116,9 +116,6 @@ namespace Skarp.forms
 
         }
 
-        private void Form_Administration_Add_User_Load ( object sender , EventArgs e ) {
-
-        }
     }
     
 }

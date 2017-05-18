@@ -258,14 +258,14 @@
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
             this.modifierToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
-            this.modifierToolStripMenuItem.Text = Traducteur.traduction_[13];
+            this.modifierToolStripMenuItem.Text = Traducteur.traduction_[12];
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
             // 
             // supprimerToolStripMenuItem
             // 
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
             this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
-            this.supprimerToolStripMenuItem.Text = Traducteur.traduction_[14];
+            this.supprimerToolStripMenuItem.Text = Traducteur.traduction_[13];
             this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
             // webServiceToolStripMenuItem
