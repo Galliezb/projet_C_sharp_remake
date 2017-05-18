@@ -18,12 +18,34 @@ namespace Skarp.forms {
 
             InitializeComponent();
 
+            if ( Session.isAdmin == false ) {
+                menu_general.Items[5].Visible = false;
+
+            }
+            if ( Session.isOrganizer == false ) {
+                menu_general.Items[4].Visible = false;
+                ToolStripItemCollection leMenuTournoi = ( (ToolStripMenuItem) menu_general.Items[1] ).DropDownItems;
+                leMenuTournoi[0].Visible = false;
+                leMenuTournoi[1].Visible = false;
+                leMenuTournoi[2].Visible = false;
+                leMenuTournoi[4].Visible = false;
+
+            }
+
             // centre le formulaire 
             Fonction.centerWindows( this );
 
         }
         
         private void Form1_Load ( object sender , EventArgs e ) {
+
+            closeAll();
+            affichage = new forms.Form_WebService();
+            displayForm();
+
+        }
+
+        public void reloadAllData () {
 
             // défini la langue par défaut au démarrage applicatif
             if ( Session.language == null ) {
@@ -35,28 +57,36 @@ namespace Skarp.forms {
             Traducteur.traduction_.Clear();
             Traducteur.loadText( Session.language );
 
-
-            if (Session.isAdmin == false )
-            {
-                menu_general.Items[5].Visible = false;
-                
-            }
-            if (Session.isOrganizer == false)
-            {
-                menu_general.Items[4].Visible = false;
-                ToolStripItemCollection leMenuTournoi =  ((ToolStripMenuItem)menu_general.Items[1]).DropDownItems;
-                leMenuTournoi[0].Visible = false;
-                leMenuTournoi[1].Visible = false;
-                leMenuTournoi[2].Visible = false;
-                leMenuTournoi[4].Visible = false;
-
-            }
-
-
+            vosÉquipesToolStripMenuItem.Text = Traducteur.traduction_[6];
+            ajouterUneÉquipeToolStripMenuItem.Text = Traducteur.traduction_[7];
+            gérerVosÉquipesToolStripMenuItem.Text = Traducteur.traduction_[8];
+            ajouterUnJoueurToolStripMenuItem.Text = Traducteur.traduction_[9];
+            tournoiToolStripMenuItem.Text = Traducteur.traduction_[10];
+            créerToolStripMenuItem.Text = Traducteur.traduction_[11];
+            modifierToolStripMenuItem1.Text = Traducteur.traduction_[12];
+            supprimerToolStripMenuItem1.Text = Traducteur.traduction_[13];
+            historiqueToolStripMenuItem.Text = Traducteur.traduction_[14];
+            enCoursToolStripMenuItem.Text = Traducteur.traduction_[15];
+            historiqueToolStripMenuItem1.Text = Traducteur.traduction_[16];
+            voirEnDétailToolStripMenuItem.Text = Traducteur.traduction_[17];
+            toolStripMenuItem1.Text = Traducteur.traduction_[18];
+            test2ToolStripMenuItem.Text = Traducteur.traduction_[19];
+            organisationToolStripMenuItem.Text = Traducteur.traduction_[20];
+            fesdfsfsToolStripMenuItem.Text = Traducteur.traduction_[21];
+            ajouterUnUtilisateurToolStripMenuItem.Text = Traducteur.traduction_[22];
+            gestionBDDToolStripMenuItem.Text = Traducteur.traduction_[23];
+            desJoueursToolStripMenuItem.Text = Traducteur.traduction_[24];
+            desÉquipesToolStripMenuItem.Text = Traducteur.traduction_[25];
+            promouvoirUnUtilisateurToolStripMenuItem.Text = Traducteur.traduction_[26];
+            ajouterUnToolStripMenuItem.Text = Traducteur.traduction_[27];
+            ajouterToolStripMenuItem.Text = Traducteur.traduction_[28];
+            modifierToolStripMenuItem.Text = Traducteur.traduction_[12];
+            supprimerToolStripMenuItem.Text = Traducteur.traduction_[13];
+            webServiceToolStripMenuItem.Text = Traducteur.traduction_[30];
 
 
             closeAll();
-            affichage = new forms.Form_WebService();
+            affichage = new forms.Form_Settings_User(this);
             displayForm();
 
         }
@@ -64,7 +94,7 @@ namespace Skarp.forms {
         private void test2ToolStripMenuItem_Click ( object sender , EventArgs e ) {
             
             closeAll();
-            affichage = new forms.Form_Settings_User();
+            affichage = new forms.Form_Settings_User(this);
             displayForm();
             
         }

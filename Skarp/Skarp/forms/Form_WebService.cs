@@ -17,7 +17,7 @@ namespace Skarp.forms {
         private void Form_WebService_Load ( object sender , EventArgs e ) {
 
             Dictionary<string , string> toDsiplay = Fonction.CiaSeeYou();
-
+            /*
             lbr_ville.Text = toDsiplay["ville"];
             lbr_code_pays.Text = toDsiplay["codePays"];
             lbr_pays.Text = toDsiplay["pays"];
@@ -26,7 +26,7 @@ namespace Skarp.forms {
             lbr_longitude.Text = toDsiplay["longitude"];
             lbr_zone_horaire.Text = toDsiplay["zoneHoraire"];
             lbr_code_postal.Text = toDsiplay["codePostal"];
-
+            */
         }
     }
 }
