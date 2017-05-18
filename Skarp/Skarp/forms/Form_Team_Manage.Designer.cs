@@ -75,7 +75,7 @@
             this.lbTeam.Name = "lbTeam";
             this.lbTeam.Size = new System.Drawing.Size(104, 20);
             this.lbTeam.TabIndex = 50;
-            this.lbTeam.Text = "Vos Équipes:";
+            this.lbTeam.Text = Traducteur.traduction_[103];
             // 
             // btSave
             // 
@@ -84,7 +84,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(143, 83);
             this.btSave.TabIndex = 51;
-            this.btSave.Text = "Save";
+            this.btSave.Text = Traducteur.traduction_[67];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
@@ -102,7 +102,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Team_Manage";
-            this.Text = "Form_Team_Manage";
+            this.Text = Traducteur.traduction_[104];
             this.Load += new System.EventHandler(this.Form_Team_Manage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_team)).EndInit();
             this.ResumeLayout(false);

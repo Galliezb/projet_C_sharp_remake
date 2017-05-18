@@ -101,3 +101,5 @@ Choisissez une équipe
 Les joueurs de l'équipe
 Joueurs disponible
 Gérer les joueurs d'une équipe
+Vos équipes
+Gestion des équipes
