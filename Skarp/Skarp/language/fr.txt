@@ -116,3 +116,4 @@ ORION Dino Horde est un jeu de tir disponible en téléchargement sur PC. Il s'a
 Type
 Max joueurs
 Jeu
+Choisissez un tournoi à supprimer
