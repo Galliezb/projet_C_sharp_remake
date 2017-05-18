@@ -60,7 +60,7 @@ namespace Skarp.forms {
 
             if ( allNews.update() ) {
 
-                MessageBox.Show( Traducteur.traduction_[64] );
+                MessageBox.Show( Traducteur.traduction_[5] );
                 dataSetAllNews.Tables["News"].Rows[ligneLu]["titre"] = cb_titre_news.Text;
                 dataSetAllNews.Tables["News"].Rows[ligneLu]["message"] = tb_message;
                 dataSetAllNews.Tables["News"].Rows[ligneLu]["language"] = cb_language;
@@ -70,7 +70,7 @@ namespace Skarp.forms {
                 tb_message.Clear();
 
             } else {
-                MessageBox.Show( Traducteur.traduction_[65] );
+                MessageBox.Show( Traducteur.traduction_[2] );
             }
 
         }

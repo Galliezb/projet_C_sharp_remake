@@ -39,7 +39,7 @@
             this.button_sauvegarder.Name = "button_sauvegarder";
             this.button_sauvegarder.Size = new System.Drawing.Size(121, 50);
             this.button_sauvegarder.TabIndex = 4;
-            this.button_sauvegarder.Text = "Mettre à jour";
+            this.button_sauvegarder.Text = Traducteur.traduction_[72];
             this.button_sauvegarder.UseVisualStyleBackColor = false;
             this.button_sauvegarder.Click += new System.EventHandler(this.button_sauvegarder_Click);
             // 
@@ -50,7 +50,7 @@
             this.lb_message.Name = "lb_message";
             this.lb_message.Size = new System.Drawing.Size(124, 24);
             this.lb_message.TabIndex = 8;
-            this.lb_message.Text = "Message";
+            this.lb_message.Text = Traducteur.traduction_[65];
             this.lb_message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tb_message
@@ -68,7 +68,7 @@
             this.lb_language.Name = "lb_language";
             this.lb_language.Size = new System.Drawing.Size(74, 20);
             this.lb_language.TabIndex = 6;
-            this.lb_language.Text = "Langue :";
+            this.lb_language.Text = Traducteur.traduction_[56];
             // 
             // cb_language
             // 
@@ -96,7 +96,7 @@
             this.lb_explication.Name = "lb_explication";
             this.lb_explication.Size = new System.Drawing.Size(700, 33);
             this.lb_explication.TabIndex = 11;
-            this.lb_explication.Text = "Choisissez une news à modifier : ";
+            this.lb_explication.Text = Traducteur.traduction_[73];
             this.lb_explication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form_administration_news_modifier
@@ -117,7 +117,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_administration_news_modifier";
-            this.Text = "Form_administration_news_modifier";
+            this.Text = Traducteur.traduction_[74];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();

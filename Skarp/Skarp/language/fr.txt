@@ -70,3 +70,6 @@ Erreur de suppression des données en BDD
 Choisissez une news à supprimer
 Auteur
 Form administration : supppression de news
+Mettre à jour
+Choisissez une news à modifier
+Form Admin : Modification de news
