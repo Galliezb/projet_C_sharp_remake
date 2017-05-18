@@ -66,7 +66,7 @@ namespace Skarp.forms {
                 monOrg.update();
 
             }
-            MessageBox.Show( Traducteur.traduction_[68] );
+            MessageBox.Show( Traducteur.traduction_[5] );
 
         }
     }

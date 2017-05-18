@@ -117,7 +117,7 @@
             // 
             this.lbr_code_postal.Location = new System.Drawing.Point(324, 450);
             this.lbr_code_postal.Name = "lbr_code_postal";
-            this.lbr_code_postal.Size = new System.Drawing.Size(168, 31);
+            this.lbr_code_postal.Size = new System.Drawing.Size(250, 31);
             this.lbr_code_postal.TabIndex = 15;
             this.lbr_code_postal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -125,7 +125,7 @@
             // 
             this.lbr_zone_horaire.Location = new System.Drawing.Point(324, 400);
             this.lbr_zone_horaire.Name = "lbr_zone_horaire";
-            this.lbr_zone_horaire.Size = new System.Drawing.Size(168, 31);
+            this.lbr_zone_horaire.Size = new System.Drawing.Size(250, 31);
             this.lbr_zone_horaire.TabIndex = 14;
             this.lbr_zone_horaire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -133,7 +133,7 @@
             // 
             this.lbr_longitude.Location = new System.Drawing.Point(324, 350);
             this.lbr_longitude.Name = "lbr_longitude";
-            this.lbr_longitude.Size = new System.Drawing.Size(168, 31);
+            this.lbr_longitude.Size = new System.Drawing.Size(250, 31);
             this.lbr_longitude.TabIndex = 13;
             this.lbr_longitude.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -141,7 +141,7 @@
             // 
             this.lbr_latitude.Location = new System.Drawing.Point(324, 300);
             this.lbr_latitude.Name = "lbr_latitude";
-            this.lbr_latitude.Size = new System.Drawing.Size(168, 31);
+            this.lbr_latitude.Size = new System.Drawing.Size(250, 31);
             this.lbr_latitude.TabIndex = 12;
             this.lbr_latitude.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -149,7 +149,7 @@
             // 
             this.lbr_region.Location = new System.Drawing.Point(324, 250);
             this.lbr_region.Name = "lbr_region";
-            this.lbr_region.Size = new System.Drawing.Size(168, 31);
+            this.lbr_region.Size = new System.Drawing.Size(250, 31);
             this.lbr_region.TabIndex = 11;
             this.lbr_region.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -157,7 +157,7 @@
             // 
             this.lbr_pays.Location = new System.Drawing.Point(324, 200);
             this.lbr_pays.Name = "lbr_pays";
-            this.lbr_pays.Size = new System.Drawing.Size(168, 31);
+            this.lbr_pays.Size = new System.Drawing.Size(250, 31);
             this.lbr_pays.TabIndex = 10;
             this.lbr_pays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -165,7 +165,7 @@
             // 
             this.lbr_code_pays.Location = new System.Drawing.Point(324, 150);
             this.lbr_code_pays.Name = "lbr_code_pays";
-            this.lbr_code_pays.Size = new System.Drawing.Size(168, 31);
+            this.lbr_code_pays.Size = new System.Drawing.Size(250, 31);
             this.lbr_code_pays.TabIndex = 9;
             this.lbr_code_pays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -173,13 +173,13 @@
             // 
             this.lbr_ville.Location = new System.Drawing.Point(324, 100);
             this.lbr_ville.Name = "lbr_ville";
-            this.lbr_ville.Size = new System.Drawing.Size(168, 31);
+            this.lbr_ville.Size = new System.Drawing.Size(250, 31);
             this.lbr_ville.TabIndex = 8;
             this.lbr_ville.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form_WebService
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(154)))));
             this.ClientSize = new System.Drawing.Size(800, 600);

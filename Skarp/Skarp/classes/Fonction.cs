@@ -36,6 +36,7 @@ namespace Skarp {
             return Convert.ToBase64String( hashBytes );
         }
 
+
         static public Dictionary<string,string> CiaSeeYou () {
 
             string ipAddress;
@@ -61,15 +62,25 @@ namespace Skarp {
             Dictionary<string , string> toReturn= new Dictionary<string , string>();
 
 
-
-            toReturn.Add("ville", item["city_name"] );
-            toReturn.Add("codePays", item["country_code"] );
-            toReturn.Add("pays", item["country_name"] );
-            toReturn.Add("region", item["region_name"] );
-            toReturn.Add("latitude", item["latitude"] );
-            toReturn.Add("longitude", item["longitude"] );
-            toReturn.Add("zoneHoraire", item["time_zone"] );
-            toReturn.Add("codePostal", item["zip_code"] );
+            if ( item["response"] == "DEMO QUOTA EXCEED" ) {
+                toReturn.Add( "ville" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "codePays" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "pays" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "region" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "latitude" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "longitude" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "zoneHoraire" , "DEMO QUOTA EXCEED" );
+                toReturn.Add( "codePostal" , "DEMO QUOTA EXCEED" );
+            } else {
+                toReturn.Add( "ville" , item["city_name"] );
+                toReturn.Add( "codePays" , item["country_code"] );
+                toReturn.Add( "pays" , item["country_name"] );
+                toReturn.Add( "region" , item["region_name"] );
+                toReturn.Add( "latitude" , item["latitude"] );
+                toReturn.Add( "longitude" , item["longitude"] );
+                toReturn.Add( "zoneHoraire" , item["time_zone"] );
+                toReturn.Add( "codePostal" , item["zip_code"] );
+            }
 
 
             return toReturn;

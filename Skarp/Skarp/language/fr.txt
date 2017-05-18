@@ -91,3 +91,7 @@ Nombre maximal de joueurs
 Championnat toute ronde
 Eliminiation directe
 Phase de groupe
+Nom de l'organisation
+Email du responsable
+Date de création
+Gérer l'organisation

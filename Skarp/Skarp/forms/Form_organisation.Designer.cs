@@ -71,7 +71,7 @@
             this.button_sauvegarder.Name = "button_sauvegarder";
             this.button_sauvegarder.Size = new System.Drawing.Size(295, 63);
             this.button_sauvegarder.TabIndex = 4;
-            this.button_sauvegarder.Text = "Sauvegarder";
+            this.button_sauvegarder.Text = Traducteur.traduction_[67];
             this.button_sauvegarder.UseVisualStyleBackColor = false;
             this.button_sauvegarder.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -82,7 +82,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(295, 27);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Nom de l\'organisation";
+            this.label1.Text = Traducteur.traduction_[93];
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -92,7 +92,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(295, 27);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Description";
+            this.label2.Text = Traducteur.traduction_[49];
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
@@ -102,7 +102,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 27);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Email du responsable";
+            this.label3.Text = Traducteur.traduction_[94];
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
@@ -112,7 +112,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(295, 27);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Date de création :";
+            this.label4.Text = Traducteur.traduction_[95];
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form_organisation
@@ -134,7 +134,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_organisation";
-            this.Text = "Form_organisation";
+            this.Text = Traducteur.traduction_[96];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
