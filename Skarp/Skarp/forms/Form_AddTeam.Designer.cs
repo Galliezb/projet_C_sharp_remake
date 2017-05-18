@@ -61,7 +61,7 @@
             this.lbNameTeam.Name = "lbNameTeam";
             this.lbNameTeam.Size = new System.Drawing.Size(57, 20);
             this.lbNameTeam.TabIndex = 67;
-            this.lbNameTeam.Text = "Name:";
+            this.lbNameTeam.Text = Traducteur.traduction_[48];
             // 
             // lbDescription
             // 
@@ -70,7 +70,7 @@
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(97, 20);
             this.lbDescription.TabIndex = 67;
-            this.lbDescription.Text = "Description:";
+            this.lbDescription.Text = Traducteur.traduction_[49];
             // 
             // btAdd
             // 
@@ -79,7 +79,7 @@
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(143, 83);
             this.btAdd.TabIndex = 68;
-            this.btAdd.Text = "Add";
+            this.btAdd.Text = Traducteur.traduction_[50];
             this.btAdd.UseVisualStyleBackColor = true;
             this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
@@ -99,7 +99,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_AddTeam";
-            this.Text = "Form_AddTeam";
+            this.Text = Traducteur.traduction_[51];
             this.ResumeLayout(false);
             this.PerformLayout();
 

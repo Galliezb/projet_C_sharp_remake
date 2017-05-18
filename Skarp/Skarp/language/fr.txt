@@ -46,3 +46,7 @@ Votre email ne peut faire plus de 255 caractères
 Votre mot de passe ne peut faire plus de 255 caractères
 Le choix de la langue ne peut être que
 ou
+Nom :
+Desription : 
+Ajouter
+Ajouter une team
