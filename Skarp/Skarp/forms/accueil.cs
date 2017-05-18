@@ -26,7 +26,10 @@ namespace Skarp.forms {
         private void Form1_Load ( object sender , EventArgs e ) {
 
             // défini la langue par défaut au démarrage applicatif
-            Session.language = "fr";
+            if ( Session.language == null ) {
+                Session.language = "fr";
+                MessageBox.Show( "Force session fr" );
+            }
             // charge la langue depuis le fichier
             // l'identification avec les infos en BDD a peut-être changer cette valeure, on recharge donc
             Traducteur.traduction_.Clear();

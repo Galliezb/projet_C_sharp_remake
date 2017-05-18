@@ -1,0 +1,130 @@
+The list is empty. Update canceled.
+Unable to delete a row without a valid ID.
+Unable to update, ID not specified.
+Insertion error: The BDD did not return ID after an insert.
+Deleted information.
+Updated information.
+teams
+Add a team
+Manage your teams
+Add player
+Tournament
+Create
+Edit
+Remove
+lister
+In progress
+Finished
+More details
+Top 10
+options
+Organization
+Administration
+Add users
+Show list
+Players
+Teams
+Promoting a user
+The news
+Add
+Active Directory
+Web Service
+welcome
+Incorrect identifiers
+Create an account
+username
+Password
+First name
+Name
+E-mail
+Pseudonym
+fr
+en
+Your first name can not be more than 50 characters
+Your name can not be longer than 50 characters
+Your email can not be longer than 255 characters
+Your password can not be longer than 255 characters
+The choice of language can only be
+or
+Your Name:
+Description:
+Add
+Add a team
+Submit
+Passwords are different
+The password can not be the same as the pseudonym
+User added to the DB
+Language
+Confirmation
+Administrator
+Organizer
+User
+Select the type of user
+Enter required information
+Form admin: Add user
+Information inserted in BDD
+Message
+title
+Save
+Error deleting data in BDD
+Choose a news to remove
+Author
+Form administration: suppressing news
+Update
+Choose a news item to edit
+Form Admin: Editing news
+Promote
+Actually ?
+More people with rights?
+Are you unconscious?
+Fault detected, click to correct
+Form admin: Promote a user
+Form admin: List teams
+Form admin: List players
+Select tournament
+Winner
+Create an organization
+Create a tournament
+Start date
+End date
+Maximum number of players
+All round championship
+Direct Elimination
+Group stage
+name of the organization
+Email of the manager
+Creation date
+Manage the organization
+Passwords are different
+User Options
+Choose a team
+The players of the team
+Players available
+Managing Team Players
+Your teams
+Team management
+In the Fields of Justice, victory depends on several factors. In the beginner's guide, you will learn how to control your champion, know the buildings scattered on the battlefield and you will also see the tutorial. Once ready, you can join the fight in your first competitive part of League of Legends.
+Battlerite is an action-packed team Arena Brawler focused on competitive PvP combat. Fight side by side with teammates to the sound of the roaring crowd in vibrating, colosseum-style surroundings. Welcome to a world where champions dedicate their lives to the arena.
+A band of hero survivors with extraordinary powers struggle for the protection of the last star of the universe, threatened by a mysterious evil. To fight you can count on characters and weapons of an unimaginable variety: men-bird cyborgs, samurai vampires, mountains of muscles equipped with sulphate.
+Counter-Strike: Global Offensive (CS: GO) expands on the team-based action gameplay that the franchise pioneered when it was launched 12 years ago. Content (de_dust, etc.). In addition, CS: GO introduces new gameplay modes, matchmaking, leader boards, and more.
+Dota 2 is played in independent games between two teams of five players, each with a cardinal base containing a building called the "Ancient", whose destruction leads to the victory of the enemy team. Each player controls a "hero" and is required to accumulate experience, earn gold, equip objects and fight the enemy team to achieve victory.
+In Overwatch, you control a hero in competitive games between teams of 6 people. Deliver battle to control goals, eliminate the enemy team and savor your victory.
+The apocalypse is coming to an end, and only the Heavy Metal Machines remain. Welcome to a world of motorized madness, where only the strongest will emerge unscathed from the constant chaos and destruction. You will have to decimate your enemies to get you out.
+Paladins is a team shooter combining strategy elements with a unique character personalization system via collectible cards. These cards enhance and enhance the skills of a champion in many ways.
+Get out your deck and get ready for Hearthstone. The rules of this card game and strategy are simple, but you can expect epic and intense challenges! Play for free, use your cards to cast spells, summon creatures and give orders to Warcraft heroes in legendary and strategic duels
+ORION Dino Horde is a shooting game available for download on PC. This is an enhanced version of the basic game, ORION: Dino Beatdown offering 5 additional game modes, new weapons and additional improvements.
+Type
+Max players
+Game
+Choose a tournament to delete
+Choose a completed tournament to observe
+See the result
+Choose an ongoing tournament to observe
+City
+Country code
+Country
+Region
+Latitude
+Longitude
+Time Zone
+Postal code

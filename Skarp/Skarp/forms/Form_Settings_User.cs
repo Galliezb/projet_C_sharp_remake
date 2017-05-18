@@ -14,12 +14,13 @@ namespace Skarp.forms {
         Users Player = new Users( -1 );
 
         public Form_Settings_User () {
+
             InitializeComponent();
 
             tb_mail.Text = Session.email;
             tb_nom.Text = Session.name;
-            tb_password.Clear();
-            tb_password2.Clear();
+            tb_password.Text = Traducteur.traduction_[35];
+            tb_password2.Text = Traducteur.traduction_[35];
             tb_prenom.Text = Session.firstname;
             tb_pseudo.Text = Session.pseudo;
             cb_language.SelectedIndex = 0;
@@ -49,6 +50,12 @@ namespace Skarp.forms {
 
                 Player.update();
                 MessageBox.Show( Traducteur.traduction_[5] );
+
+                Traducteur.loadText( Session.language );
+
+                //this.MdiParent.Refresh();
+
+                this.MdiParent.Refresh();
 
             } else {
 

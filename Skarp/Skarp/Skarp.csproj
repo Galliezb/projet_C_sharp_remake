@@ -322,6 +322,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="language\en.txt" />
     <Content Include="language\fr.txt" />
     <Content Include="Ressources\SKARP.ico" />
     <Content Include="Ressources\SKARP2.ico">
