@@ -38,14 +38,21 @@ namespace Skarp.forms {
             if (Session.isOrganizer == false)
             {
                 menu_general.Items[4].Visible = false;
+                ToolStripItemCollection leMenuTournoi =  ((ToolStripMenuItem)menu_general.Items[1]).DropDownItems;
+                leMenuTournoi[0].Visible = false;
+                leMenuTournoi[1].Visible = false;
+                leMenuTournoi[2].Visible = false;
+                leMenuTournoi[4].Visible = false;
+
             }
-           
-            MessageBox.Show("" + Session.isAdmin + "\n " +Session.isOrganizer);
-            /*
-            Form form = new forms.Form_accueil();
-            form.MdiParent = this;
-            form.Show();
-            */
+
+
+
+
+            closeAll();
+            affichage = new forms.Form_WebService();
+            displayForm();
+
         }
 
         private void test2ToolStripMenuItem_Click ( object sender , EventArgs e ) {
