@@ -40,11 +40,11 @@ namespace Skarp.forms {
                 tb_titre.Clear();
                 tb_message.Clear();
                 cb_language.SelectedIndex = 0;
-                MessageBox.Show(Traducteur.traduction_[62]);
+                MessageBox.Show(Traducteur.traduction_[64]);
             }
             else
             {
-                MessageBox.Show(Traducteur.traduction_[63]);
+                MessageBox.Show(Traducteur.traduction_[3]);
             }
         }
     }

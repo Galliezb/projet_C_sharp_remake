@@ -62,3 +62,7 @@ Utilisateur
 Sélectionnez le type d'utilisateur
 Entrez les informations requises
 Form admin : Ajout d'utilisateur
+Informations insérées en BDD
+Message
+Titre
+Sauvegarder

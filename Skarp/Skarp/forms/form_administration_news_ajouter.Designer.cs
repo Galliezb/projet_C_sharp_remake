@@ -50,7 +50,7 @@
             this.lb_language.Name = "lb_language";
             this.lb_language.Size = new System.Drawing.Size(74, 20);
             this.lb_language.TabIndex = 1;
-            this.lb_language.Text = "Langue :";
+            this.lb_language.Text = Traducteur.traduction_[56] + " :";
             // 
             // tb_message
             // 
@@ -68,7 +68,7 @@
             this.lb_message.Name = "lb_message";
             this.lb_message.Size = new System.Drawing.Size(72, 20);
             this.lb_message.TabIndex = 3;
-            this.lb_message.Text = "Message";
+            this.lb_message.Text = Traducteur.traduction_[65];
             // 
             // tb_titre
             // 
@@ -85,7 +85,7 @@
             this.lb_titre.Name = "lb_titre";
             this.lb_titre.Size = new System.Drawing.Size(46, 20);
             this.lb_titre.TabIndex = 6;
-            this.lb_titre.Text = "Titre";
+            this.lb_titre.Text = Traducteur.traduction_[66];
             // 
             // btSave
             // 
@@ -94,7 +94,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(121, 54);
             this.btSave.TabIndex = 54;
-            this.btSave.Text = "Sauvegarder";
+            this.btSave.Text = Traducteur.traduction_[67];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
