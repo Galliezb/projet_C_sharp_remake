@@ -45,7 +45,7 @@
             this.btPromote1.Name = "btPromote1";
             this.btPromote1.Size = new System.Drawing.Size(143, 83);
             this.btPromote1.TabIndex = 46;
-            this.btPromote1.Text = "Promote";
+            this.btPromote1.Text = Traducteur.traduction_[75];
             this.btPromote1.UseVisualStyleBackColor = true;
             this.btPromote1.Click += new System.EventHandler(this.btPromote1_Click);
             // 
@@ -56,7 +56,7 @@
             this.btPromote2.Name = "btPromote2";
             this.btPromote2.Size = new System.Drawing.Size(143, 83);
             this.btPromote2.TabIndex = 46;
-            this.btPromote2.Text = "Really ?";
+            this.btPromote2.Text = Traducteur.traduction_[76];
             this.btPromote2.UseVisualStyleBackColor = true;
             this.btPromote2.Visible = false;
             this.btPromote2.Click += new System.EventHandler(this.btPromote2_Click);
@@ -68,7 +68,7 @@
             this.btPromote3.Name = "btPromote3";
             this.btPromote3.Size = new System.Drawing.Size(143, 83);
             this.btPromote3.TabIndex = 46;
-            this.btPromote3.Text = "More people with rights ?";
+            this.btPromote3.Text = Traducteur.traduction_[77];
             this.btPromote3.UseVisualStyleBackColor = true;
             this.btPromote3.Visible = false;
             this.btPromote3.Click += new System.EventHandler(this.btPromote3_Click);
@@ -80,7 +80,7 @@
             this.btPromote4.Name = "btPromote4";
             this.btPromote4.Size = new System.Drawing.Size(143, 83);
             this.btPromote4.TabIndex = 46;
-            this.btPromote4.Text = "Are you dumb ?";
+            this.btPromote4.Text = Traducteur.traduction_[78];
             this.btPromote4.UseVisualStyleBackColor = true;
             this.btPromote4.Visible = false;
             this.btPromote4.Click += new System.EventHandler(this.btPromote4_Click);
@@ -92,7 +92,7 @@
             this.btPromote5.Name = "btPromote5";
             this.btPromote5.Size = new System.Drawing.Size(143, 83);
             this.btPromote5.TabIndex = 46;
-            this.btPromote5.Text = "Failure Detected Click to fix";
+            this.btPromote5.Text = Traducteur.traduction_[79];
             this.btPromote5.UseVisualStyleBackColor = true;
             this.btPromote5.Visible = false;
             this.btPromote5.Click += new System.EventHandler(this.btPromote5_Click);
@@ -109,7 +109,6 @@
             this.dg_joueur.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dg_joueur.Size = new System.Drawing.Size(250, 300);
             this.dg_joueur.TabIndex = 48;
-            this.dg_joueur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_joueur_CellContentClick);
             // 
             // Form_Administration_Promote_User
             // 
@@ -128,7 +127,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Administration_Promote_User";
-            this.Text = "Form_Administration_Promote_User";
+            this.Text = Traducteur.traduction_[80];
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_Administration_Promote_User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_joueur)).EndInit();

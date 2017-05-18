@@ -74,10 +74,5 @@ namespace Skarp.forms
             }
             
        }
-
-        private void dg_joueur_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

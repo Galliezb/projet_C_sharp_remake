@@ -73,3 +73,9 @@ Form administration : supppression de news
 Mettre à jour
 Choisissez une news à modifier
 Form Admin : Modification de news
+Promouvoir
+Réellement ?
+Plus de gens avec des droits ?
+Etes-vous inconscient ?
+Faille détecté, cliquez pour corriger
+Form admin : Promouvoir un utilisateur
