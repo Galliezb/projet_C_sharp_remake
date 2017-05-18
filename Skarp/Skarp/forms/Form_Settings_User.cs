@@ -36,20 +36,20 @@ namespace Skarp.forms {
                 Player.name = tb_nom.Text.ToString();
                 Player.password = tb_password.Text.ToString();
                 Player.pseudo = tb_pseudo.Text.ToString();
-                if ( cb_language.SelectedItem.ToString() == Traducteur.traduction_[55] ) {
+                if ( cb_language.SelectedItem.ToString() == Traducteur.traduction_[40] ) {
                     Player.language = "fr";
-                } else if ( cb_language.SelectedItem.ToString() == Traducteur.traduction_[56] ) {
+                } else if ( cb_language.SelectedItem.ToString() == Traducteur.traduction_[41] ) {
                     Player.language = "en";
                 }
                 Player.isAdmin = Session.isAdmin;
                 Player.isOrganizer = Session.isOrganizer;
 
                 Player.update();
-                MessageBox.Show( "Informations mises à jours" );
+                MessageBox.Show( Traducteur.traduction_[5] );
 
             } else {
 
-                MessageBox.Show( "Mots de passe differents" );
+                MessageBox.Show( Traducteur.traduction_[97] );
 
             }
         }

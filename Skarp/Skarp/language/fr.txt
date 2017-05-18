@@ -95,3 +95,5 @@ Nom de l'organisation
 Email du responsable
 Date de création
 Gérer l'organisation
+Les mots de passes sont différents
+OPtions utilisateurs

@@ -50,7 +50,7 @@
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(160, 46);
             this.btSave.TabIndex = 27;
-            this.btSave.Text = "Save";
+            this.btSave.Text = Traducteur.traduction_[67];
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
@@ -64,7 +64,7 @@
             this.label_password2.Name = "label_password2";
             this.label_password2.Size = new System.Drawing.Size(100, 20);
             this.label_password2.TabIndex = 21;
-            this.label_password2.Text = "Vérification:";
+            this.label_password2.Text = Traducteur.traduction_[57];
             // 
             // label_password1
             // 
@@ -76,7 +76,7 @@
             this.label_password1.Name = "label_password1";
             this.label_password1.Size = new System.Drawing.Size(82, 20);
             this.label_password1.TabIndex = 22;
-            this.label_password1.Text = "Password:";
+            this.label_password1.Text = Traducteur.traduction_[35];
             // 
             // label_pseudo
             // 
@@ -88,7 +88,7 @@
             this.label_pseudo.Name = "label_pseudo";
             this.label_pseudo.Size = new System.Drawing.Size(66, 20);
             this.label_pseudo.TabIndex = 23;
-            this.label_pseudo.Text = "Pseudo:";
+            this.label_pseudo.Text = Traducteur.traduction_[39];
             // 
             // label_email
             // 
@@ -100,7 +100,7 @@
             this.label_email.Name = "label_email";
             this.label_email.Size = new System.Drawing.Size(64, 20);
             this.label_email.TabIndex = 24;
-            this.label_email.Text = "E-Mail:";
+            this.label_email.Text = Traducteur.traduction_[38];
             // 
             // label_prenom
             // 
@@ -112,7 +112,7 @@
             this.label_prenom.Name = "label_prenom";
             this.label_prenom.Size = new System.Drawing.Size(93, 20);
             this.label_prenom.TabIndex = 25;
-            this.label_prenom.Text = "FirstName:";
+            this.label_prenom.Text = Traducteur.traduction_[36];
             // 
             // label_nom
             // 
@@ -124,7 +124,7 @@
             this.label_nom.Name = "label_nom";
             this.label_nom.Size = new System.Drawing.Size(57, 20);
             this.label_nom.TabIndex = 26;
-            this.label_nom.Text = "Name:";
+            this.label_nom.Text = Traducteur.traduction_[37];
             // 
             // tb_password2
             // 
@@ -224,7 +224,7 @@
             this.label_langage.Name = "label_langage";
             this.label_langage.Size = new System.Drawing.Size(100, 20);
             this.label_langage.TabIndex = 29;
-            this.label_langage.Text = "Vérification:";
+            this.label_langage.Text = Traducteur.traduction_[57];
             // 
             // Form_Settings_User
             // 
@@ -251,7 +251,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form_Settings_User";
+            this.Name = Traducteur.traduction_[99];
             this.ResumeLayout(false);
             this.PerformLayout();
 
