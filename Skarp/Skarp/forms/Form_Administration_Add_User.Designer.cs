@@ -91,6 +91,7 @@
             this.lbDesc.Name = "lbDesc";
             this.lbDesc.Size = new System.Drawing.Size(0, 23);
             this.lbDesc.TabIndex = 61;
+            this.lbDesc.Text = Traducteur.traduction_[49];
             // 
             // lbLanguage
             // 
@@ -99,6 +100,7 @@
             this.lbLanguage.Name = "lbLanguage";
             this.lbLanguage.Size = new System.Drawing.Size(0, 23);
             this.lbLanguage.TabIndex = 60;
+            this.lbLanguage.Text = Traducteur.traduction_[56];
             // 
             // lbFirstName
             // 
@@ -107,6 +109,7 @@
             this.lbFirstName.Name = "lbFirstName";
             this.lbFirstName.Size = new System.Drawing.Size(0, 23);
             this.lbFirstName.TabIndex = 58;
+            this.lbFirstName.Text = Traducteur.traduction_[36];
             // 
             // tbPseudo
             // 
@@ -124,6 +127,7 @@
             this.lbPseudo.Name = "lbPseudo";
             this.lbPseudo.Size = new System.Drawing.Size(0, 23);
             this.lbPseudo.TabIndex = 56;
+            this.lbPseudo.Text = Traducteur.traduction_[39];
             // 
             // tbMail
             // 
@@ -141,6 +145,7 @@
             this.lbMail.Name = "lbMail";
             this.lbMail.Size = new System.Drawing.Size(0, 23);
             this.lbMail.TabIndex = 54;
+            this.lbMail.Text = Traducteur.traduction_[38];
             // 
             // tbpwd2
             // 
