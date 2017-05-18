@@ -96,4 +96,8 @@ Email du responsable
 Date de création
 Gérer l'organisation
 Les mots de passes sont différents
-OPtions utilisateurs
+Options utilisateurs
+Choisissez une équipe
+Les joueurs de l'équipe
+Joueurs disponible
+Gérer les joueurs d'une équipe

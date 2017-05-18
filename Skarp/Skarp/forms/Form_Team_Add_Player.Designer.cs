@@ -55,7 +55,7 @@
             this.button_sauvegarder.Name = "button_sauvegarder";
             this.button_sauvegarder.Size = new System.Drawing.Size(249, 49);
             this.button_sauvegarder.TabIndex = 66;
-            this.button_sauvegarder.Text = "Sauvegarder";
+            this.button_sauvegarder.Text = Traducteur.traduction_[67];
             this.button_sauvegarder.UseVisualStyleBackColor = true;
             this.button_sauvegarder.Click += new System.EventHandler(this.btSubmit_Click);
             // 
@@ -66,7 +66,7 @@
             this.lb_choix_equipe.Name = "lb_choix_equipe";
             this.lb_choix_equipe.Size = new System.Drawing.Size(327, 34);
             this.lb_choix_equipe.TabIndex = 67;
-            this.lb_choix_equipe.Text = "Choisissez une équipe";
+            this.lb_choix_equipe.Text = Traducteur.traduction_[99];
             // 
             // listbox_joueur_equipe
             // 
@@ -115,7 +115,7 @@
             this.lb_equipe_joueur.Name = "lb_equipe_joueur";
             this.lb_equipe_joueur.Size = new System.Drawing.Size(304, 34);
             this.lb_equipe_joueur.TabIndex = 70;
-            this.lb_equipe_joueur.Text = "Les joueurs de l\'équipe";
+            this.lb_equipe_joueur.Text = Traducteur.traduction_[100];
             // 
             // lb_les_joueurs
             // 
@@ -124,7 +124,7 @@
             this.lb_les_joueurs.Name = "lb_les_joueurs";
             this.lb_les_joueurs.Size = new System.Drawing.Size(304, 34);
             this.lb_les_joueurs.TabIndex = 71;
-            this.lb_les_joueurs.Text = "Joueurs disponible";
+            this.lb_les_joueurs.Text = Traducteur.traduction_[101];
             // 
             // Form_Team_Add_Player
             // 
@@ -146,7 +146,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form_Team_Add_Player";
-            this.Text = "Form_Team_Add_Player";
+            this.Text = Traducteur.traduction_[102];
             this.ResumeLayout(false);
 
         }

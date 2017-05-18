@@ -24,6 +24,9 @@ namespace Skarp.forms {
             tb_pseudo.Text = Session.pseudo;
             cb_language.SelectedIndex = 0;
 
+            cb_language.Items.Clear();
+            cb_language.Items.Add( Traducteur.traduction_[40] );
+            cb_language.Items.Add( Traducteur.traduction_[41] );
         }
 
         private void btSave_Click ( object sender , EventArgs e ) {
