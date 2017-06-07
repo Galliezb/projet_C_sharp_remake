@@ -184,13 +184,14 @@ namespace Skarp.forms {
 
                         lb_news[maxNews] = new Label();
                         lb_news[maxNews].AutoSize = false;
-                        lb_news[maxNews].Size = new Size( 565 , 50 );
+                        lb_news[maxNews].Size = new Size( 565 , 110 );
                         lb_news[maxNews].Location = new Point( 4 , 100 + maxNews * 125 );
                         lb_news[maxNews].BorderStyle = BorderStyle.None;
                         lb_news[maxNews].ForeColor = Color.White;
                         lb_news[maxNews].BackColor = Color.Transparent;
                         lb_news[maxNews].Padding = new Padding( 5 );
                         lb_news[maxNews].Image = Properties.Resources.fond_news;
+                        lb_news[maxNews].AutoEllipsis = true;
                         lb_news[maxNews].Text = rw["auteur"].ToString() + " : \n" + rw["message"].ToString();
                         this.Controls.Add( lb_news[maxNews] );
 
