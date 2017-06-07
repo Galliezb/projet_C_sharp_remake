@@ -224,7 +224,7 @@
             this.label_langage.Name = "label_langage";
             this.label_langage.Size = new System.Drawing.Size( 100 , 20 );
             this.label_langage.TabIndex = 29;
-            this.label_langage.Text = Traducteur.traduction_[57];
+            this.label_langage.Text = Traducteur.traduction_[56];
             // 
             // Form_Settings_User
             // 

@@ -61,5 +61,9 @@ namespace Skarp.forms {
 
             }
         }
+
+        private void Form_Settings_User_Load ( object sender , EventArgs e ) {
+
+        }
     }
 }
