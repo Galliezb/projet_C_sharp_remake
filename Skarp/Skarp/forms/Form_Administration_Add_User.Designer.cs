@@ -206,7 +206,7 @@
             this.lbSelectType.Name = "lbSelectType";
             this.lbSelectType.Size = new System.Drawing.Size(0, 23);
             this.lbSelectType.TabIndex = 48;
-            this.lbSelectType.Text = Traducteur.traduction_[56];
+            this.lbSelectType.Text = Traducteur.traduction_[115];
             // 
             // label2
             // 

@@ -62,7 +62,7 @@ namespace Skarp {
             Dictionary<string , string> toReturn = new Dictionary<string , string>();
 
 
-            /*
+            
             toReturn.Add( "ville" , item["city_name"] );
             toReturn.Add( "codePays" , item["country_code"] );
             toReturn.Add( "pays" , item["country_name"] );
@@ -71,7 +71,7 @@ namespace Skarp {
             toReturn.Add( "longitude" , item["longitude"] );
             toReturn.Add( "zoneHoraire" , item["time_zone"] );
             toReturn.Add( "codePostal" , item["zip_code"] );
-            */
+            
 
 
 
