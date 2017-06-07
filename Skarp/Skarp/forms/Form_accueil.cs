@@ -158,7 +158,7 @@ namespace Skarp.forms {
 
             cb_choix_langue.Items.Clear();
             cb_choix_langue.Items.Add( Traducteur.traduction_[40] );
-            cb_choix_langue.Items.Add( Traducteur.traduction_[40] );
+            cb_choix_langue.Items.Add( Traducteur.traduction_[41] );
             cb_choix_langue.SelectedIndex = 0;
 
             allNews = new News();

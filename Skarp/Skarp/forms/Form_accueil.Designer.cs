@@ -281,8 +281,8 @@
             this.ClientSize = new System.Drawing.Size(800, 628);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pb_french);
-            this.Controls.Add(this.panel_login);
             this.Controls.Add(this.panel_create_account);
+            this.Controls.Add(this.panel_login);
             this.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
